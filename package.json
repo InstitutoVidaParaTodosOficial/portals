@@ -4,8 +4,8 @@
   "workspaces": [
     "services/*"
   ],
-  "dependencies": {},
   "devDependencies": {
+    "create-next-app": "14.2.3",
     "lerna": "8.1.3"
   }
 }
