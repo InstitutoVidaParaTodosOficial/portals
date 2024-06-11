@@ -1,5 +1,5 @@
 {
-  "name": "@ivpt-portals",
+  "name": "ivpt-portals",
   "private": true,
   "workspaces": [
     "services/*"
