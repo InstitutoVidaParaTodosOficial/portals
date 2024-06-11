@@ -1,0 +1,47 @@
+version: '3.1'
+
+services:
+  database:
+    image: postgres:alpine3.20
+    restart: always
+    # set shared memory limit when using docker-compose
+    shm_size: 128mb
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_USER=directus
+      - POSTGRES_DB=directus
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  directus:
+    build:
+      dockerfile: Dockerfile
+      context: ./services/directus
+    ports:
+      - 8055:8055
+    environment:
+      - SECRET="my-super-secret"
+      # database
+      - DB_CLIENT=postgres
+      - DB_HOST=database
+      - DB_DATABASE=directus
+      - DB_USER=directus
+      - DB_PASSWORD=secret
+      - DB_PORT=5432
+      # cache
+      - CACHE_ENABLED=true
+      - CACHE_TTL=5m
+      - CACHE_STORE=memory
+      - CACHE_AUTO_PURGE=true
+      # admin 
+      - ADMIN_EMAIL=admin@email.com
+      - ADMIN_PASSWORD=secret
+    depends_on:
+      database:
+        condition: service_healthy
+
