@@ -14,3 +14,7 @@ This is a monorepo that hosts all portals for IVPT.
 1. Download and install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 2. Run `docker compose up -d` to start Directus CMS
 3. Go to the specific portal's folder inside services folder and run `npm run dev`
+
+# Before commiting
+
+Make sure the code you are commiting follows code styling guidelines. You can check by running `npm run prettier:check` and to fix any issues `npm run prettier:fix`
