@@ -2,19 +2,55 @@
 
 This is a monorepo that hosts all portals for IVPT.
 
-# Dependencies
+## Development Environment
 
-1. Directus CMS: v10.12.1
-2. PostgreSQL: v16.3
-3. NextJS: 14.2.3
-4. React: v18
+To ensure everyone has a similar development environment and to avoid issues, make sure to have the following tools in these versions:
 
-# Setting up development environment
+| Tool   | Version  |
+| ------ | -------- |
+| Git    | Latest   |
+| Docker | v26.1.4  |
+| NodeJS | v18.18.0 |
 
-1. Download and install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-2. Run `docker compose up -d` to start Directus CMS
-3. Go to the specific portal's folder inside services folder and run `npm run dev`
+To install the appropriate versions, follow the steps in the [`dev_environment.md`](./.github/docs/dev_environment.md) file.
 
-# Before commiting
+## Installation Guide
+
+> With the tools properly installed, execute the commands below
+
+### **1. Clone the repository**
+
+```bash
+git clone https://github.com/InstitutoVidaParaTodosOficial/portals.git
+```
+
+### **2. Enter the project directory**
+
+```bash
+cd portals
+```
+
+### **3. Start Directus CM**
+
+```bash
+docker compose up -d
+```
+
+### **4. Install the dependencies**
+
+```bash
+npm install
+```
+
+### **5. Run a portal**
+
+Go to the specific portal's folder inside services folder and run
+
+```bash
+npm install #If the portal dependencies have not been installed
+npm run dev
+```
+
+## Before commiting
 
 Make sure the code you are commiting follows code styling guidelines. You can check by running `npm run prettier:check` and to fix any issues `npm run prettier:fix`
