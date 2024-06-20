@@ -1,0 +1,15 @@
+{
+  "name": "@ivpt-portals/directus",
+  "version": "1.0.0",
+  "description": "Portals CMS",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx directus start",
+    "bootstrap": "npx directus bootstrap"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "directus": "10.12.1"
+  }
+}
