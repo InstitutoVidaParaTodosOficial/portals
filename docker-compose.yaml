@@ -20,6 +20,7 @@ services:
     build:
       dockerfile: Dockerfile
       context: ./services/directus
+    restart: always
     ports:
       - 8055:8055
     environment:
