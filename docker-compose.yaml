@@ -1,19 +1,17 @@
-version: "3.1"
-
 services:
   database:
-    image: postgres:alpine3.20
+    image: mysql:5.7.44
+    platform: linux/x86_64
     restart: always
-    # set shared memory limit when using docker-compose
-    shm_size: 128mb
     ports:
-      - 5432:5432
+      - 3306:3306
     environment:
-      - POSTGRES_PASSWORD=secret
-      - POSTGRES_USER=directus
-      - POSTGRES_DB=directus
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+      - MYSQL_DATABASE=directus
+      - MYSQL_USER=directus
+      - MYSQL_PASSWORD=secret
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready"]
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -27,12 +25,12 @@ services:
     environment:
       - SECRET="my-super-secret"
       # database
-      - DB_CLIENT=postgres
+      - DB_CLIENT=mysql
       - DB_HOST=database
       - DB_DATABASE=directus
       - DB_USER=directus
       - DB_PASSWORD=secret
-      - DB_PORT=5432
+      - DB_PORT=3306
       # cache
       - CACHE_ENABLED=true
       - CACHE_TTL=5m
