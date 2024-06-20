@@ -7,16 +7,18 @@ RUN apk add --update --no-cache make g++ python3 &&  \
 # create directus user
 RUN addgroup -S directus && adduser -S directus -G directus
 
-# build directus
+# Setup Directus
 WORKDIR /directus
 
+# Install Directus
 COPY package.json .
-
-COPY ./scripts/start.sh .
-
 RUN npm install
 
-# start
+# Copy directus files
+COPY ./snapshots/ ./snapshots
+COPY ./scripts/start.sh .
+
+# Start
 USER directus
 
 CMD ["sh", "-c", "cat ./start.sh | sh"]

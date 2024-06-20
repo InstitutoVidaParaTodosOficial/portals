@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "npx directus start",
-    "bootstrap": "npx directus bootstrap"
+    "bootstrap": "npx directus bootstrap",
+    "snapshot:create": "npx directus schema snapshot --yes ./snapshots/snapshot.yaml",
+    "snapshot:apply": "npx directus schema apply --yes ./snapshots/snapshot.yaml",
+    "snapshot:compare": "npx directus schema apply --dry-run ./snapshots/snapshot.yaml"
   },
   "author": "",
   "license": "ISC",
