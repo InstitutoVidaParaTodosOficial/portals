@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Portals CMS",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "npx directus start",
     "bootstrap": "npx directus bootstrap",
