@@ -17,6 +17,7 @@ RUN npm install
 # Copy directus files
 COPY ./snapshots/ ./snapshots
 COPY ./scripts/start.sh .
+COPY ./migrations/ ./migrations
 
 # Start
 USER directus
