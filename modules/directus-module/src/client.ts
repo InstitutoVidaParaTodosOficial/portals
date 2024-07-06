@@ -1,5 +1,5 @@
-import { DirectusClientConfig, DirectusConfig, Schema } from "./types/DirectusConfig"
-import { createDirectus, DirectusClient, graphql, GraphqlClient } from "@directus/sdk"
+import { DirectusClientConfig, DirectusConfig, DirectusGraphqlClient } from "./types/DirectusConfig"
+import { createDirectus, graphql } from "@directus/sdk"
 
 function buildDirectusUrl(config: DirectusClientConfig): string {
   const url = new URL(`${config.proto}://${config.host}`)
@@ -9,7 +9,7 @@ function buildDirectusUrl(config: DirectusClientConfig): string {
   return url.toString()
 }
 
-export function useDirectusGraphql(config: DirectusConfig): DirectusClient<Schema> & GraphqlClient<Schema> {
+export function useDirectusGraphql(config: DirectusConfig): DirectusGraphqlClient {
   const url = buildDirectusUrl(config.client)
   return createDirectus(url).with(graphql())
 }

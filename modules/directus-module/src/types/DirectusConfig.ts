@@ -1,8 +1,7 @@
-import { Portal } from "../collections"
+import { DirectusClient, GraphqlClient } from "@directus/sdk"
+import { DirectusSchema } from "./DirectusSchema"
 
-export type DirectusConfig = {
-  client: DirectusClientConfig
-}
+export type DirectusGraphqlClient = DirectusClient<DirectusSchema> & GraphqlClient<DirectusSchema>
 
 export type DirectusClientConfig = {
   proto: "http" | "https"
@@ -10,6 +9,6 @@ export type DirectusClientConfig = {
   port?: number
 }
 
-export type Schema = {
-  Portals: Portal
+export type DirectusConfig = {
+  client: DirectusClientConfig
 }
