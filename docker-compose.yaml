@@ -44,6 +44,7 @@ services:
       - ADMIN_PASSWORD=secret
       # CORS
       - CORS_ENABLED=true
+      - CORS_ORIGIN=*
     depends_on:
       database:
         condition: service_healthy
