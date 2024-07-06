@@ -25,6 +25,7 @@ services:
       - 8055:8055
     volumes:
       - ./services/directus/uploads:/directus/uploads
+      - ./services/directus/snapshots:/directus/snapshots
     environment:
       - SECRET="my-super-secret"
       # database
