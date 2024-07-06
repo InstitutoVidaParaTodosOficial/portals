@@ -42,6 +42,8 @@ services:
       # admin
       - ADMIN_EMAIL=admin@email.com
       - ADMIN_PASSWORD=secret
+      # CORS
+      - CORS_ENABLED=true
     depends_on:
       database:
         condition: service_healthy
