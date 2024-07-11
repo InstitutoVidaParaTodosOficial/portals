@@ -25,6 +25,7 @@ services:
       - 8055:8055
     volumes:
       - ./services/directus/uploads:/directus/uploads
+      - ./services/directus/snapshots:/directus/snapshots
     environment:
       - SECRET="my-super-secret"
       # database
@@ -42,6 +43,9 @@ services:
       # admin
       - ADMIN_EMAIL=admin@email.com
       - ADMIN_PASSWORD=secret
+      # CORS
+      - CORS_ENABLED=true
+      - CORS_ORIGIN=*
     depends_on:
       database:
         condition: service_healthy
