@@ -2,7 +2,7 @@ export async function up(knex) {
   await knex("directus_settings").insert([
     {
       id: 1,
-      default_language: "pt_BR"
+      default_language: "pt-BR"
     }
   ])
 }
