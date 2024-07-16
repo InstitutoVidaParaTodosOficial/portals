@@ -26,6 +26,7 @@ services:
     volumes:
       - ./services/directus/uploads:/directus/uploads
       - ./services/directus/snapshots:/directus/snapshots
+      - ./services/directus/migrations:/directus/migrations
     environment:
       - SECRET="my-super-secret"
       # database
