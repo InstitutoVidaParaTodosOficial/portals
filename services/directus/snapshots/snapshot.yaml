@@ -377,82 +377,6 @@ fields:
       foreign_key_table: null
       foreign_key_column: null
   - collection: midias_sociais
-    field: url
-    type: string
-    meta:
-      collection: midias_sociais
-      conditions: null
-      display: null
-      display_options: null
-      field: url
-      group: null
-      hidden: false
-      interface: input
-      note: null
-      options: null
-      readonly: false
-      required: false
-      sort: 8
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: url
-      table: midias_sociais
-      data_type: varchar
-      default_value: null
-      max_length: 255
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: midias_sociais
-    field: icon
-    type: string
-    meta:
-      collection: midias_sociais
-      conditions: null
-      display: null
-      display_options: null
-      field: icon
-      group: null
-      hidden: false
-      interface: select-icon
-      note: null
-      options: null
-      readonly: false
-      required: false
-      sort: 9
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: icon
-      table: midias_sociais
-      data_type: varchar
-      default_value: null
-      max_length: 255
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: midias_sociais
     field: midias
     type: integer
     meta:
@@ -467,7 +391,7 @@ fields:
       note: null
       options: null
       readonly: false
-      required: false
+      required: true
       sort: 10
       special:
         - m2o
@@ -491,6 +415,82 @@ fields:
       has_auto_increment: false
       foreign_key_table: midias_sociais
       foreign_key_column: id
+  - collection: midias_sociais
+    field: icone
+    type: string
+    meta:
+      collection: midias_sociais
+      conditions: null
+      display: null
+      display_options: null
+      field: icone
+      group: null
+      hidden: false
+      interface: select-icon
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 11
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: icone
+      table: midias_sociais
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: midias_sociais
+    field: link
+    type: string
+    meta:
+      collection: midias_sociais
+      conditions: null
+      display: null
+      display_options: null
+      field: link
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: true
+      sort: 12
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: link
+      table: midias_sociais
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
   - collection: noticias
     field: id
     type: integer
