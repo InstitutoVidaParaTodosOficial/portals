@@ -50,6 +50,30 @@ collections:
       versioning: false
     schema:
       name: noticias
+  - collection: noticias_portais
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: noticias_portais
+      color: null
+      display_template: null
+      group: null
+      hidden: true
+      icon: import_export
+      item_duplication_fields: null
+      note: null
+      preview_url: null
+      singleton: false
+      sort: null
+      sort_field: null
+      translations: null
+      unarchive_value: null
+      versioning: false
+    schema:
+      name: noticias_portais
   - collection: portais
     meta:
       accountability: all
@@ -604,7 +628,7 @@ fields:
             color: var(--theme--warning)
             value: archived
       readonly: false
-      required: false
+      required: true
       sort: 2
       special: null
       translations: null
@@ -803,7 +827,7 @@ fields:
       options: null
       readonly: false
       required: true
-      sort: 7
+      sort: 10
       special:
         - file
       translations: null
@@ -827,44 +851,6 @@ fields:
       foreign_key_table: directus_files
       foreign_key_column: id
   - collection: noticias
-    field: descricao_curta
-    type: text
-    meta:
-      collection: noticias
-      conditions: null
-      display: null
-      display_options: null
-      field: descricao_curta
-      group: null
-      hidden: false
-      interface: input-multiline
-      note: null
-      options: null
-      readonly: false
-      required: true
-      sort: 8
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: descricao_curta
-      table: noticias
-      data_type: text
-      default_value: null
-      max_length: 65535
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: noticias
     field: conteudo
     type: text
     meta:
@@ -880,7 +866,7 @@ fields:
       options: null
       readonly: false
       required: true
-      sort: 9
+      sort: 11
       special: null
       translations: null
       validation: null
@@ -903,8 +889,31 @@ fields:
       foreign_key_table: null
       foreign_key_column: null
   - collection: noticias
+    field: portais
+    type: alias
+    meta:
+      collection: noticias
+      field: portais
+      special:
+        - m2m
+      interface: list-m2m
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 9
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: noticias
     field: destaque
-    type: boolean
+    type: integer
     meta:
       collection: noticias
       conditions: null
@@ -913,14 +922,18 @@ fields:
       field: destaque
       group: null
       hidden: false
-      interface: boolean
+      interface: select-dropdown
       note: null
-      options: null
+      options:
+        choices:
+          - text: Sim
+            value: 1
+          - text: Não
+            value: 0
       readonly: false
       required: true
-      sort: 10
-      special:
-        - cast-boolean
+      sort: 8
+      special: null
       translations: null
       validation: null
       validation_message: null
@@ -928,10 +941,10 @@ fields:
     schema:
       name: destaque
       table: noticias
-      data_type: boolean
-      default_value: null
+      data_type: int
+      default_value: 0
       max_length: null
-      numeric_precision: 3
+      numeric_precision: 10
       numeric_scale: 0
       is_nullable: true
       is_unique: false
@@ -942,31 +955,144 @@ fields:
       foreign_key_table: null
       foreign_key_column: null
   - collection: noticias
-    field: portais
-    type: integer
+    field: titulo
+    type: string
     meta:
       collection: noticias
       conditions: null
       display: null
       display_options: null
-      field: portais
+      field: titulo
       group: null
       hidden: false
-      interface: select-dropdown-m2o
+      interface: input
       note: null
       options: null
       readonly: false
       required: true
-      sort: 11
-      special:
-        - m2o
+      sort: 7
+      special: null
       translations: null
       validation: null
       validation_message: null
       width: full
     schema:
-      name: portais
+      name: titulo
       table: noticias
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: noticias_portais
+    field: id
+    type: integer
+    meta:
+      collection: noticias_portais
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 1
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: id
+      table: noticias_portais
+      data_type: int unsigned
+      default_value: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: noticias_portais
+    field: noticias_id
+    type: integer
+    meta:
+      collection: noticias_portais
+      conditions: null
+      display: null
+      display_options: null
+      field: noticias_id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 2
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: noticias_id
+      table: noticias_portais
+      data_type: int unsigned
+      default_value: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: noticias
+      foreign_key_column: id
+  - collection: noticias_portais
+    field: portais_id
+    type: integer
+    meta:
+      collection: noticias_portais
+      conditions: null
+      display: null
+      display_options: null
+      field: portais_id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 3
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: portais_id
+      table: noticias_portais
       data_type: int unsigned
       default_value: null
       max_length: null
@@ -1563,13 +1689,13 @@ relations:
       constraint_name: noticias_imagem_foreign
       on_update: RESTRICT
       on_delete: SET NULL
-  - collection: noticias
-    field: portais
+  - collection: noticias_portais
+    field: portais_id
     related_collection: portais
     meta:
-      junction_field: null
-      many_collection: noticias
-      many_field: portais
+      junction_field: noticias_id
+      many_collection: noticias_portais
+      many_field: portais_id
       one_allowed_collections: null
       one_collection: portais
       one_collection_field: null
@@ -1577,11 +1703,32 @@ relations:
       one_field: null
       sort_field: null
     schema:
-      table: noticias
-      column: portais
+      table: noticias_portais
+      column: portais_id
       foreign_key_table: portais
       foreign_key_column: id
-      constraint_name: noticias_portais_foreign
+      constraint_name: noticias_portais_portais_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+  - collection: noticias_portais
+    field: noticias_id
+    related_collection: noticias
+    meta:
+      junction_field: portais_id
+      many_collection: noticias_portais
+      many_field: noticias_id
+      one_allowed_collections: null
+      one_collection: noticias
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: portais
+      sort_field: null
+    schema:
+      table: noticias_portais
+      column: noticias_id
+      foreign_key_table: noticias
+      foreign_key_column: id
+      constraint_name: noticias_portais_noticias_id_foreign
       on_update: RESTRICT
       on_delete: SET NULL
   - collection: portais
