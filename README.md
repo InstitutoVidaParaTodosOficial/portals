@@ -12,7 +12,7 @@ To ensure everyone has a similar development environment and to avoid issues, ma
 | Docker | v26.1.4  |
 | NodeJS | v18.18.0 |
 
-To install the appropriate versions, follow the steps in the [`dev_environment.md`](./.github/docs/dev_environment.md) file.
+To install the appropriate versions, follow the steps in the [`dev_environment.md`](doc/dev_environment.md) file.
 
 ## Installation Guide
 
