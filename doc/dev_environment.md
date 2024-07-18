@@ -34,7 +34,7 @@ If NodeJS is not installed, go to https://nodejs.org and download the "LTS" vers
 
 > If your operating system is Linux-based (e.g., Ubuntu, Debian), you will need to use `sudo` before the commands below (`sudo <command>`).
 
-If the version differs from the one specified in the [`README.md`](../../README.md#development-environment), install the `n` package to get the correct version:
+If the version differs from the one specified in the [`README.md`](../README.md#development-environment), install the `n` package to get the correct version:
 
 ```
 npm install --global n
@@ -46,4 +46,4 @@ Once installed, install the correct version with:
 n x.x.x
 ```
 
-Replace `x.x.x` with the version specified in the [`README.md`](../../README.md#development-environment) for NodeJS.
+Replace `x.x.x` with the version specified in the [`README.md`](../README.md#development-environment) for NodeJS.
