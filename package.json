@@ -21,5 +21,8 @@
     "prettier:check": "prettier -c .",
     "eslint:check": "eslint -c .eslintrc.js .",
     "prepare": "husky"
+  },
+  "dependencies": {
+    "styled-components": "6.1.12"
   }
 }
