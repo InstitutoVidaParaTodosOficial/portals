@@ -40,10 +40,10 @@ const VideoPlayer = styled.video`
 
 type PhoneFramePlayerProps = {
   videoUrl: string
-  videoType: string
-  width: string
-  height: string
-  displayVideoControls: boolean
+  videoType?: string
+  width?: string
+  height?: string
+  displayVideoControls?: boolean
 }
 
 export default function PhoneFrameVideoPlayer({
