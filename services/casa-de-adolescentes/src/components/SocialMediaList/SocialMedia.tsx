@@ -5,15 +5,15 @@ import { SocialMedia } from "@/types/SocialMedia"
 type BorderRadiusPosition = "none" | "left" | "right" | "all"
 
 const SocialMediaList = styled.div<{
-  borderRadiusPosition: BorderRadiusPosition | undefined
+  $borderRadiusPosition: BorderRadiusPosition | undefined
   radius: string
-  backColor: `#${string}`
+  $backgroundColor: `#${string}`
 }>`
   padding: 16px;
-  background-color: ${props => props.backColor};
+  background-color: ${props => props.$backgroundColor};
   display: inline-block;
   border-radius: ${props => {
-    switch (props.borderRadiusPosition) {
+    switch (props.$borderRadiusPosition) {
       case "all":
         return props.radius
       case "left":
@@ -61,7 +61,7 @@ export default function SocialMediasList({
   }
 
   return (
-    <SocialMediaList borderRadiusPosition={borderRadiusPosition} radius={radius} backColor={backColor}>
+    <SocialMediaList $borderRadiusPosition={borderRadiusPosition} radius={radius} $backgroundColor={backColor}>
       {list.map(media => (
         <SocialIcon key={media.id} onClick={event => onClickSocialIcon(media, event)}>
           <img alt={`${media.platform} social media`} src={media.iconUrl} />
