@@ -6,10 +6,10 @@ import RedThumbtackPng from "./assets/red-thumbtack.png"
 
 const StickyNoteBackground = styled.div<{
   rotate?: number
-  maxWidth?: `${string}px`
+  $maxWidth?: `${string}px`
 }>`
   background-color: #f3e27a;
-  max-width: ${props => props.maxWidth || "300px"};
+  max-width: ${props => props.$maxWidth || "300px"};
   transform: rotate(${props => props.rotate + "deg" || "0deg"});
 `
 
@@ -44,7 +44,7 @@ export default function StickyNote({
   displayThumbtack = true
 }: StickyNoteProps) {
   return (
-    <StickyNoteBackground rotate={rotate} maxWidth={maxWidth}>
+    <StickyNoteBackground rotate={rotate} $maxWidth={maxWidth}>
       <TopGradient>{displayThumbtack && <RedThumbtack src={RedThumbtackPng} alt="red thumbtack" />}</TopGradient>
 
       <ChildrenWrapper>{children}</ChildrenWrapper>
