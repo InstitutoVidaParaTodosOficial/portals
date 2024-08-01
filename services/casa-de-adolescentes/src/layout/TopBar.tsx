@@ -1,4 +1,7 @@
 import styled from "styled-components"
+import Image from "next/image"
+
+import svgLogo from "./assets/logo.svg"
 
 import { Just_Me_Again_Down_Here } from "next/font/google"
 
@@ -30,6 +33,11 @@ const TopBarNavItemsList = styled.ul`
 
 const LogWrapper = styled.div`
   width: 142px;
+  height: auto;
+`
+
+const Logo = styled(Image)`
+  width: 100%;
   height: auto;
 `
 
@@ -75,7 +83,9 @@ export default function TopBar() {
         ))}
       </TopBarNavItemsList>
 
-      <LogWrapper></LogWrapper>
+      <LogWrapper>
+        <Logo src={svgLogo} alt="Logo casa de adolescentes" />
+      </LogWrapper>
     </TopBarWrapper>
   )
 }
