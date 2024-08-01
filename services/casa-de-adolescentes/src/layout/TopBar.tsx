@@ -12,8 +12,12 @@ const TopBarWrapper = styled.nav`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
   padding: 16px 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
 `
 
 const TopBarNavItemsList = styled.ul`
