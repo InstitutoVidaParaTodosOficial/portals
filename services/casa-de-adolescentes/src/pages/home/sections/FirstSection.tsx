@@ -16,7 +16,8 @@ const abrilFatface = Abril_Fatface({
 })
 
 const FirstSectionWrapper = styled.section`
-  background-color: red;
+  background-image: url("/assets/images/grey-background.png");
+  background-size: cover;
   padding: 125px 0 0 16px;
   display: flex;
   justify-content: space-between;
