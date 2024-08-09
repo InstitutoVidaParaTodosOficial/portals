@@ -12,7 +12,6 @@ const justMeAgainDownHere = Just_Me_Again_Down_Here({
 const SectionWrapper = styled.section`
   background-color: #eb529c;
   margin: 0;
-  padding: 32px 64px;
 `
 
 const Title = styled.h2`
@@ -25,9 +24,14 @@ const Title = styled.h2`
 const EventsList = styled.ul`
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 72px;
+  overflow: auto;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  li {
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    padding: 0 22px;
+  }
 `
 
 const MOCK_NEXT_EVENTS: NextEvent[] = [
@@ -63,6 +67,16 @@ const MOCK_NEXT_EVENTS: NextEvent[] = [
   },
   {
     id: "4",
+    title: "Holy Generation Conference\n",
+    place: "Flórida, USA",
+    date: "26 a 04 de agosto",
+    link: "https://google.com",
+    backgroundColor: "#1D1C1C",
+    textColor: "#FFF",
+    titleColor: "#F39324"
+  },
+  {
+    id: "5",
     title: "Holy Generation Conference\n",
     place: "Flórida, USA",
     date: "26 a 04 de agosto",

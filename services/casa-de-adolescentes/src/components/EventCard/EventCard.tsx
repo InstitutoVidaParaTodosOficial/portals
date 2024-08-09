@@ -20,7 +20,7 @@ const EventCardWrapper = styled.div<{
   height: 400px;
   background-color: ${props => props.$backgroundColor};
   position: relative;
-  transform: rotate(${props => props.$rotateDegrees}deg);
+  transform: rotate(${props => props.$rotateDegrees}deg) scale(0.85);
 `
 
 const ContentWrapper = styled.div<{
