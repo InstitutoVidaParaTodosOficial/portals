@@ -1,11 +1,11 @@
-import FirstSection from "@/pages/home/sections/FirstSection"
-import NextEventsSection from "@/pages/home/sections/NextEventsSection"
+import LandingSection from "@/pages/home/sections/LandingSection/LandingSection"
+import EventsSection from "@/pages/home/sections/EventsSection/EventsSection"
 
 export default function HomePage() {
   return (
     <>
-      <FirstSection />
-      <NextEventsSection />
+      <LandingSection />
+      <EventsSection />
     </>
   )
 }

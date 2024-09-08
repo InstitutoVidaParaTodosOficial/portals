@@ -87,7 +87,7 @@ const MOCK_NEXT_EVENTS: NextEvent[] = [
   }
 ]
 
-export default function NextEventsSection() {
+export default function EventsSection() {
   return (
     <SectionWrapper>
       <Title className={justMeAgainDownHere.className}>Próximos Eventos</Title>

@@ -17,6 +17,7 @@ const TopBarWrapper = styled.nav`
   align-items: center;
   padding: 16px 24px;
   position: absolute;
+  z-index: 9999999999;
   top: 0;
   left: 0;
   box-sizing: border-box;
