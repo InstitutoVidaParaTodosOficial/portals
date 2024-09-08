@@ -27,6 +27,7 @@ const EventsList = styled.ul`
   overflow: auto;
   scrollbar-width: none;
   scroll-snap-type: x mandatory;
+  margin: 0;
   li {
     flex-shrink: 0;
     scroll-snap-align: start;
