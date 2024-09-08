@@ -86,7 +86,7 @@ const socialMediaItems: SocialMedia[] = [
 export default function LandingSection() {
   return (
     <FirstSectionWrapper>
-      <BackgroundImage src={BackgroundImageFile} alt="background image" objectFit="cover" objectPosition="center" />
+      <BackgroundImage src={BackgroundImageFile} alt="background image" />
 
       <HeroContent>
         <HeadLine className={abrilFatface.className}>
