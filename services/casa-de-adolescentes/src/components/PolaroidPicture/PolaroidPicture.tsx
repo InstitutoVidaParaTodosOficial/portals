@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 
 import GreyStickerImage from "./assets/grey-sticky-tape.png"
 
@@ -25,7 +25,7 @@ const GreySticker = styled(Image)<{
 `
 
 type PolaroidPictureProps = {
-  imageUrl: string
+  imageUrl: string | StaticImageData
   imageDescription: string
   imageWidth?: number
 }
