@@ -12,3 +12,7 @@ body {
   color: inherit;
   text-decoration: inherit;
 }
+
+h2 {
+  font-size: 64px;
+}
