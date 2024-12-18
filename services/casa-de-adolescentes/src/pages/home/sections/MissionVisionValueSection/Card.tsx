@@ -25,7 +25,8 @@ const Title = styled.h2`
 `
 
 const Content = styled.p`
-  color: 000;
+  color: #000;
+  text-wrap: auto;
 `
 
 type CardProps = {

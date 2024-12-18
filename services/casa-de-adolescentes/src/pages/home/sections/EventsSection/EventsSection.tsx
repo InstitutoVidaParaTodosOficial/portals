@@ -1,3 +1,4 @@
+import { useRef } from "react"
 import styled from "styled-components"
 import { NextEvent } from "@/types/NextEvent"
 import { Just_Me_Again_Down_Here } from "next/font/google"
@@ -11,6 +12,7 @@ const justMeAgainDownHere = Just_Me_Again_Down_Here({
 
 const SectionWrapper = styled.section`
   background-color: #eb529c;
+  position: relative;
   margin: 0;
 `
 
@@ -27,12 +29,45 @@ const EventsList = styled.ul`
   overflow: auto;
   scrollbar-width: none;
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
   margin: 0;
+  gap: 22px;
+
   li {
     flex-shrink: 0;
     scroll-snap-align: start;
     padding: 0 22px;
   }
+
+  li:first-child {
+    padding-left: 70px;
+  }
+`
+
+const NavButton = styled.button`
+  background-color: #fff;
+  border: none;
+  color: #eb529c;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  z-index: 1;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+`
+
+const PrevButton = styled(NavButton)`
+  left: 10px;
+`
+
+const NextButton = styled(NavButton)`
+  right: 10px;
 `
 
 const MOCK_NEXT_EVENTS: NextEvent[] = [
@@ -89,17 +124,39 @@ const MOCK_NEXT_EVENTS: NextEvent[] = [
 ]
 
 export default function EventsSection() {
+  const listRef = useRef<HTMLUListElement>(null)
+
+  const scrollLeft = () => {
+    if (listRef.current) {
+      listRef.current.scrollBy({ left: -300, behavior: "smooth" })
+    }
+  }
+
+  const scrollRight = () => {
+    if (listRef.current) {
+      listRef.current.scrollBy({ left: 300, behavior: "smooth" })
+    }
+  }
+
   return (
     <SectionWrapper>
       <Title className={justMeAgainDownHere.className}>Próximos Eventos</Title>
 
-      <EventsList>
+      <PrevButton onClick={scrollLeft} aria-label="Scroll left">
+        &#9664;
+      </PrevButton>
+
+      <EventsList ref={listRef}>
         {MOCK_NEXT_EVENTS.map((event, index) => (
           <li key={event.id}>
             <EventCard rotateDegrees={index % 2 === 0 ? -5 : 5} event={event} />
           </li>
         ))}
       </EventsList>
+
+      <NextButton onClick={scrollRight} aria-label="Scroll right">
+        &#9654;
+      </NextButton>
     </SectionWrapper>
   )
 }

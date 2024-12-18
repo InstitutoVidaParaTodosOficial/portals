@@ -23,6 +23,9 @@ const Container = styled.div`
   transform: translate(-50%, -50%);
   display: flex;
   gap: 16px;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
 `
 
 type CardContent = {
