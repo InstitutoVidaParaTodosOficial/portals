@@ -1,2 +1,2 @@
-npm run prettier:check
+npm run prettier:fix
 npm run eslint:check
