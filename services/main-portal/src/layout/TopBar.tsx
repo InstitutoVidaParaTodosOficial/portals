@@ -1,6 +1,7 @@
 import React from "react"
 import Image from "next/image"
 import styled from "styled-components"
+import { useRouter } from "next/router"
 
 import SocialMedia from "@/components/social-medias/SocialMedia"
 
@@ -19,14 +20,21 @@ const LogoWrapper = styled.div`
   flex: 1;
   display: flex;
   justify-content: center;
+
+  :hover {
+    cursor: pointer;
+  }
 `
 
 export default function TopBar() {
+  const router = useRouter()
+
   return (
     <TopBarWrapper>
-      <div></div>
       {/* Empty div to push logo to the center */}
-      <LogoWrapper>
+      <div></div>
+
+      <LogoWrapper onClick={() => router.push("/")}>
         <Image src={Logo} alt="IVPT Logo" width={200} />
       </LogoWrapper>
 

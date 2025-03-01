@@ -1,7 +1,7 @@
 import { useRouter } from "next/router"
 
 import styled from "styled-components"
-import useFetchTranslation from "@/hooks/fetchTranslation"
+import { useTranslations } from "next-intl"
 
 const NavMenuWrapper = styled.nav``
 
@@ -54,17 +54,14 @@ const MENU_ITEMS: MenuItem[] = [
 
 export default function NavMenu() {
   const router = useRouter()
-  const translations = useFetchTranslation({
-    locale: router.locale,
-    jsonFileName: "menu"
-  })
+  const t = useTranslations("nav-menu")
 
   return (
     <NavMenuWrapper>
       <NavMenuItemsList>
         {MENU_ITEMS.map((item, index) => (
           <li key={index}>
-            <a onClick={() => router.push(item.path)}>{translations && translations[item.name]}</a>
+            <a onClick={() => router.push(item.path)}>{t(item.name)}</a>
           </li>
         ))}
       </NavMenuItemsList>

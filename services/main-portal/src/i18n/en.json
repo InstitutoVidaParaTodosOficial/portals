@@ -1,0 +1,31 @@
+{
+  "welcome": "Welcome to the main portal!",
+  "nav-menu": {
+    "about-us": "About Us",
+    "agenda": "Agenda",
+    "donations": "Donations",
+    "find-us": "Find Us",
+    "ministry": "Ministry",
+    "news-feed": "News Feed",
+    "projects": "Projects"
+  },
+  "sections": {
+    "contact": {
+      "headline": "Contact us",
+      "subtitle": "Contact",
+      "email": "exemplo@exemplo.com.br",
+      "phone": "(021) 8000-600",
+      "address": {
+        "title": "Address",
+        "line_1": "Rua das Airoras, n.642",
+        "city": "City",
+        "state": "State",
+        "country": "USA"
+      },
+      "pray": {
+        "call_to_action": "May I pray for you?",
+        "action_button": "Click here"
+      }
+    }
+  }
+}

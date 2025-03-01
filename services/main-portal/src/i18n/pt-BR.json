@@ -1,0 +1,31 @@
+{
+  "welcome": "Bem-vindo ao portal principal",
+  "nav-menu": {
+    "about-us": "Sobre nós",
+    "agenda": "Agenda",
+    "donations": "Central de Ofertas",
+    "find-us": "Encontre-nos",
+    "ministry": "Ministérios",
+    "news-feed": "Notícias",
+    "projects": "Projetos"
+  },
+  "sections": {
+    "contact": {
+      "headline": "Entre em contato",
+      "subtitle": "Contato",
+      "email": "exemplo@exemplo.com.br",
+      "phone": "(021) 8000-600",
+      "address": {
+        "title": "Localização",
+        "line_1": "Rua das Airoras, n.642",
+        "city": "Cidade",
+        "state": "Estado",
+        "country": "Brasil"
+      },
+      "pray": {
+        "call_to_action": "Posso orar por você?",
+        "action_button": "Clique aqui"
+      }
+    }
+  }
+}
