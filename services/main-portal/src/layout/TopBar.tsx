@@ -2,7 +2,7 @@ import React from "react"
 import Image from "next/image"
 import styled from "styled-components"
 
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa"
+import SocialMedia from "@/components/social-medias/SocialMedia"
 
 import Logo from "./assets/logo.png"
 
@@ -21,21 +21,6 @@ const LogoWrapper = styled.div`
   justify-content: center;
 `
 
-const IconLink = styled.a`
-  color: var(--background-color);
-  font-size: 24px;
-  text-decoration: none;
-
-  &:hover {
-    color: var(--accent-color);
-  }
-`
-
-const SocialMediaIcons = styled.div`
-  display: flex;
-  gap: 16px;
-`
-
 export default function TopBar() {
   return (
     <TopBarWrapper>
@@ -44,17 +29,8 @@ export default function TopBar() {
       <LogoWrapper>
         <Image src={Logo} alt="IVPT Logo" width={200} />
       </LogoWrapper>
-      <SocialMediaIcons>
-        <IconLink href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-          <FaFacebook />
-        </IconLink>
-        <IconLink href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          <FaTwitter />
-        </IconLink>
-        <IconLink href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-          <FaInstagram />
-        </IconLink>
-      </SocialMediaIcons>
+
+      <SocialMedia />
     </TopBarWrapper>
   )
 }
