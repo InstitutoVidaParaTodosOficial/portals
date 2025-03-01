@@ -1,12 +1,14 @@
 import styled from "styled-components"
+import { useTranslations } from "next-intl"
 
 import { Colors } from "@/styles/types"
 import SocialMedia from "@/components/social-medias/SocialMedia"
-import { useTranslations } from "next-intl"
+import FancyTitle from "@/components/FancyTitle"
 
 const ComponentWrapper = styled.section<{ $backgroundColor: Colors }>`
   background-color: ${props => `var(${props.$backgroundColor})`};
   color: var(--background-color);
+  padding: 32px 0;
 `
 
 const Row = styled.div`
@@ -28,7 +30,7 @@ export default function ContactUs({ backgroundColor = Colors.primaryColor }: Pro
 
   return (
     <ComponentWrapper $backgroundColor={backgroundColor}>
-      <h2>{t("headline")}</h2>
+      <FancyTitle text={t("headline")} />
 
       <Row>
         <Column>
