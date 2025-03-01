@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react"
 import { useRouter } from "next/router"
 
 import styled from "styled-components"
+import useFetchTranslation from "@/hooks/fetchTranslation"
 
 const NavMenuWrapper = styled.nav``
 
@@ -54,13 +54,10 @@ const MENU_ITEMS: MenuItem[] = [
 
 export default function NavMenu() {
   const router = useRouter()
-  const [translations, setTranslations] = useState<{ [key: string]: string }>()
-
-  useEffect(() => {
-    fetch(`/locales/${router.locale}/menu.json`)
-      .then(response => response.json())
-      .then(data => setTranslations(data))
-  }, [router.locale])
+  const translations = useFetchTranslation({
+    locale: router.locale,
+    jsonFileName: "menu"
+  })
 
   return (
     <NavMenuWrapper>
