@@ -2,3 +2,22 @@ body {
   margin: 0;
   background-color: var(--background-color);
 }
+
+.centered-column {
+  display: flex;
+  align-items: center;
+}
+
+.vertical-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.zero-margin > p,
+.zero-margin > h1,
+.zero-margin > h2,
+.zero-margin > h3,
+.zero-margin > h4 {
+  margin: 0;
+}

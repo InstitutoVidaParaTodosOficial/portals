@@ -3,7 +3,6 @@ import { NextIntlClientProvider } from "next-intl"
 import { useRouter } from "next/router"
 import "../global.css"
 import "../styles/colors.css"
-import { Colors } from "@/styles/types"
 import TopBar from "@/layout/TopBar"
 import Footer from "@/layout/Footer"
 import NavMenu from "@/layout/NavMenu"
@@ -17,7 +16,7 @@ function App({ Component, pageProps }: AppProps) {
       <TopBar />
       <NavMenu />
       <Component {...pageProps} />
-      <ContactUs backgroundColor={Colors.secondaryColor} />
+      <ContactUs />
       <Footer />
     </NextIntlClientProvider>
   )
