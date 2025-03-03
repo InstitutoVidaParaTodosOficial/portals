@@ -73,7 +73,11 @@ type EventCardProps = {
 
 export default function EventCard({ event, rotateDegrees }: EventCardProps) {
   return (
-    <EventCardWrapper $backgroundColor={event.backgroundColor} $rotateDegrees={rotateDegrees}>
+    <EventCardWrapper
+      data-testid="event-card-wrapper"
+      $backgroundColor={event.backgroundColor}
+      $rotateDegrees={rotateDegrees}
+    >
       <ContentWrapper
         className={anaheim.className}
         $backgroundImage={event.backgroundImage}
