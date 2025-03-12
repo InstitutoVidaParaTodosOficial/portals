@@ -7,46 +7,11 @@ services:
       - 3306:3306
     environment:
       - MYSQL_ALLOW_EMPTY_PASSWORD=yes
-      - MYSQL_DATABASE=directus
-      - MYSQL_USER=directus
+      - MYSQL_DATABASE=strapi
+      - MYSQL_USER=strapi
       - MYSQL_PASSWORD=secret
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       interval: 10s
       timeout: 5s
       retries: 5
-
-  directus:
-    build:
-      dockerfile: Dockerfile
-      context: ./services/directus
-    restart: always
-    ports:
-      - 8055:8055
-    volumes:
-      - ./services/directus/uploads:/directus/uploads
-      - ./services/directus/snapshots:/directus/snapshots
-      - ./services/directus/migrations:/directus/migrations
-    environment:
-      - SECRET="my-super-secret"
-      # database
-      - DB_CLIENT=mysql
-      - DB_HOST=database
-      - DB_DATABASE=directus
-      - DB_USER=directus
-      - DB_PASSWORD=secret
-      - DB_PORT=3306
-      # cache
-      - CACHE_ENABLED=true
-      - CACHE_TTL=5m
-      - CACHE_STORE=memory
-      - CACHE_AUTO_PURGE=true
-      # admin
-      - ADMIN_EMAIL=admin@email.com
-      - ADMIN_PASSWORD=secret
-      # CORS
-      - CORS_ENABLED=true
-      - CORS_ORIGIN=*
-    depends_on:
-      database:
-        condition: service_healthy
