@@ -49,6 +49,13 @@ const Number = styled.div`
   margin-right: 32px;
 `
 
+const StickyNoteContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  position: relative;
+`
+
 export default function HowToJoinSection() {
   return (
     <Wrapper>
@@ -75,9 +82,11 @@ export default function HowToJoinSection() {
         </StepWrapper>
       </StepsSection>
 
-      <StickyNote>
-        <Image src={VemEVeImage} alt="Vem E Ve image" />
-      </StickyNote>
+      <StickyNoteContainer>
+        <StickyNote rotate={-5} maxWidth={"600px"}>
+          <Image src={VemEVeImage} alt="Vem E Ve image" />
+        </StickyNote>
+      </StickyNoteContainer>
 
       <PolaroidPicture imageUrl={AdolescentesImage} imageDescription="Adolescentes" />
 
