@@ -2,8 +2,7 @@
   "name": "ivpt-portals",
   "private": true,
   "workspaces": [
-    "services/*",
-    "modules/*"
+    "services/*"
   ],
   "devDependencies": {
     "@types/lodash": "4.17.16",
