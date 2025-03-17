@@ -6,6 +6,11 @@
   ],
   "devDependencies": {
     "@types/lodash": "4.17.16",
+    "@testing-library/dom": "10.4.0",
+    "@testing-library/jest-dom": "6.6.3",
+    "@testing-library/react": "16.2.0",
+    "@testing-library/user-event": "13.5.0",
+    "@types/jest": "27.5.2",
     "@typescript-eslint/eslint-plugin": "7.13.0",
     "@typescript-eslint/parser": "7.13.0",
     "create-next-app": "14.2.3",
@@ -33,6 +38,8 @@
     "react-dom": "18",
     "react-icons": "5.5.0",
     "styled-components": "6.1.12",
-    "typescript": "5"
+    "typescript": "4.9.5",
+    "react-router-dom": "7.3.0",
+    "react-scripts": "5.0.1"
   }
 }
