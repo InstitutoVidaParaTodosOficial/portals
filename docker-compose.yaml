@@ -15,3 +15,28 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+
+  strapi:
+    container_name: strapi
+    build: ./services/strapi-cms
+    image: strapi:5
+    restart: unless-stopped
+    environment:
+      - DATABASE_CLIENT=mysql
+      - DATABASE_HOST=database
+      - DATABASE_PORT=3306
+      - DATABASE_NAME=strapi
+      - DATABASE_USERNAME=strapi
+      - DATABASE_PASSWORD=secret
+      - JWT_SECRET=mysecrettoken
+      - ADMIN_JWT_SECRET=myadminsecrettoken
+      - APP_KEYS=key1,key2,key3,key4
+      - NODE_ENV=develop
+    volumes:
+      - ./services/strapi-cms/config:/opt/app/config
+      - ./services/strapi-cms/public/uploads:/opt/app/public/uploads
+      - ./services/strapi-cms/database:/opt/app/database
+    ports:
+      - "1337:1337"
+    depends_on:
+      - database
