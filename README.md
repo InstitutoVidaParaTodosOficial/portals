@@ -6,13 +6,26 @@ This is a monorepo that hosts all portals for IVPT.
 
 To ensure everyone has a similar development environment and to avoid issues, make sure to have the following tools in these versions:
 
-| Tool   | Version  |
-| ------ | -------- |
-| Git    | Latest   |
-| Docker | v26.1.4  |
-| NodeJS | v18.18.0 |
+| Tool   | Version |
+| ------ | ------- |
+| Git    | Latest  |
+| Docker | v26.1.4 |
+| NodeJS | v18     |
 
-To install the appropriate versions, follow the steps in the [`dev_environment.md`](doc/dev_environment.md) file.
+### Installing Node Js
+
+We recommend using [volta.js](https://volta.sh/):
+
+```bash
+# install volta
+curl https://get.volta.sh | bash
+
+# install node v18
+volta install node@18
+
+# check node version
+node --version
+```
 
 ## Installation Guide
 
@@ -30,7 +43,7 @@ git clone https://github.com/InstitutoVidaParaTodosOficial/portals.git
 cd portals
 ```
 
-### **3. Start Directus CM**
+### **3. Start Strapi CMS**
 
 ```bash
 docker compose up -d
@@ -47,8 +60,7 @@ npm install
 Go to the specific portal's folder inside services folder and run
 
 ```bash
-npm install #If the portal dependencies have not been installed
-npm run dev
+npm run dev # or npm start (check package.json for the available scripts)
 ```
 
 ## Before commiting
