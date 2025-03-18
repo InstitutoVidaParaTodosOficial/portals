@@ -1,3 +1,13 @@
 {
-  "welcome": "hey"
+  "pageTitle": "IVPT - 링크 인 바이오 및 크리에이터 도구 | 비콘",
+  "pageDescription": "내 링크를 확인하세요 (인스타그램, 유튜브, 틱톡). 이메일 리스트에 가입하세요.",
+  "profileBackgroundStyle": "프로필 배경 스타일",
+  "profilePage": "프로필 페이지",
+  "profileAvatarAlt": "비콘 프로필 아바타",
+  "organizationName": "모두를 위한 생명 연구소",
+  "instagram": "인스타그램",
+  "ivpt": "IVPT",
+  "editora": "출판사",
+  "possoOrarPorVoce": "당신을 위해 기도할 수 있나요?",
+  "querSerUmMissionario": "선교사가 되고 싶으신가요?"
 }
