@@ -17,16 +17,6 @@ export default function QrCodesBooksPage() {
         <link rel="stylesheet" href="https://beacons.ai/_next/static/css/fca59e7c5ca010dc.css" data-precedence="next" />
         <link rel="stylesheet" href="https://beacons.ai/_next/static/css/f1c1b11210d202b4.css" data-precedence="next" />
         <link rel="stylesheet" href="https://beacons.ai/_next/static/css/6dea5569ecf8e338.css" />
-        <link
-          href="https://fonts.googleapis.com/css?family=Space+Mono:400,700|sans-serif:400,700&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          rel="preload"
-          as="script"
-          fetchPriority="low"
-          href="https://beacons.ai/_next/static/chunks/webpack-845337f3000ce40f.js"
-        />
         <script src="https://beacons.ai/_next/static/chunks/d7663dc6-65ed111b21784c53.js" async></script>
         <script src="https://beacons.ai/_next/static/chunks/9d13b1b8-0f1cc34c228c0da4.js" async></script>
         <script src="https://beacons.ai/_next/static/chunks/7641-409a07431705ea79.js" async></script>
@@ -160,235 +150,231 @@ export default function QrCodesBooksPage() {
               <div
                 className="Profile h-full false flex w-full justify-center"
                 style={{
-                  backgroundImage: "none",
                   backgroundPosition: "50% 15%",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
                   backgroundAttachment: "scroll",
-                  overflow: "auto",
+                  overflow: "hidden auto",
                   maxHeight: "100%",
-                  paddingTop: "72px"
+                  backgroundImage: "none",
+                  paddingTop: "72px",
                 }}
               >
-                <div aria-label="profile background style">
+
+                <div aria-label="profile background style"
+                  style={{
+                    backgroundImage: "linear-gradient(rgb(43, 44, 52), rgb(43, 44, 52))",
+                    borderRadius: "24px",
+                    width: "720px",
+                    height: "fit-content",
+                    marginBottom: "144px"
+                  }}
+                >
                   <div
+                    className="MuiContainer-root MuiContainer-maxWidthSm css-79b8a8"
                     style={{
-                      backgroundImage: "linear-gradient(rgb(43, 44, 52), rgb(43, 44, 52))",
-                      borderRadius: "24px",
-                      width: "720px",
-                      height: "auto",
-                      marginBottom: "144px",
-                      overflow: "visible",
-                      justifyContent: "center"
+                      padding: "0px 20px 100px"
                     }}
                   >
-                    <div
-                      className="MuiContainer-root MuiContainer-maxWidthSm css-79b8a8"
-                      style={{
-                        padding: "0px 20px 100px"
-                      }}
-                    >
-                      <div role="region" aria-label="profile page" className="relative">
-                        <div className="py-4"></div>
-                        <div className="MuiGrid-root MuiGrid-container css-1d3bbye">
-                          <div className="MuiGrid-root MuiGrid-item mb-4 w-full mt-12 css-1wxaqej">
-                            <div
-                              data-testid="f3702bd0-b9af-4db1-8fd7-e80aad78b1fb"
-                              aria-label="portrait header block in profile"
-                              className="relative -mx-5 flex h-[480px] w-[calc(100%+40px)] flex-col items-center pb-4 desktop:mx-auto desktop:mt-0 desktop:h-[520px] desktop:max-w-[420px] -mt-[40px]"
-                            >
-                              <img
-                                alt={t("profileAvatarAlt")}
-                                src="https://cdn.beacons.ai/user_content/eaPG7w5CO5YFE4lwMIUGIYB63v12/profile_ivpt.png?t=1740075237728"
-                                className="h-full w-full object-cover desktop:rounded-16"
-                              />
-                              <div className="absolute bottom-0 z-10 w-full text-center">
-                                <div
-                                  aria-label="profile tag"
-                                  style={{
-                                    borderRadius: "36px",
-                                    color: "rgb(255, 255, 254)",
-                                    fontFamily: "Space Mono, sans-serif",
-                                    fontWeight: "400",
-                                    fontSize: "20px",
-                                    marginBottom: "4px",
-                                    display: "flex",
-                                    justifyContent: "center",
-                                    alignItems: "center"
-                                  }}
-                                >
-                                  <span className="font-bold">{t("organizationName")}</span>
-                                </div>
-                                <div className="mt-2">
-                                  <div className="flex flex-wrap items-center text-center justify-center"></div>
-                                </div>
-                              </div>
-                              <div className="absolute top-0 h-[480px] w-full desktop:h-[520px]">
-                                <div
-                                  className="absolute bottom-0 h-36 w-full"
-                                  style={{ background: "linear-gradient(rgba(0,0,0,0)0%,rgb(43,44,52)100%)" }}
-                                ></div>
-                                <div
-                                  className="absolute bottom-0 h-24 w-full"
-                                  style={{ background: "linear-gradient(rgba(0,0,0,0)0%,rgb(43,44,52)100%)" }}
-                                ></div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div className="MuiGrid-root MuiGrid-item Section false css-1wxaqej">
-                            <div data-testid="e8aa3277-13b9-4244-8651-3186585678c8">
+                    <div role="region" aria-label="profile page" className="relative">
+                      <div className="py-4"></div>
+                      <div className="MuiGrid-root MuiGrid-container css-1d3bbye">
+                        <div className="MuiGrid-root MuiGrid-item mb-4 w-full mt-12 css-1wxaqej">
+                          <div
+                            data-testid="f3702bd0-b9af-4db1-8fd7-e80aad78b1fb"
+                            aria-label="portrait header block in profile"
+                            className="relative -mx-5 flex h-[480px] w-[calc(100%+40px)] flex-col items-center pb-4 desktop:mx-auto desktop:mt-0 desktop:h-[520px] desktop:max-w-[420px] -mt-[40px]"
+                          >
+                            <img
+                              alt={t("profileAvatarAlt")}
+                              src="https://cdn.beacons.ai/user_content/eaPG7w5CO5YFE4lwMIUGIYB63v12/profile_ivpt.png?t=1740075237728"
+                              className="h-full w-full object-cover desktop:rounded-16"
+                            />
+                            <div className="absolute bottom-0 z-10 w-full text-center">
                               <div
-                                aria-label="links block link buttons"
-                                className="Links classic"
+                                aria-label="profile tag"
                                 style={{
-                                  gridTemplateColumns: "repeat(1,minmax(0px,1fr))",
-                                  gap: "16px"
+                                  borderRadius: "36px",
+                                  color: "rgb(255, 255, 254)",
+                                  fontFamily: "Space Mono, sans-serif",
+                                  fontWeight: "400",
+                                  fontSize: "22px",
+                                  marginBottom: "4px",
+                                  display: "flex",
+                                  justifyContent: "center",
+                                  alignItems: "center"
                                 }}
                               >
-                                {/* IVPT */}
-                                <center className=" RowLink relative">
-                                  <a
-                                    className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth css-f9dlpb"
-                                    tabIndex={0}
-                                    href="https://institutovidaparatodos.org.br/"
-                                    aria-label={t("ivpt")}
-                                    style={{
-                                      borderRadius: "36px",
-                                      backgroundColor: "rgb(255, 255, 254)",
-                                      color: "rgb(43, 44, 52)",
-                                      fontFamily: "Space Mono, sans-serif",
-                                      textTransform: "none",
-                                      boxShadow: "none",
-                                      fontSize: "15px",
-                                      minHeight: "40px",
-                                      padding: "10px",
-                                      margin: "16px 16px",
-                                      border: "px solid rgba(255, 255, 255, 0)",
-                                      display: "flex",
-                                      alignItems: "center",
-                                      justifyContent: "center",
-                                      textDecoration: "none"
-                                    }}
-                                  >
-                                    <div className="w-full min-w-0 whitespace-pre-wrap text-center">
-                                      <div className="text-16">{t("ivpt")}</div>
-                                      <div className="text-sm-normal"></div>
-                                    </div>
-                                  </a>
-                                </center>
-
-                                {/* EDITORA */}
-                                <center className=" RowLink relative">
-                                  <a
-                                    className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth css-f9dlpb"
-                                    href="https://www.arvoredavida.org.br/"
-                                    tabIndex={0}
-                                    id=":r2:"
-                                    aria-label={t("editora")}
-                                    style={{
-                                      borderRadius: "36px",
-                                      backgroundColor: "rgb(255, 255, 254)",
-                                      color: "rgb(43, 44, 52)",
-                                      fontFamily: "Space Mono, sans-serif",
-                                      textTransform: "none",
-                                      boxShadow: "none",
-                                      fontSize: "15px",
-                                      minHeight: "40px",
-                                      padding: "10px",
-                                      margin: "16px 16px",
-                                      border: "px solid rgba(255, 255, 255, 0)",
-                                      display: "flex",
-                                      alignItems: "center",
-                                      justifyContent: "center",
-                                      textDecoration: "none"
-                                    }}
-                                  >
-                                    <div className="w-full min-w-0 whitespace-pre-wrap text-center">
-                                      <div className="text-16">{t("editora")}</div>
-                                      <div className="text-sm-normal"></div>
-                                    </div>
-                                  </a>
-                                </center>
-
-                                {/* POSSO ORAR POR VOCÊ? */}
-                                <center className=" RowLink relative">
-                                  <a
-                                    className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth css-f9dlpb"
-                                    href="javascript:void(0)"
-                                    tabIndex={0}
-                                    id=":r3:"
-                                    aria-label={t("possoOrarPorVoce")}
-                                    style={{
-                                      borderRadius: "36px",
-                                      backgroundColor: "rgb(255, 255, 254)",
-                                      color: "rgb(43, 44, 52)",
-                                      fontFamily: "Space Mono, sans-serif",
-                                      textTransform: "none",
-                                      boxShadow: "none",
-                                      fontSize: "15px",
-                                      minHeight: "40px",
-                                      padding: "10px",
-                                      margin: "16px 16px",
-                                      border: "px solid rgba(255, 255, 255, 0)",
-                                      display: "flex",
-                                      alignItems: "center",
-                                      justifyContent: "center",
-                                      textDecoration: "none"
-                                    }}
-                                  >
-                                    <div className="w-full min-w-0 whitespace-pre-wrap text-center">
-                                      <div className="text-16">{t("possoOrarPorVoce")}</div>
-                                      <div className="text-sm-normal"></div>
-                                    </div>
-                                  </a>
-                                </center>
-
-                                {/* QUER SER UM MISSIONÁRIO */}
-                                <center className=" RowLink relative">
-                                  <a
-                                    className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth css-f9dlpb"
-                                    href="https://wa.me/5511982081803"
-                                    tabIndex={0}
-                                    id=":r4:"
-                                    aria-label={t("querSerUmMissionario")}
-                                    style={{
-                                      borderRadius: "36px",
-                                      backgroundColor: "rgb(255, 255, 254)",
-                                      color: "rgb(43, 44, 52)",
-                                      fontFamily: "Space Mono, sans-serif",
-                                      textTransform: "none",
-                                      boxShadow: "none",
-                                      fontSize: "15px",
-                                      minHeight: "40px",
-                                      padding: "10px",
-                                      margin: "16px 16px",
-                                      border: "px solid rgba(255, 255, 255, 0)",
-                                      display: "flex",
-                                      alignItems: "center",
-                                      justifyContent: "center",
-                                      textDecoration: "none"
-                                    }}
-                                  >
-                                    <div className="w-full min-w-0 whitespace-pre-wrap text-center">
-                                      <div className="text-16">{t("querSerUmMissionario")}</div>
-                                      <div className="text-sm-normal"></div>
-                                    </div>
-                                  </a>
-                                </center>
+                                <span className="font-bold">{t("organizationName")}</span>
+                              </div>
+                              <div className="mt-2">
+                                <div className="flex flex-wrap items-center text-center justify-center"></div>
                               </div>
                             </div>
-                          </div>
-                          <div className="mt-2">
-                            <div className="ProfileLogo flex justify-center"></div>
+                            <div className="absolute top-0 h-[480px] w-full desktop:h-[520px]">
+                              <div
+                                className="absolute bottom-0 h-36 w-full"
+                                style={{ background: "linear-gradient(rgba(0,0,0,0)0%,rgb(43,44,52)100%)" }}
+                              ></div>
+                              <div
+                                className="absolute bottom-0 h-24 w-full"
+                                style={{ background: "linear-gradient(rgba(0,0,0,0)0%,rgb(43,44,52)100%)" }}
+                              ></div>
+                            </div>
                           </div>
                         </div>
-                        <div className="fixed bottom-0 right-0 z-50 w-full">
-                          <div className="mx-4 mb-6"></div>
+
+                        <div className="MuiGrid-root MuiGrid-item Section false css-1wxaqej">
+                          <div data-testid="e8aa3277-13b9-4244-8651-3186585678c8">
+                            <div
+                              aria-label="links block link buttons"
+                              className="Links classic"
+                              style={{
+                                gridTemplateColumns: "repeat(1,minmax(0px,1fr))",
+                                gap: "16px"
+                              }}
+                            >
+                              {/* IVPT */}
+                              <center className=" RowLink relative">
+                                <a
+                                  className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth css-f9dlpb"
+                                  tabIndex={0}
+                                  href="https://institutovidaparatodos.org.br/"
+                                  aria-label={t("ivpt")}
+                                  style={{
+                                    borderRadius: "36px",
+                                    backgroundColor: "rgb(255, 255, 254)",
+                                    color: "rgb(43, 44, 52)",
+                                    fontFamily: "Space Mono, sans-serif",
+                                    textTransform: "none",
+                                    boxShadow: "none",
+                                    fontSize: "15px",
+                                    minHeight: "40px",
+                                    padding: "10px",
+                                    margin: "18px 80px",
+                                    border: "px solid rgba(255, 255, 255, 0)",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                    textDecoration: "none"
+                                  }}
+                                >
+                                  <div className="w-full min-w-0 whitespace-pre-wrap text-center">
+                                    <div className="text-16">{t("ivpt")}</div>
+                                    <div className="text-sm-normal"></div>
+                                  </div>
+                                </a>
+                              </center>
+
+                              {/* EDITORA */}
+                              <center className=" RowLink relative">
+                                <a
+                                  className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth css-f9dlpb"
+                                  href="https://www.arvoredavida.org.br/"
+                                  tabIndex={0}
+                                  id=":r2:"
+                                  aria-label={t("editora")}
+                                  style={{
+                                    borderRadius: "36px",
+                                    backgroundColor: "rgb(255, 255, 254)",
+                                    color: "rgb(43, 44, 52)",
+                                    fontFamily: "Space Mono, sans-serif",
+                                    textTransform: "none",
+                                    boxShadow: "none",
+                                    fontSize: "15px",
+                                    minHeight: "40px",
+                                    padding: "10px",
+                                    margin: "18px 80px",
+                                    border: "px solid rgba(255, 255, 255, 0)",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                    textDecoration: "none"
+                                  }}
+                                >
+                                  <div className="w-full min-w-0 whitespace-pre-wrap text-center">
+                                    <div className="text-16">{t("editora")}</div>
+                                    <div className="text-sm-normal"></div>
+                                  </div>
+                                </a>
+                              </center>
+
+                              {/* POSSO ORAR POR VOCÊ? */}
+                              <center className=" RowLink relative">
+                                <a
+                                  className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth css-f9dlpb"
+                                  href="javascript:void(0)"
+                                  tabIndex={0}
+                                  id=":r3:"
+                                  aria-label={t("possoOrarPorVoce")}
+                                  style={{
+                                    borderRadius: "36px",
+                                    backgroundColor: "rgb(255, 255, 254)",
+                                    color: "rgb(43, 44, 52)",
+                                    fontFamily: "Space Mono, sans-serif",
+                                    textTransform: "none",
+                                    boxShadow: "none",
+                                    fontSize: "15px",
+                                    minHeight: "40px",
+                                    padding: "10px",
+                                    margin: "18px 80px",
+                                    border: "px solid rgba(255, 255, 255, 0)",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                    textDecoration: "none"
+                                  }}
+                                >
+                                  <div className="w-full min-w-0 whitespace-pre-wrap text-center">
+                                    <div className="text-16">{t("possoOrarPorVoce")}</div>
+                                    <div className="text-sm-normal"></div>
+                                  </div>
+                                </a>
+                              </center>
+
+                              {/* QUER SER UM MISSIONÁRIO */}
+                              <center className=" RowLink relative">
+                                <a
+                                  className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth css-f9dlpb"
+                                  href="https://wa.me/5511982081803"
+                                  tabIndex={0}
+                                  id=":r4:"
+                                  aria-label={t("querSerUmMissionario")}
+                                  style={{
+                                    borderRadius: "36px",
+                                    backgroundColor: "rgb(255, 255, 254)",
+                                    color: "rgb(43, 44, 52)",
+                                    fontFamily: "Space Mono, sans-serif",
+                                    textTransform: "none",
+                                    boxShadow: "none",
+                                    fontSize: "15px",
+                                    minHeight: "40px",
+                                    padding: "10px",
+                                    margin: "18px 80px",
+                                    border: "px solid rgba(255, 255, 255, 0)",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                    textDecoration: "none"
+                                  }}
+                                >
+                                  <div className="w-full min-w-0 whitespace-pre-wrap text-center">
+                                    <div className="text-16">{t("querSerUmMissionario")}</div>
+                                    <div className="text-sm-normal"></div>
+                                  </div>
+                                </a>
+                              </center>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="mt-2">
+                          <div className="ProfileLogo flex justify-center"></div>
                         </div>
                       </div>
+                      <div className="fixed bottom-0 right-0 z-50 w-full">
+                        <div className="mx-4 mb-6"></div>
+                      </div>
                     </div>
-                
                   </div>
                 </div>
               </div>
@@ -397,5 +383,6 @@ export default function QrCodesBooksPage() {
         </div>
       </div>
     </div>
+
   )
 }
