@@ -157,11 +157,11 @@ export default function QrCodesBooksPage() {
                   overflow: "hidden auto",
                   maxHeight: "100%",
                   backgroundImage: "none",
-                  paddingTop: "72px",
+                  paddingTop: "72px"
                 }}
               >
-
-                <div aria-label="profile background style"
+                <div
+                  aria-label="profile background style"
                   style={{
                     backgroundImage: "linear-gradient(rgb(43, 44, 52), rgb(43, 44, 52))",
                     borderRadius: "24px",
@@ -383,6 +383,5 @@ export default function QrCodesBooksPage() {
         </div>
       </div>
     </div>
-
   )
 }

@@ -1,9 +1,9 @@
 {
-  "pageTitle": "IVPT - Link in Bio & Creator Tools | Beacons",
-  "pageDescription": "Check out my links to (Instagram, YouTube, TikTok). Subscribe to my email list.",
-  "profileBackgroundStyle": "Profile background style",
-  "profilePage": "Profile page",
-  "profileAvatarAlt": "Beacons profile avatar",
+  "pageTitle": "IVPT",
+  "pageDescription": "Check out my links to the Portal of Instituto Vida Para Todos, Editora Árvore da Vida, Can I Pray for You?, and Do You Want to Be a Missionary?",
   "organizationName": "INSTITUTO VIDA PARA TODOS",
-  "instagram": "Instagram"
+  "ivpt": "Institute Life for All",
+  "editora": "Publisher",
+  "possoOrarPorVoce": "Can I pray for you?",
+  "querSerUmMissionario": "Do you want to be a missionary?"
 }

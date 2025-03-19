@@ -1,13 +1,9 @@
 {
-  "pageTitle": "IVPT - Enlace en la bio y herramientas para creadores | Beacons",
-  "pageDescription": "Descubre mis enlaces para (Instagram, YouTube, TikTok). Suscríbete a mi lista de correos.",
-  "profileBackgroundStyle": "Estilo de fondo del perfil",
-  "profilePage": "Página de perfil",
-  "profileAvatarAlt": "Avatar del perfil Beacons",
+  "pageTitle": "IVPT",
+  "pageDescription": "Descubre mis enlaces para el Portal del Instituto Vida Para Todos, Editora Árbol de la Vida, ¿Puedo Orar Por Ti? y ¿Quieres Ser Un Misionero?",
   "organizationName": "INSTITUTO VIDA PARA TODOS",
-  "instagram": "Instagram",
-  "ivpt": "IVPT",
-  "editora": "EDITORIAL",
-  "possoOrarPorVoce": "¿PUEDO ORAR POR TI?",
-  "querSerUmMissionario": "¿QUIERES SER MISIONERO?"
+  "ivpt": "Instituto Vida para Todos",
+  "editora": "Editorial",
+  "possoOrarPorVoce": "¿Puedo orar por ti?",
+  "querSerUmMissionario": "¿Quieres ser un misionero?"
 }
