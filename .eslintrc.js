@@ -30,5 +30,5 @@ module.exports = {
       version: "detect"
     }
   },
-  ignorePatterns: ["**/node_modules/**", "**/dist/**"]
+  ignorePatterns: ["**/node_modules/**", "**/dist/**", "**/strapi-cms/types/generated/**"]
 }
