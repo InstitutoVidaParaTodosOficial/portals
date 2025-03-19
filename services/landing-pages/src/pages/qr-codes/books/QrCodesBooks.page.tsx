@@ -165,7 +165,7 @@ export default function QrCodesBooksPage() {
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
                   backgroundAttachment: "scroll",
-                  overflow: "hidden auto",
+                  overflow: "auto",
                   maxHeight: "100%",
                   paddingTop: "72px"
                 }}
@@ -173,11 +173,13 @@ export default function QrCodesBooksPage() {
                 <div aria-label="profile background style">
                   <div
                     style={{
-                      backgroundImage: "linear-gradient(rgb(43,44,52),rgb(43,44,52))",
+                      backgroundImage: "linear-gradient(rgb(43, 44, 52), rgb(43, 44, 52))",
                       borderRadius: "24px",
                       width: "720px",
-                      height: "fit-content",
-                      marginBottom: "144px"
+                      height: "auto",
+                      marginBottom: "144px",
+                      overflow: "visible",
+                      justifyContent: "center"
                     }}
                   >
                     <div
@@ -208,7 +210,7 @@ export default function QrCodesBooksPage() {
                                     color: "rgb(255, 255, 254)",
                                     fontFamily: "Space Mono, sans-serif",
                                     fontWeight: "400",
-                                    fontSize: "15px",
+                                    fontSize: "20px",
                                     marginBottom: "4px",
                                     display: "flex",
                                     justifyContent: "center",
@@ -260,10 +262,13 @@ export default function QrCodesBooksPage() {
                                       boxShadow: "none",
                                       fontSize: "15px",
                                       minHeight: "40px",
-                                      padding: "8px",
+                                      padding: "10px",
                                       margin: "16px 16px",
                                       border: "px solid rgba(255, 255, 255, 0)",
-                                      display: "flex"
+                                      display: "flex",
+                                      alignItems: "center",
+                                      justifyContent: "center",
+                                      textDecoration: "none"
                                     }}
                                   >
                                     <div className="w-full min-w-0 whitespace-pre-wrap text-center">
@@ -290,10 +295,13 @@ export default function QrCodesBooksPage() {
                                       boxShadow: "none",
                                       fontSize: "15px",
                                       minHeight: "40px",
-                                      padding: "8px",
+                                      padding: "10px",
                                       margin: "16px 16px",
                                       border: "px solid rgba(255, 255, 255, 0)",
-                                      display: "flex"
+                                      display: "flex",
+                                      alignItems: "center",
+                                      justifyContent: "center",
+                                      textDecoration: "none"
                                     }}
                                   >
                                     <div className="w-full min-w-0 whitespace-pre-wrap text-center">
@@ -320,10 +328,13 @@ export default function QrCodesBooksPage() {
                                       boxShadow: "none",
                                       fontSize: "15px",
                                       minHeight: "40px",
-                                      padding: "8px",
+                                      padding: "10px",
                                       margin: "16px 16px",
                                       border: "px solid rgba(255, 255, 255, 0)",
-                                      display: "flex"
+                                      display: "flex",
+                                      alignItems: "center",
+                                      justifyContent: "center",
+                                      textDecoration: "none"
                                     }}
                                   >
                                     <div className="w-full min-w-0 whitespace-pre-wrap text-center">
@@ -350,10 +361,13 @@ export default function QrCodesBooksPage() {
                                       boxShadow: "none",
                                       fontSize: "15px",
                                       minHeight: "40px",
-                                      padding: "8px",
+                                      padding: "10px",
                                       margin: "16px 16px",
                                       border: "px solid rgba(255, 255, 255, 0)",
-                                      display: "flex"
+                                      display: "flex",
+                                      alignItems: "center",
+                                      justifyContent: "center",
+                                      textDecoration: "none"
                                     }}
                                   >
                                     <div className="w-full min-w-0 whitespace-pre-wrap text-center">
@@ -374,6 +388,7 @@ export default function QrCodesBooksPage() {
                         </div>
                       </div>
                     </div>
+                
                   </div>
                 </div>
               </div>
