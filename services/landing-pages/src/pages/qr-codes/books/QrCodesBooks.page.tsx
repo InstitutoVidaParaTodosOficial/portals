@@ -1,11 +1,67 @@
 import { useTranslation } from "react-i18next"
 
+import styled from "styled-components"
+import MenuItem from "./MenuItem"
+
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(circle, #071834, #627085);
+`
+
+const Card = styled.div`
+  background-color: #2b2c33;
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+`
+
+const Image = styled.img`
+  max-width: 360px;
+  margin-bottom: 16px;
+`
+
+const ClickableCard = styled.button`
+  padding: 16px;
+  margin-bottom: 8px;
+  background-color: white;
+  border-radius: 20px;
+  width: 100%;
+
+  &:hover {
+    cursor: pointer;
+  }
+`
+
+const CLICKABLE_ITEMS: MenuItem[] = [
+  { i18nKey: "institute", link: "https://institutovidaparatodos.org.br" },
+  { i18nKey: "publisher", link: "https://www.arvoredavida.org.br" },
+  { i18nKey: "may_i_pray_for_you", link: "https://www.possoorarporvoce.com.br" },
+  { i18nKey: "missionary", link: "https://wa.me/5511982081803" }
+]
+
 export default function QrCodesBooksPage() {
-  const { t } = useTranslation()
+  const { t } = useTranslation("qr-codes-books")
+
+  const onClickCard = (link: string) => {
+    window.location.href = link
+  }
 
   return (
-    <>
-      <h1>{t("welcome")}</h1>
-    </>
+    <Container>
+      <Card>
+        <Image src="/profile_ivpt.png" alt="Logo" />
+
+        {CLICKABLE_ITEMS.map((item, index) => (
+          <ClickableCard key={index} className="clickable-item" onClick={() => onClickCard(item.link)}>
+            {t(item.i18nKey)}
+          </ClickableCard>
+        ))}
+      </Card>
+    </Container>
   )
 }
