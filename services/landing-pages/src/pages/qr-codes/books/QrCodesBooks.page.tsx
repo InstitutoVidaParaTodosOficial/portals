@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next"
-
 import styled from "styled-components"
 import MenuItem from "./MenuItem"
 import LanguageSelector from "../../../components/LanguageSelector"
@@ -11,6 +10,8 @@ const Container = styled.div`
   width: 100%;
   min-height: 100vh;
   background: radial-gradient(circle, #071834, #627085);
+  position: relative;
+  padding: 16px;
 `
 
 const Card = styled.div`
@@ -19,10 +20,16 @@ const Card = styled.div`
   padding: 30px;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+
+  @media (max-width: 600px) {
+    padding: 20px;
+  }
 `
 
 const Image = styled.img`
-  max-width: 360px;
+  max-width: 100%;
   margin-bottom: 16px;
 `
 
@@ -36,12 +43,21 @@ const ClickableCard = styled.button`
   &:hover {
     cursor: pointer;
   }
+
+  @media (max-width: 600px) {
+    padding: 12px;
+  }
 `
 
 const LanguageSelectorContainer = styled.div`
   position: absolute;
   top: 16px;
   right: 16px;
+
+  @media (max-width: 600px) {
+    top: 8px;
+    right: 8px;
+  }
 `
 
 const CLICKABLE_ITEMS: MenuItem[] = [
