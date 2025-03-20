@@ -1,24 +1,23 @@
 import styled from "styled-components"
 import { Just_Me_Again_Down_Here } from "next/font/google"
-import { Abril_Fatface } from "next/font/google";
+import { Abril_Fatface } from "next/font/google"
 import { Anaheim } from "next/font/google"
-import {NextNews} from "@/types/NextNews"
+import { NextNews } from "@/types/NextNews"
 
 const justMeAgainDownHere = Just_Me_Again_Down_Here({
-    subsets: ["latin"],
-    weight: "400"
-  })
+  subsets: ["latin"],
+  weight: "400"
+})
 
 const abrilFatface = Abril_Fatface({
-    subsets: ["latin"],
-    weight: "400",
-  });
+  subsets: ["latin"],
+  weight: "400"
+})
 
 const anaheim = Anaheim({
-    subsets: ["latin"],
-    weight: "400",
-  })
-
+  subsets: ["latin"],
+  weight: "400"
+})
 
 const SectionWrapper = styled.section`
   background-color: #02B9D7;
@@ -45,11 +44,11 @@ const TitleContainer = styled.div`
 
 const Title = styled.h2`
   color: #fff;
-  margin: 0 ;
+  margin: 0;
   font-size: 64px;
   font-weight: 400;
   white-space: nowrap;
-  transform:rotate(-0.8deg);
+  transform: rotate(-0.8deg);
 `
 
 const TitleLine = styled.div`
@@ -89,7 +88,7 @@ const NewsImage = styled.img`
   @media (max-width: 768px) {
     max-width: 319px;
     max-height: 219px;
-    margin-right: 0; 
+    margin-right: 0;
   }
 `
 
@@ -102,7 +101,7 @@ const NewsContent = styled.div`
   @media (max-width: 768px) {
     align-items: center; /* Centraliza o conteúdo */
     text-align: center; /* Alinha o texto */
-    gap: 10px
+    gap: 10px;
   }
 `
 
@@ -112,7 +111,7 @@ const NewsTitle = styled.h3`
   max-width: 385px;
   max-height: 87px;
   line-height: 36px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0;
 
   @media (max-width: 768px) {
@@ -128,7 +127,7 @@ const NewsDescription = styled.p`
   max-width: 534px;
   max-height: 113px;
   line-height: 25px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0;
 
   @media (max-width: 768px) {
@@ -140,7 +139,7 @@ const NewsDescription = styled.p`
 
 const NewsButton = styled.a`
   text-decoration: none;
-  background: #F39324;
+  background: #f39324;
   color: white;
   padding: 8px 12px;
   font-size: 14px;
@@ -183,15 +182,15 @@ const MOCK_NEXT_EVENTS: NextNews[] = [
 ]
 
 export default function StayUpSection() {
-    return (
-      <SectionWrapper>
-        <TitleContainer>
-          <Title className={justMeAgainDownHere.className}> Fique por dentro!</Title>
-          <TitleLine />
-        </TitleContainer>
+  return (
+    <SectionWrapper>
+      <TitleContainer>
+        <Title className={justMeAgainDownHere.className}> Fique por dentro!</Title>
+        <TitleLine />
+      </TitleContainer>
 
-        <NewsContainer>
-        {MOCK_NEXT_EVENTS.map((news) => (
+      <NewsContainer>
+        {MOCK_NEXT_EVENTS.map(news => (
           <NewsCard key={news.id}>
             <NewsImage src={news.image} alt={news.title} />
             <NewsContent>
@@ -202,7 +201,6 @@ export default function StayUpSection() {
           </NewsCard>
         ))}
       </NewsContainer>
-
-      </SectionWrapper>
-    )
-  }
+    </SectionWrapper>
+  )
+}
