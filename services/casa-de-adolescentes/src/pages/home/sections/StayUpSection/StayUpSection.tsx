@@ -4,6 +4,7 @@ import { Abril_Fatface } from "next/font/google"
 import { Anaheim } from "next/font/google"
 import { NextNews } from "@/types/NextNews"
 
+// Fontes
 const justMeAgainDownHere = Just_Me_Again_Down_Here({
   subsets: ["latin"],
   weight: "400"
@@ -19,19 +20,20 @@ const anaheim = Anaheim({
   weight: "400"
 })
 
+//Fundo azul
 const SectionWrapper = styled.section`
   background-color: #02B9D7;
   position: relative;
   margin: 0;
-  width: 100vw; /* Ocupa toda a largura da viewport */
+  width: 100%; /* Ocupa toda a largura da viewport */
   overflow-x: hidden;
-  margin-left:60px;
   box-sizing: border-box;
 
   @media (max-width: 768px) {
     margin-left: 0;
 `
 
+//Parte que contem o titulo e a linha
 const TitleContainer = styled.div`
   display: flex;
   align-items: center; /* Alinha verticalmente */
@@ -42,6 +44,7 @@ const TitleContainer = styled.div`
   padding: 20px; /* Espaçamento interno */
 `
 
+//Titulo fique por dentro
 const Title = styled.h2`
   color: #fff;
   margin: 0;
@@ -51,12 +54,15 @@ const Title = styled.h2`
   transform: rotate(-0.8deg);
 `
 
+//Linha ao lado do titulo
 const TitleLine = styled.div`
   flex-grow: 1; /* Faz a linha ocupar o espaço restante */
   height: 3px; /* Espessura da linha */
   background-color: white; /* Cor da linha */
   border-radius: 10px; /* Borda arredondada */
 `
+
+//Container que contem as noticias
 const NewsContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -65,6 +71,7 @@ const NewsContainer = styled.div`
   padding: 20px;
 `
 
+//Card de cada noticia
 const NewsCard = styled.div`
   display: flex;
   align-items: center;
@@ -79,6 +86,7 @@ const NewsCard = styled.div`
   }
 `
 
+//Imagem da noticia
 const NewsImage = styled.img`
   width: 299px;
   height: 252px;
@@ -91,7 +99,7 @@ const NewsImage = styled.img`
     margin-right: 0;
   }
 `
-
+//Container do conteudo da noticia(titulo, descricao e botao)
 const NewsContent = styled.div`
   flex: 1;
   display: flex;
@@ -104,7 +112,7 @@ const NewsContent = styled.div`
     gap: 10px;
   }
 `
-
+//Titulo da noticia
 const NewsTitle = styled.h3`
   font-family: ${abrilFatface.style.fontFamily};
   font-size: 36px;
@@ -121,6 +129,7 @@ const NewsTitle = styled.h3`
   }
 `
 
+//Descricao da noticia
 const NewsDescription = styled.p`
   font-family: ${anaheim.style.fontFamily};
   font-size: 24px;
@@ -137,7 +146,9 @@ const NewsDescription = styled.p`
   }
 `
 
+//Botao de saiba mais
 const NewsButton = styled.a`
+  font-family: ${anaheim.style.fontFamily};  //nao estava no figma, mas so para ter algo melhor
   text-decoration: none;
   background: #f39324;
   color: white;
@@ -154,6 +165,7 @@ const NewsButton = styled.a`
   }
 `
 
+//Mock das noticias
 const MOCK_NEXT_EVENTS: NextNews[] = [
   {
     id: "1",
@@ -204,3 +216,4 @@ export default function StayUpSection() {
     </SectionWrapper>
   )
 }
+//a melhorar: maneira como a imagem eh carregada
