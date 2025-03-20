@@ -26,5 +26,5 @@ test("clicking on a clickable item redirects to the correct link", () => {
   render(<QrCodesBooksPage />)
   const clickableItem = screen.getByText("institute")
   userEvent.click(clickableItem)
-  expect(window.location.href).toBe("https://institutovidaparatodos.org.br")
+  expect(window.location.href).toBe("https://www.instagram.com/institutovidaparatodos")
 })
