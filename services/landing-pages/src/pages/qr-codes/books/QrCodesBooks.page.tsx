@@ -61,7 +61,7 @@ const LanguageSelectorContainer = styled.div`
 `
 
 const CLICKABLE_ITEMS: MenuItem[] = [
-  { i18nKey: "institute", link: "https://institutovidaparatodos.org.br" },
+  { i18nKey: "institute", link: "https://www.instagram.com/institutovidaparatodos" },
   { i18nKey: "publisher", link: "https://www.arvoredavida.org.br" },
   { i18nKey: "may_i_pray_for_you", link: "https://www.possoorarporvoce.com.br" },
   { i18nKey: "missionary", link: "https://wa.me/5511982081803" }
