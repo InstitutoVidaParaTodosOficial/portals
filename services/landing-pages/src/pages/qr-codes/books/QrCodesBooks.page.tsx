@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next"
 
 import styled from "styled-components"
 import MenuItem from "./MenuItem"
+import LanguageSelector from "../../../components/LanguageSelector"
 
 const Container = styled.div`
   display: flex;
@@ -37,6 +38,12 @@ const ClickableCard = styled.button`
   }
 `
 
+const LanguageSelectorContainer = styled.div`
+  position: absolute;
+  top: 16px;
+  right: 16px;
+`
+
 const CLICKABLE_ITEMS: MenuItem[] = [
   { i18nKey: "institute", link: "https://institutovidaparatodos.org.br" },
   { i18nKey: "publisher", link: "https://www.arvoredavida.org.br" },
@@ -53,6 +60,10 @@ export default function QrCodesBooksPage() {
 
   return (
     <Container>
+      <LanguageSelectorContainer>
+        <LanguageSelector />
+      </LanguageSelectorContainer>
+
       <Card>
         <Image src="/profile_ivpt.png" alt="Logo" />
 
