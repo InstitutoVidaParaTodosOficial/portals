@@ -84,7 +84,7 @@ export default function QrCodesBooksPage() {
         <Image src="/profile_ivpt.png" alt="Logo" />
 
         {CLICKABLE_ITEMS.map((item, index) => (
-          <ClickableCard key={index} className="clickable-item" onClick={() => onClickCard(item.link)}>
+          <ClickableCard key={index} onClick={() => onClickCard(item.link)}>
             {t(item.i18nKey)}
           </ClickableCard>
         ))}

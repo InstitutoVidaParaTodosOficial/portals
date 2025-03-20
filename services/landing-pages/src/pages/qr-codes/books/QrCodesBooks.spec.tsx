@@ -2,6 +2,7 @@ import React from "react"
 import { render, screen } from "@testing-library/react"
 import QrCodesBooksPage from "./QrCodesBooks.page"
 import userEvent from "@testing-library/user-event"
+import "../../../__mocks__/react-i18next"
 
 test("renders QrCodes Books with Image", () => {
   render(<QrCodesBooksPage />)
