@@ -1,4 +1,4 @@
-export type NextNews = {
+export type News = {
   id: string
   title: string
   image: string

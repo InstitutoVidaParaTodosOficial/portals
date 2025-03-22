@@ -3,7 +3,7 @@ import EventsSection from "@/pages/home/sections/EventsSection/EventsSection"
 import MissionVisionValueSection from "@/pages/home/sections/MissionVisionValueSection/MissionVisionValueSection"
 import OurNumbersSection from "@/pages/home/sections/OurNumbersSection/OurNumbersSection"
 import HowToJoinSection from "@/pages/home/sections/HowToJoinSection/HowToJoinSection"
-import StayUpSection from "@/pages/home/sections/StayUpSection/StayUpSection"
+import NewsFeedSection from "@/pages/home/sections/NewsFeedSection/NewsFeedSection"
 
 export default function HomePage() {
   return (
@@ -13,7 +13,7 @@ export default function HomePage() {
       <MissionVisionValueSection />
       <OurNumbersSection />
       <HowToJoinSection />
-      <StayUpSection />
+      <NewsFeedSection />
     </>
   )
 }

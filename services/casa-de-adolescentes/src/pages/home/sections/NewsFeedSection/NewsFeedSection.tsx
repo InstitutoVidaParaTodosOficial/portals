@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { Just_Me_Again_Down_Here } from "next/font/google"
 import { Abril_Fatface } from "next/font/google"
 import { Anaheim } from "next/font/google"
-import { NextNews } from "@/types/NextNews"
+import { News } from "./NextNews"
 
 // Fonts
 const justMeAgainDownHere = Just_Me_Again_Down_Here({
@@ -20,31 +20,25 @@ const anaheim = Anaheim({
   weight: "400"
 })
 
-//Blue background
 const SectionWrapper = styled.section`
   background-color: #02B9D7;
   position: relative;
   margin: 0;
-  width: 100%; /* Ocupa toda a largura da viewport */
+  width: 100%; 
   overflow-x: hidden;
   box-sizing: border-box;
-
-  @media (max-width: 768px) {
-    margin-left: 0;
 `
 
-//container that contains the title and the line
 const TitleContainer = styled.div`
   display: flex;
-  align-items: center; /* Alinha verticalmente */
-  justify-content: center; /* Centraliza horizontalmente */
-  gap: 20px; /* Espaço entre o título e a linha */
-  width: 100%; /* Ocupa toda a largura */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  padding: 20px; /* Espaçamento interno */
+  align-items: center; 
+  justify-content: center; 
+  gap: 20px; 
+  width: 100%; 
+  margin: 0 auto; 
+  padding: 20px; 
 `
 
-//title "fique por dentro"
 const Title = styled.h2`
   color: #fff;
   margin: 0;
@@ -52,41 +46,51 @@ const Title = styled.h2`
   font-weight: 400;
   white-space: nowrap;
   transform: rotate(-0.8deg);
+
+  @media (max-width: 768px) {
+    font-size: 48px;
+  }
 `
 
-//Line on the right of the title
 const TitleLine = styled.div`
-  flex-grow: 1; /* Faz a linha ocupar o espaço restante */
-  height: 3px; /* Espessura da linha */
-  background-color: white; /* Cor da linha */
-  border-radius: 10px; /* Borda arredondada */
+  flex-grow: 1; 
+  height: 3px; 
+  background-color: white; 
+  border-radius: 10px; 
 `
 
-//Container that contains the news
 const NewsContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 40px;
   margin: 0 auto;
   padding: 20px;
+
+  @media (max-width: 768px) {
+    margin:0;
+    width: 100%;
+  }
 `
 
-//Card of each news
 const NewsCard = styled.div`
   display: flex;
+  flex-direction: row;
   align-items: center;
   padding: 20px;
   border-radius: 8px;
   gap: 20px;
 
   @media (max-width: 768px) {
-    flex-direction: column; /* Empilha os elementos no celular */
-    align-items: center; /* Centraliza os elementos */
-    text-align: center; /* Alinha os textos ao centro */
+    flex-direction: column; 
+    align-items: flex-start; 
+    text-align: left;
+    width: 100%;
+    padding: 0;
   }
 `
 
-//Image of the news
+
+
 const NewsImage = styled.img`
   width: 299px;
   height: 252px;
@@ -94,61 +98,66 @@ const NewsImage = styled.img`
   margin-right: 33px;
 
   @media (max-width: 768px) {
-    max-width: 319px;
-    max-height: 219px;
-    margin-right: 0;
+    width: 90%; 
+    align-self: flex-start; 
+    margin: 0 0 10px 0; 
   }
 `
-//Container of the news content(title, description and button)
+
 const NewsContent = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 10px;
-
-  @media (max-width: 768px) {
-    align-items: center; /* Centraliza o conteúdo */
-    text-align: center; /* Alinha o texto */
-    gap: 10px;
-  }
 `
-//Title of the news
+
 const NewsTitle = styled.h3`
   font-family: ${abrilFatface.style.fontFamily};
   font-size: 36px;
-  max-width: 385px;
-  max-height: 87px;
   line-height: 36px;
   color: #ffffff;
   margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   @media (max-width: 768px) {
-    text-align: left;
-    max-width: 349px;
-    max-height: 97px;
+    font-size: 32px;
+    line-height: 35px;
+    -webkit-line-clamp: 3; 
+    width: 90%
   }
 `
 
-//Description of the news
 const NewsDescription = styled.p`
   font-family: ${anaheim.style.fontFamily};
   font-size: 24px;
-  max-width: 534px;
-  max-height: 113px;
   line-height: 25px;
   color: #ffffff;
   margin: 0;
+  max-width: 534px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   @media (max-width: 768px) {
-    text-align: left;
-    max-width: 269px;
-    max-height: 113px;
+  text-align: left;
+  font-size: 16px;
+  width: 80%;
+  -webkit-line-clamp: 5; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
   }
 `
 
-//Button of the news	
 const NewsButton = styled.a`
-  font-family: ${anaheim.style.fontFamily}; //nao estava no figma, mas so para ter algo melhor
+  font-family: ${anaheim.style.fontFamily}; 
   text-decoration: none;
   background: #f39324;
   color: white;
@@ -159,14 +168,13 @@ const NewsButton = styled.a`
   max-height: 35px;
 
   @media (max-width: 768px) {
-    text-align: left;
+    text-align: center;
     max-width: 112px;
     max-height: 22px;
   }
 `
 
-//Mock of the news
-const MOCK_NEXT_EVENTS: NextNews[] = [
+const MOCK_NEXT_EVENTS: News[] = [
   {
     id: "1",
     title: "Inauguração da Casa de Adolescentes em MG",
@@ -193,7 +201,7 @@ const MOCK_NEXT_EVENTS: NextNews[] = [
   }
 ]
 
-export default function StayUpSection() {
+export default function NewsFeedSection() {
   return (
     <SectionWrapper>
       <TitleContainer>
