@@ -12,6 +12,7 @@ const Container = styled.div`
   background: radial-gradient(circle, #071834, #627085);
   position: relative;
   padding: 16px;
+  box-sizing: border-box;
 `
 
 const Card = styled.div`
@@ -60,6 +61,11 @@ const LanguageSelectorContainer = styled.div`
   }
 `
 
+const Title = styled.h1`
+  text-align: center;
+  color: white;
+`
+
 const CLICKABLE_ITEMS: MenuItem[] = [
   { i18nKey: "institute", link: "https://www.instagram.com/institutovidaparatodos" },
   { i18nKey: "publisher", link: "https://www.arvoredavida.org.br" },
@@ -82,6 +88,8 @@ export default function QrCodesBooksPage() {
 
       <Card>
         <Image src="/profile_ivpt.png" alt="Logo" />
+
+        <Title>{t("institute")}</Title>
 
         {CLICKABLE_ITEMS.map((item, index) => (
           <ClickableCard key={index} onClick={() => onClickCard(item.link)}>
