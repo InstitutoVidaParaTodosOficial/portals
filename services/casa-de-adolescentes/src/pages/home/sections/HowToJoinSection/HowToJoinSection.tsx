@@ -56,6 +56,13 @@ const StickyNoteContainer = styled.div`
   position: relative;
 `
 
+const PolaroidContainer = styled.div`
+  justify-content: center;
+  margin-left: 820px;
+  margin-top: -20px;
+  rotate: 10deg;
+`
+
 export default function HowToJoinSection() {
   return (
     <Wrapper>
@@ -88,7 +95,9 @@ export default function HowToJoinSection() {
         </StickyNote>
       </StickyNoteContainer>
 
-      <PolaroidPicture imageUrl={AdolescentesImage} imageDescription="Adolescentes" />
+      <PolaroidContainer>
+        <PolaroidPicture imageUrl={AdolescentesImage} imageDescription="Adolescentes"/>
+      </PolaroidContainer>
 
       <StickyNote maxWidth="350px">
         <p

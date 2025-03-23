@@ -28,6 +28,7 @@ type PolaroidPictureProps = {
   imageUrl: string | StaticImageData
   imageDescription: string
   imageWidth?: number
+  maxWidth?: `${string}px`
 }
 
 export default function PolaroidPicture({ imageUrl, imageDescription, imageWidth = 400 }: PolaroidPictureProps) {
