@@ -21,22 +21,27 @@ const anaheim = Anaheim({
 })
 
 const SectionWrapper = styled.section`
-  background-color: #02B9D7;
+  background-color: #02b9d7;
   position: relative;
   margin: 0;
-  width: 100%; 
+  width: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
 `
 
 const TitleContainer = styled.div`
   display: flex;
-  align-items: center; 
-  justify-content: center; 
-  gap: 20px; 
-  width: 100%; 
-  margin: 0 auto; 
-  padding: 20px; 
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto auto 80px;
+  padding: 20px;
+
+  @media (max-width: 768px) {
+    margin: 0;
+    padding: 20px 0 0 20px;
+  }
 `
 
 const Title = styled.h2`
@@ -53,21 +58,21 @@ const Title = styled.h2`
 `
 
 const TitleLine = styled.div`
-  flex-grow: 1; 
-  height: 3px; 
-  background-color: white; 
-  border-radius: 10px; 
+  flex-grow: 1;
+  height: 3px;
+  background-color: white;
+  border-radius: 10px;
 `
 
 const NewsContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin: 0 auto;
+  margin: 0 auto auto 60px;
   padding: 20px;
 
   @media (max-width: 768px) {
-    margin:0;
+    margin: 0;
     width: 100%;
   }
 `
@@ -81,26 +86,24 @@ const NewsCard = styled.div`
   gap: 20px;
 
   @media (max-width: 768px) {
-    flex-direction: column; 
-    align-items: flex-start; 
+    flex-direction: column;
+    align-items: flex-start;
     text-align: left;
     width: 100%;
     padding: 0;
   }
 `
 
-
-
 const NewsImage = styled.img`
   width: 299px;
   height: 252px;
   object-fit: cover;
-  margin-right: 33px;
+  margin-right: 10px;
 
   @media (max-width: 768px) {
-    width: 90%; 
-    align-self: flex-start; 
-    margin: 0 0 10px 0; 
+    width: 85%;
+    align-self: flex-start;
+    margin: 0 0 10px 0;
   }
 `
 
@@ -114,7 +117,7 @@ const NewsContent = styled.div`
 const NewsTitle = styled.h3`
   font-family: ${abrilFatface.style.fontFamily};
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1.25;
   color: #ffffff;
   margin: 0;
   display: -webkit-box;
@@ -126,8 +129,8 @@ const NewsTitle = styled.h3`
   @media (max-width: 768px) {
     font-size: 32px;
     line-height: 35px;
-    -webkit-line-clamp: 3; 
-    width: 90%
+    -webkit-line-clamp: 3;
+    width: 90%;
   }
 `
 
@@ -140,24 +143,24 @@ const NewsDescription = styled.p`
   max-width: 534px;
 
   display: -webkit-box;
-  -webkit-line-clamp: 3; 
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
 
   @media (max-width: 768px) {
-  text-align: left;
-  font-size: 16px;
-  width: 80%;
-  -webkit-line-clamp: 5; 
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    text-align: left;
+    font-size: 16px;
+    width: 80%;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 `
 
 const NewsButton = styled.a`
-  font-family: ${anaheim.style.fontFamily}; 
+  font-family: ${anaheim.style.fontFamily};
   text-decoration: none;
   background: #f39324;
   color: white;
