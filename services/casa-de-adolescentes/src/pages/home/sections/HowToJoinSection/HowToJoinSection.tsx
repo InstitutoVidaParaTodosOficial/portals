@@ -29,7 +29,7 @@ const Wrapper = styled.section`
   position: relative;
   padding-top: 100px;
 `
-  
+
 const SectionTitle = styled.h2`
   margin: 0;
   color: #f39324;
@@ -91,7 +91,7 @@ const PolaroidContainer = styled.div<{ rotate: number; marginTop: number; margin
 `
 
 const FinalSection = styled.div`
-  background-color: #02B9D7;
+  background-color: #02b9d7;
   box-sizing: border-box;
   position: relative;
 `
@@ -126,10 +126,9 @@ const StyledStars = styled(Image)`
 export default function HowToJoinSection() {
   return (
     <Wrapper className={anaheim.className}>
-
       <StyledStars src={Stars} alt="" height={634} width={634} />
 
-      <StyledArrow src={Arrow} alt="" height={342} width={129}/>
+      <StyledArrow src={Arrow} alt="" height={342} width={129} />
 
       <SectionTitle className={justMeAgainDownHere.className}>Como Fazer Parte?</SectionTitle>
 
@@ -137,17 +136,15 @@ export default function HowToJoinSection() {
         <StepWrapper>
           <Number className={justMeAgainDownHere.className}>1.</Number>
           <StepText className={anaheim.className}>
-            Se você teve o coração de participar, não espere amanhã!
-            Preencha agora o formulário para ter experiências sobrenaturais
-            com o Senhor! Sua vida nunca mais será a mesma!
+            Se você teve o coração de participar, não espere amanhã! Preencha agora o formulário para ter experiências
+            sobrenaturais com o Senhor! Sua vida nunca mais será a mesma!
           </StepText>
         </StepWrapper>
         <StepWrapper>
           <Number className={justMeAgainDownHere.className}>2.</Number>
           <StepText className={anaheim.className}>
-            Clique no link e insira suas informações, em breve um
-            capitão entrará em contato para passar detalhes sobre a
-            Casa de Adolescentes mais próxima.
+            Clique no link e insira suas informações, em breve um capitão entrará em contato para passar detalhes sobre
+            a Casa de Adolescentes mais próxima.
           </StepText>
         </StepWrapper>
         <StepWrapper>
@@ -155,7 +152,6 @@ export default function HowToJoinSection() {
           <StepText className={anaheim.className}>Tem uma galera esperando! Só falta você! Vem e vê !</StepText>
         </StepWrapper>
       </StepsSection>
-
 
       {/* <div>
         <StickyNoteContainer>
@@ -191,7 +187,7 @@ export default function HowToJoinSection() {
           </p>
         </StickyNote>
       </StickyNoteContainer>
-      
+
       <FinalSection>
         <ClickableCardContainer>
           <ClickableCard

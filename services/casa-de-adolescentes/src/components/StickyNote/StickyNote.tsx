@@ -48,7 +48,7 @@ export default function StickyNote({
   maxWidth = "300px",
   displayThumbtack = true,
   height,
-  width,
+  width
 }: StickyNoteProps) {
   return (
     <StickyNoteBackground rotate={rotate} $maxWidth={maxWidth} $height={height} $width={width}>
