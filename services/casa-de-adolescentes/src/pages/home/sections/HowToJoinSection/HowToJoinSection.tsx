@@ -10,6 +10,9 @@ import AdolescentesImage from "./assets/adolescentes.png"
 import PeopleHoldingBookImage from "./assets/holding-book.png"
 import Image13 from "./assets/image-13.png"
 import Image12 from "./assets/image-12.png"
+import Arrow from "./assets/arrow.svg"
+import Stars from "./assets/stars.webp"
+// import VemeVe from "./assets/vemeve.webp"
 
 const justMeAgainDownHere = Just_Me_Again_Down_Here({
   subsets: ["latin"],
@@ -23,19 +26,32 @@ const anaheim = Anaheim({
 
 const Wrapper = styled.section`
   background-color: #0a0b2f;
-  box-sizing: border-box;
   position: relative;
+  padding-top: 100px;
 `
-
+  
 const SectionTitle = styled.h2`
   margin: 0;
   color: #f39324;
   text-align: center;
+  margin-bottom: 8rem;
+  font-size: 6rem;
+`
+
+const StepText = styled.span`
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 39.75rem;
 `
 
 const StepsSection = styled.div`
   padding: 0 10%;
   margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 `
 
 const StepWrapper = styled.div`
@@ -46,15 +62,18 @@ const StepWrapper = styled.div`
 
 const Number = styled.div`
   color: #f39324;
-  font-size: 64px;
+  font-size: 6rem;
+  line-height: 6rem;
   margin-right: 32px;
+  width: 3.25rem;
 `
 
-const StickyNoteContainer = styled.div<{ marginTop: number , marginLeft: number}>`
+const StickyNoteContainer = styled.div<{ marginTop: number; marginLeft: number }>`
   display: flex;
   justify-content: center;
   margin-left: ${({ marginLeft }) => marginLeft}px;
   margin-top: ${({ marginTop }) => marginTop}px;
+  align-items: center;
 `
 
 const ClickableCardContainer = styled.div`
@@ -64,38 +83,87 @@ const ClickableCardContainer = styled.div`
   justify-content: center;
 `
 
-const PolaroidContainer = styled.div<{ rotate: number, marginTop: number, marginLeft: number }>`
+const PolaroidContainer = styled.div<{ rotate: number; marginTop: number; marginLeft: number }>`
   justify-content: center;
   margin-left: ${({ marginLeft }) => marginLeft}px;
   margin-top: ${({ marginTop }) => marginTop}px;
   rotate: ${({ rotate }) => rotate}deg;
 `
 
+const FinalSection = styled.div`
+  background-color: #02B9D7;
+  box-sizing: border-box;
+  position: relative;
+`
+
+const StyledArrow = styled(Image)`
+  position: absolute;
+  top: -145px;
+  left: 94px;
+  z-index: 1;
+`
+
+const StyledStars = styled(Image)`
+  position: absolute;
+  top: -42px;
+  right: -128px;
+  z-index: 0;
+`
+
+// const StickyNoteContainer = styled.div`
+//   position: relative;
+//   display: flex;
+// `
+
+// const VemEVeImageStyle = styled(Image)`
+//   position: absolute;
+//   top: 50%;
+//   z-index: 1;
+//   left: 50%;
+//   transform: translateY(-50%), translateX(-50%);
+// `
+
 export default function HowToJoinSection() {
   return (
-    <Wrapper>
+    <Wrapper className={anaheim.className}>
+
+      <StyledStars src={Stars} alt="" height={634} width={634} />
+
+      <StyledArrow src={Arrow} alt="" height={342} width={129}/>
+
       <SectionTitle className={justMeAgainDownHere.className}>Como Fazer Parte?</SectionTitle>
 
       <StepsSection>
         <StepWrapper>
           <Number className={justMeAgainDownHere.className}>1.</Number>
-          <span className={anaheim.className}>
-            Se você teve o coração de participar, não espere amanhã! Preencha agora o formulário para ter experiências
-            sobrenaturais com o Senhor! Sua vida nunca mais será a mesma!
-          </span>
+          <StepText className={anaheim.className}>
+            Se você teve o coração de participar, não espere amanhã!
+            Preencha agora o formulário para ter experiências sobrenaturais
+            com o Senhor! Sua vida nunca mais será a mesma!
+          </StepText>
         </StepWrapper>
         <StepWrapper>
           <Number className={justMeAgainDownHere.className}>2.</Number>
-          <span className={anaheim.className}>
-            Clique no link e insira suas informações, em breve um capitão entrará em contato para passar detalhes sobre
-            a Casa de Adolescentes mais próxima.
-          </span>
+          <StepText className={anaheim.className}>
+            Clique no link e insira suas informações, em breve um
+            capitão entrará em contato para passar detalhes sobre a
+            Casa de Adolescentes mais próxima.
+          </StepText>
         </StepWrapper>
         <StepWrapper>
           <Number className={justMeAgainDownHere.className}>3.</Number>
-          <span className={anaheim.className}>Tem uma galera esperando! Só falta você! Vem e vê !</span>
+          <StepText className={anaheim.className}>Tem uma galera esperando! Só falta você! Vem e vê !</StepText>
         </StepWrapper>
       </StepsSection>
+
+
+      {/* <div>
+        <StickyNoteContainer>
+            <VemEVeImageStyle src={VemeVe} alt="Vem E Ve image" height={329} width={332}/>
+            <StickyNote rotate={-7.45} width="600px" height="400px">
+            </StickyNote>
+        </StickyNoteContainer>
+      </div> */}
 
       <StickyNoteContainer marginTop={50} marginLeft={10}>
         <StickyNote rotate={-5} maxWidth={"600px"}>
@@ -104,11 +172,11 @@ export default function HowToJoinSection() {
       </StickyNoteContainer>
 
       <PolaroidContainer marginLeft={820} marginTop={-20} rotate={13}>
-        <PolaroidPicture imageUrl={AdolescentesImage} imageDescription="Adolescentes"/>
+        <PolaroidPicture imageUrl={AdolescentesImage} imageDescription="Adolescentes" />
       </PolaroidContainer>
 
       <StickyNoteContainer marginTop={-330} marginLeft={-250}>
-        <StickyNote rotate={-5} maxWidth="400px">
+        <StickyNote rotate={-7.45} maxWidth="400px">
           <p
             style={{
               ...justMeAgainDownHere.style,
@@ -124,18 +192,19 @@ export default function HowToJoinSection() {
         </StickyNote>
       </StickyNoteContainer>
       
-      <ClickableCardContainer>
-        <ClickableCard
-          onClick={() => {}}
-          header={<Image src={Image13} alt="Card Header" />}
-          body={<Image src={Image12} alt="Card Body" />}
-        />
-      </ClickableCardContainer>
+      <FinalSection>
+        <ClickableCardContainer>
+          <ClickableCard
+            onClick={() => {}}
+            header={<Image src={Image13} alt="Card Header" />}
+            body={<Image src={Image12} alt="Card Body" />}
+          />
+        </ClickableCardContainer>
 
-      <PolaroidContainer marginLeft={850} marginTop={10} rotate={13}>
-        <PolaroidPicture imageUrl={PeopleHoldingBookImage} imageDescription="Pessoas segurando livro" />
-      </PolaroidContainer>
-
+        <PolaroidContainer marginLeft={850} marginTop={10} rotate={13}>
+          <PolaroidPicture imageUrl={PeopleHoldingBookImage} imageDescription="Pessoas segurando livro" />
+        </PolaroidContainer>
+      </FinalSection>
     </Wrapper>
   )
 }
