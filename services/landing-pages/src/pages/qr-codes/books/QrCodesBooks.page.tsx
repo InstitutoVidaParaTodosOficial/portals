@@ -40,6 +40,7 @@ const ClickableCard = styled.button`
   background-color: white;
   border-radius: 20px;
   width: 100%;
+  font-size: 16px;
 
   &:hover {
     cursor: pointer;
