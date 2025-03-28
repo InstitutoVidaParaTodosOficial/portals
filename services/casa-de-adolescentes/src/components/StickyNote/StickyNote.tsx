@@ -14,6 +14,7 @@ const StickyNoteBackground = styled.div<{
   max-width: ${props => props.$maxWidth || "300px"};
   transform: rotate(${props => props.rotate + "deg" || "0deg"});
   height: ${props => props.$height || "auto"};
+  width: ${props => props.$width || "auto"};
 `
 
 const TopGradient = styled.div`

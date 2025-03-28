@@ -5,14 +5,15 @@ import Image from "next/image"
 import PolaroidPicture from "@/components/PolaroidPicture/PolaroidPicture"
 import ClickableCard from "@/components/ClickableCard/ClickableCard"
 
-import VemEVeImage from "./assets/vemeve.svg"
+// import VemEVeImage from "./assets/vemeve.svg"
 import AdolescentesImage from "./assets/adolescentes.png"
-import PeopleHoldingBookImage from "./assets/holding-book.png"
+// import PeopleHoldingBookImage from "./assets/holding-book.png"
 import Image13 from "./assets/image-13.png"
 import Image12 from "./assets/image-12.png"
 import Arrow from "./assets/arrow.svg"
 import Stars from "./assets/stars.webp"
-// import VemeVe from "./assets/vemeve.webp"
+import VemeVe from "./assets/vemeve.webp"
+import Play from "./assets/play.svg"
 
 const justMeAgainDownHere = Just_Me_Again_Down_Here({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ const Wrapper = styled.section`
   background-color: #0a0b2f;
   position: relative;
   padding-top: 100px;
+  z-index: 0;
 `
 
 const SectionTitle = styled.h2`
@@ -68,13 +70,13 @@ const Number = styled.div`
   width: 3.25rem;
 `
 
-const StickyNoteContainer = styled.div<{ marginTop: number; marginLeft: number }>`
-  display: flex;
-  justify-content: center;
-  margin-left: ${({ marginLeft }) => marginLeft}px;
-  margin-top: ${({ marginTop }) => marginTop}px;
-  align-items: center;
-`
+// const StickyNoteContainer = styled.div<{ marginTop: number; marginLeft: number }>`
+//   display: flex;
+//   justify-content: center;
+//   margin-left: ${({ marginLeft }) => marginLeft}px;
+//   margin-top: ${({ marginTop }) => marginTop}px;
+//   align-items: center;
+// `
 
 const ClickableCardContainer = styled.div`
   position: absolute;
@@ -83,11 +85,14 @@ const ClickableCardContainer = styled.div`
   justify-content: center;
 `
 
-const PolaroidContainer = styled.div<{ rotate: number; marginTop: number; marginLeft: number }>`
-  justify-content: center;
-  margin-left: ${({ marginLeft }) => marginLeft}px;
+const PolaroidContainer = styled.div<{ rotate?: number}>`
+  display: flex;
+  align-self: center;
+  ${({rotate}) => `transform: rotate(${rotate}deg);`}
+  /* justify-content: center; */
+  /* margin-left: ${({ marginLeft }) => marginLeft}px;
   margin-top: ${({ marginTop }) => marginTop}px;
-  rotate: ${({ rotate }) => rotate}deg;
+  rotate: ${({ rotate }) => rotate}deg; */
 `
 
 const FinalSection = styled.div`
@@ -107,21 +112,44 @@ const StyledStars = styled(Image)`
   position: absolute;
   top: -42px;
   right: -128px;
-  z-index: 0;
+  z-index: -1;
 `
 
-// const StickyNoteContainer = styled.div`
-//   position: relative;
-//   display: flex;
-// `
+const StickyNoteContainer = styled.div`
+  position: relative;
+  display: flex;
+  align-self: center;
+`
 
-// const VemEVeImageStyle = styled(Image)`
-//   position: absolute;
-//   top: 50%;
-//   z-index: 1;
-//   left: 50%;
-//   transform: translateY(-50%), translateX(-50%);
-// `
+const VemEVeImageStyle = styled(Image)`
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+`
+
+const StickyNoteTrail = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+const PolaroidVideo = styled.div`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 54px;
+  background-color: #F5F5F5;
+  justify-content: center;
+  align-items: center;
+`
+
+const PolaroidVideoContainer = styled.div`
+  max-width: 836px;
+  width: 100%;
+  height: 445px;
+  align-self: center;
+`
 
 export default function HowToJoinSection() {
   return (
@@ -153,15 +181,39 @@ export default function HowToJoinSection() {
         </StepWrapper>
       </StepsSection>
 
-      {/* <div>
+      <StickyNoteTrail>
         <StickyNoteContainer>
             <VemEVeImageStyle src={VemeVe} alt="Vem E Ve image" height={329} width={332}/>
-            <StickyNote rotate={-7.45} width="600px" height="400px">
+            <StickyNote rotate={-7.45} width="400px" height="400px" maxWidth="400px">
             </StickyNote>
         </StickyNoteContainer>
-      </div> */}
+        <PolaroidContainer rotate={9.87}>
+          <PolaroidPicture imageUrl={AdolescentesImage} imageDescription="Adolescentes" />
+        </PolaroidContainer>
+        <StickyNoteContainer>
+          <StickyNote rotate={-7.45} maxWidth="400px">
+            <p
+              style={{
+                ...justMeAgainDownHere.style,
+                color: "#0A0B2F",
+                fontSize: "22px"
+              }}
+            >
+              “Vem e vê” é mais do que um convite; é uma experiência transformadora. Nesse convite, há uma promessa de
+              descoberta, de encontro, de conexão. É um convite para testemunhar o que Deus está fazendo em nossas vidas e
+              nas vidas daqueles ao nosso redor. É um chamado para experimentar o amor, a graça e o poder de Deus de
+              primeira mão. Então, o que você está esperando? Vem e vê por si mesmo!
+            </p>
+          </StickyNote>
+        </StickyNoteContainer>
+        <PolaroidVideoContainer>
+          <PolaroidVideo>
+            <Image src={Play} alt="" width={174} height={174}/>
+          </PolaroidVideo>
+        </PolaroidVideoContainer>
+      </StickyNoteTrail>
 
-      <StickyNoteContainer marginTop={50} marginLeft={10}>
+      {/* <StickyNoteContainer marginTop={50} marginLeft={10}>
         <StickyNote rotate={-5} maxWidth={"600px"}>
           <Image src={VemEVeImage} alt="Vem E Ve image" />
         </StickyNote>
@@ -186,7 +238,7 @@ export default function HowToJoinSection() {
             primeira mão. Então, o que você está esperando? Vem e vê por si mesmo!
           </p>
         </StickyNote>
-      </StickyNoteContainer>
+      </StickyNoteContainer> */}
 
       <FinalSection>
         <ClickableCardContainer>
@@ -197,9 +249,9 @@ export default function HowToJoinSection() {
           />
         </ClickableCardContainer>
 
-        <PolaroidContainer marginLeft={850} marginTop={10} rotate={13}>
+        {/* <PolaroidContainer marginLeft={850} marginTop={10} rotate={13}>
           <PolaroidPicture imageUrl={PeopleHoldingBookImage} imageDescription="Pessoas segurando livro" />
-        </PolaroidContainer>
+        </PolaroidContainer> */}
       </FinalSection>
     </Wrapper>
   )
