@@ -40,6 +40,7 @@ const ClickableCard = styled.button`
   background-color: white;
   border-radius: 20px;
   width: 100%;
+  font-size: 16px;
 
   &:hover {
     cursor: pointer;
@@ -61,15 +62,10 @@ const LanguageSelectorContainer = styled.div`
   }
 `
 
-const Title = styled.h1`
-  text-align: center;
-  color: white;
-`
-
 const CLICKABLE_ITEMS: MenuItem[] = [
   { i18nKey: "institute", link: "https://www.instagram.com/institutovidaparatodos" },
   { i18nKey: "publisher", link: "https://www.arvoredavida.org.br" },
-  { i18nKey: "may_i_pray_for_you", link: "https://www.possoorarporvoce.com.br" },
+  { i18nKey: "may_i_pray_for_you", link: "https://qrfacil.me/QqNKW4z5" },
   { i18nKey: "missionary", link: "https://wa.me/5511982081803" }
 ]
 
@@ -88,8 +84,6 @@ export default function QrCodesBooksPage() {
 
       <Card>
         <Image src="/profile_ivpt.png" alt="Logo" />
-
-        <Title>{t("institute")}</Title>
 
         {CLICKABLE_ITEMS.map((item, index) => (
           <ClickableCard key={index} onClick={() => onClickCard(item.link)}>
