@@ -77,10 +77,10 @@ const ClickableCardContainer = styled.div`
   justify-content: center;
 `
 
-const PolaroidContainer = styled.div<{ rotate?: number}>`
+const PolaroidContainer = styled.div<{ rotate?: number }>`
   display: flex;
   align-self: center;
-  ${({rotate}) => `transform: rotate(${rotate}deg);`}
+  ${({ rotate }) => `transform: rotate(${rotate}deg);`}
   justify-content: center;
   rotate: ${({ rotate }) => rotate}deg; */
 `
@@ -129,7 +129,7 @@ const PolaroidVideo = styled.div`
   width: 100%;
   height: 100%;
   border-radius: 54px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   justify-content: center;
   align-items: center;
 `
@@ -173,9 +173,8 @@ export default function HowToJoinSection() {
 
       <StickyNoteTrail>
         <StickyNoteContainer>
-            <VemEVeImageStyle src={VemeVe} alt="Vem E Ve image" height={329} width={332}/>
-            <StickyNote rotate={-7.45} width="400px" height="400px" maxWidth="400px">
-            </StickyNote>
+          <VemEVeImageStyle src={VemeVe} alt="Vem E Ve image" height={329} width={332} />
+          <StickyNote rotate={-7.45} width="400px" height="400px" maxWidth="400px"></StickyNote>
         </StickyNoteContainer>
         <PolaroidContainer rotate={9.87}>
           <PolaroidPicture imageUrl={AdolescentesImage} imageDescription="Adolescentes" />
@@ -190,15 +189,15 @@ export default function HowToJoinSection() {
               }}
             >
               “Vem e vê” é mais do que um convite; é uma experiência transformadora. Nesse convite, há uma promessa de
-              descoberta, de encontro, de conexão. É um convite para testemunhar o que Deus está fazendo em nossas vidas e
-              nas vidas daqueles ao nosso redor. É um chamado para experimentar o amor, a graça e o poder de Deus de
+              descoberta, de encontro, de conexão. É um convite para testemunhar o que Deus está fazendo em nossas vidas
+              e nas vidas daqueles ao nosso redor. É um chamado para experimentar o amor, a graça e o poder de Deus de
               primeira mão. Então, o que você está esperando? Vem e vê por si mesmo!
             </p>
           </StickyNote>
         </StickyNoteContainer>
         <PolaroidVideoContainer>
           <PolaroidVideo>
-            <Image src={Play} alt="" width={174} height={174}/>
+            <Image src={Play} alt="" width={174} height={174} />
           </PolaroidVideo>
         </PolaroidVideoContainer>
       </StickyNoteTrail>
@@ -215,7 +214,6 @@ export default function HowToJoinSection() {
             body={<Image src={Image12} alt="Card Body" />}
           />
         </ClickableCardContainer>
-        
       </FinalSection>
     </Wrapper>
   )
