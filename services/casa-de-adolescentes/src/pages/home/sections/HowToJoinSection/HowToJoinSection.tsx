@@ -7,7 +7,7 @@ import ClickableCard from "@/components/ClickableCard/ClickableCard"
 
 // import VemEVeImage from "./assets/vemeve.svg"
 import AdolescentesImage from "./assets/adolescentes.png"
-// import PeopleHoldingBookImage from "./assets/holding-book.png"
+import PeopleHoldingBookImage from "./assets/holding-book.png"
 import Image13 from "./assets/image-13.png"
 import Image12 from "./assets/image-12.png"
 import Arrow from "./assets/arrow.svg"
@@ -70,14 +70,6 @@ const Number = styled.div`
   width: 3.25rem;
 `
 
-// const StickyNoteContainer = styled.div<{ marginTop: number; marginLeft: number }>`
-//   display: flex;
-//   justify-content: center;
-//   margin-left: ${({ marginLeft }) => marginLeft}px;
-//   margin-top: ${({ marginTop }) => marginTop}px;
-//   align-items: center;
-// `
-
 const ClickableCardContainer = styled.div`
   position: absolute;
   margin-top: 230px;
@@ -89,9 +81,7 @@ const PolaroidContainer = styled.div<{ rotate?: number}>`
   display: flex;
   align-self: center;
   ${({rotate}) => `transform: rotate(${rotate}deg);`}
-  /* justify-content: center; */
-  /* margin-left: ${({ marginLeft }) => marginLeft}px;
-  margin-top: ${({ marginTop }) => marginTop}px;
+  justify-content: center;
   rotate: ${({ rotate }) => rotate}deg; */
 `
 
@@ -213,34 +203,11 @@ export default function HowToJoinSection() {
         </PolaroidVideoContainer>
       </StickyNoteTrail>
 
-      {/* <StickyNoteContainer marginTop={50} marginLeft={10}>
-        <StickyNote rotate={-5} maxWidth={"600px"}>
-          <Image src={VemEVeImage} alt="Vem E Ve image" />
-        </StickyNote>
-      </StickyNoteContainer>
-
-      <PolaroidContainer marginLeft={820} marginTop={-20} rotate={13}>
-        <PolaroidPicture imageUrl={AdolescentesImage} imageDescription="Adolescentes" />
-      </PolaroidContainer>
-
-      <StickyNoteContainer marginTop={-330} marginLeft={-250}>
-        <StickyNote rotate={-7.45} maxWidth="400px">
-          <p
-            style={{
-              ...justMeAgainDownHere.style,
-              color: "#0A0B2F",
-              fontSize: "22px"
-            }}
-          >
-            “Vem e vê” é mais do que um convite; é uma experiência transformadora. Nesse convite, há uma promessa de
-            descoberta, de encontro, de conexão. É um convite para testemunhar o que Deus está fazendo em nossas vidas e
-            nas vidas daqueles ao nosso redor. É um chamado para experimentar o amor, a graça e o poder de Deus de
-            primeira mão. Então, o que você está esperando? Vem e vê por si mesmo!
-          </p>
-        </StickyNote>
-      </StickyNoteContainer> */}
-
       <FinalSection>
+        <PolaroidContainer rotate={13}>
+          <PolaroidPicture imageUrl={PeopleHoldingBookImage} imageDescription="Pessoas segurando livro" />
+        </PolaroidContainer>
+
         <ClickableCardContainer>
           <ClickableCard
             onClick={() => {}}
@@ -248,10 +215,7 @@ export default function HowToJoinSection() {
             body={<Image src={Image12} alt="Card Body" />}
           />
         </ClickableCardContainer>
-
-        {/* <PolaroidContainer marginLeft={850} marginTop={10} rotate={13}>
-          <PolaroidPicture imageUrl={PeopleHoldingBookImage} imageDescription="Pessoas segurando livro" />
-        </PolaroidContainer> */}
+        
       </FinalSection>
     </Wrapper>
   )
