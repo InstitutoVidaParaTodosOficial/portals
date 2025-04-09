@@ -5,7 +5,6 @@ import Image from "next/image"
 import PolaroidPicture from "@/components/PolaroidPicture/PolaroidPicture"
 import ClickableCard from "@/components/ClickableCard/ClickableCard"
 
-// import VemEVeImage from "./assets/vemeve.svg"
 import AdolescentesImage from "./assets/adolescentes.png"
 import PeopleHoldingBookImage from "./assets/holding-book.png"
 import Image13 from "./assets/image-13.png"
