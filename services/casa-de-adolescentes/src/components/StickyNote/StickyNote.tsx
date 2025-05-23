@@ -7,10 +7,14 @@ import RedThumbtackPng from "./assets/red-thumbtack.png"
 const StickyNoteBackground = styled.div<{
   rotate?: number
   $maxWidth?: `${string}px`
+  $height?: `${string}px`
+  $width?: `${string}px`
 }>`
   background-color: #f3e27a;
   max-width: ${props => props.$maxWidth || "300px"};
   transform: rotate(${props => props.rotate + "deg" || "0deg"});
+  height: ${props => props.$height || "auto"};
+  width: ${props => props.$width || "auto"};
 `
 
 const TopGradient = styled.div`
@@ -31,20 +35,24 @@ const RedThumbtack = styled(Image)`
 `
 
 type StickyNoteProps = {
-  children: ReactElement
+  children?: ReactElement
   rotate?: number
   maxWidth?: `${string}px`
   displayThumbtack?: boolean
+  height?: `${string}px`
+  width?: `${string}px`
 }
 
 export default function StickyNote({
   children,
   rotate = 0,
   maxWidth = "300px",
-  displayThumbtack = true
+  displayThumbtack = true,
+  height,
+  width
 }: StickyNoteProps) {
   return (
-    <StickyNoteBackground rotate={rotate} $maxWidth={maxWidth}>
+    <StickyNoteBackground rotate={rotate} $maxWidth={maxWidth} $height={height} $width={width}>
       <TopGradient>{displayThumbtack && <RedThumbtack src={RedThumbtackPng} alt="red thumbtack" />}</TopGradient>
 
       <ChildrenWrapper>{children}</ChildrenWrapper>
