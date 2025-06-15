@@ -31,22 +31,6 @@ const MENU_ITEMS: MenuItem[] = [
     path: "/news-feed"
   },
   {
-    name: "projects",
-    path: "/projects"
-  },
-  {
-    name: "ministry",
-    path: "/ministry"
-  },
-  {
-    name: "agenda",
-    path: "/agenda"
-  },
-  {
-    name: "find-us",
-    path: "/find-us"
-  },
-  {
     name: "donations",
     path: "/donations"
   }

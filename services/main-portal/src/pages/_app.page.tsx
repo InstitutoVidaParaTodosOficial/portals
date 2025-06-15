@@ -6,7 +6,6 @@ import "../styles/colors.css"
 import TopBar from "@/layout/TopBar"
 import Footer from "@/layout/Footer"
 import NavMenu from "@/layout/NavMenu"
-import ContactUs from "@/sections/contact-us/ContactUs"
 
 function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
@@ -16,7 +15,6 @@ function App({ Component, pageProps }: AppProps) {
       <TopBar />
       <NavMenu />
       <Component {...pageProps} />
-      <ContactUs />
       <Footer />
     </NextIntlClientProvider>
   )
