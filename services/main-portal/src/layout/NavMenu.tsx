@@ -7,7 +7,7 @@ const NavMenuWrapper = styled.nav``
 
 const NavMenuItemsList = styled.ul`
   display: flex;
-  justify-content: space-around;
+  gap: 16px;
   padding: 0;
   list-style: none;
 
