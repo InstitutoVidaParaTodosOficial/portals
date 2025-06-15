@@ -3,9 +3,14 @@ import { NextIntlClientProvider } from "next-intl"
 import { useRouter } from "next/router"
 import "../global.css"
 import "../styles/colors.css"
+import "../styles/configuration.css"
 import TopBar from "@/layout/TopBar"
 import Footer from "@/layout/Footer"
-import NavMenu from "@/layout/NavMenu"
+import styled from "styled-components"
+
+const ContentWrapper = styled.div`
+  padding-top: var(--header-height);
+`
 
 function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
@@ -13,8 +18,9 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <NextIntlClientProvider locale={router.locale} messages={pageProps.messages}>
       <TopBar />
-      <NavMenu />
-      <Component {...pageProps} />
+      <ContentWrapper>
+        <Component {...pageProps} />
+      </ContentWrapper>
       <Footer />
     </NextIntlClientProvider>
   )
