@@ -12,13 +12,13 @@ const BackgroundImage = styled(Image)`
 `
 
 const SocialMediaContainer = styled.div`
-  width: 10vw; 
-  height: 20vh; 
+  width: 10vw;
+  height: 20vh;
   position: absolute;
-  top: 30vh; 
-  right: -4vw; 
+  top: 30vh;
+  right: -4vw;
   border-radius: 2vw;
-  background-color: #082d50; 
+  background-color: #082d50;
 `
 
 export default function HomePage() {
