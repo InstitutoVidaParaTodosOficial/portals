@@ -5,7 +5,6 @@ import styled from "styled-components"
 
 import BackgroundImageFile from "./assets/backgroud.png"
 
-
 const BackgroundImage = styled(Image)`
   z-index: 0;
   width: 100%;
@@ -13,23 +12,23 @@ const BackgroundImage = styled(Image)`
 `
 
 const SocialMediaContainer = styled.div`
-  width: 10vw;              // ~10% da largura da tela
-  height: 20vh;             // ~20% da altura da tela
+  width: 10vw; 
+  height: 20vh; 
   position: absolute;
-  top: 30vh;                // ~10% da altura da tela
-  right: -4vw;               // ~60% da largura da tela
-  border-radius: 2vw; 
-  background-color: #082D50; /* opcional, apenas para visualização */
+  top: 30vh; 
+  right: -4vw; 
+  border-radius: 2vw;
+  background-color: #082d50; 
 `
 
 export default function HomePage() {
   return (
     <>
-    <BackgroundImage src={BackgroundImageFile} alt="background image" />
+      <BackgroundImage src={BackgroundImageFile} alt="background image" />
 
-    <SocialMediaContainer>
+      <SocialMediaContainer>
         <SocialMedia></SocialMedia>
-    </SocialMediaContainer>
+      </SocialMediaContainer>
     </>
   )
 }

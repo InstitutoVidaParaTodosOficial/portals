@@ -16,7 +16,7 @@ const SocialMediaIcons = styled.div`
   display: flex;
   gap: 16px;
   flex-direction: column;
-  align-items: center
+  align-items: center;
 `
 
 export default function SocialMedia() {
