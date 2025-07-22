@@ -6,11 +6,6 @@ import "../styles/colors.css"
 import "../styles/configuration.css"
 import TopBar from "@/layout/TopBar"
 import Footer from "@/layout/Footer"
-import styled from "styled-components"
-
-const ContentWrapper = styled.div`
-  padding-top: var(--header-height);
-`
 
 function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
@@ -18,9 +13,7 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <NextIntlClientProvider locale={router.locale} messages={pageProps.messages}>
       <TopBar />
-      <ContentWrapper>
-        <Component {...pageProps} />
-      </ContentWrapper>
+      <Component {...pageProps} />
       <Footer />
     </NextIntlClientProvider>
   )

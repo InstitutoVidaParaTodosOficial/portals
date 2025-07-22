@@ -8,10 +8,7 @@ const HeroSectionWrapper = styled.section`
   background-image: url(${BackgroundImageFile.src});
   background-size: cover;
   background-position: center;
-  width: 100%;
   height: 100vh;
-  position: absolute;
-  top: 0;
   color: var(--white);
   padding: 32px;
 `
