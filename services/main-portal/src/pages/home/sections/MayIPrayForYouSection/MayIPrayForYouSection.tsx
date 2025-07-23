@@ -1,33 +1,72 @@
 import styled from "styled-components"
-import Image from "next/image"
-import Logo from "./assets/crown-logo.png"
+import CrownLogo from "./assets/crown-logo.svg"
+import BackgroundImage from "./assets/background.svg"
+import GradientImage from "./assets/background-gradient.svg"
 import { FaPaperPlane } from "react-icons/fa"
 
-const Wrapper = styled.div`
+const MayIPrayForYouContainer = styled.div`
+  position: relative;
   min-height: 100vh;
+  background:
   width: 100vw;
-  background: linear-gradient(180deg, #082d50 60%, #235b8c 100%);
+  background: #082D50;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 32px 16px;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url(${BackgroundImage.src});
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url(${GradientImage.src});
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+`
+
+const FirstTextContainer = styled.div`
+  width: 838px;
+  height: 170px;
 `
 
 const MainText = styled.h2`
-  color: #fff;
-  font-size: 2.2rem;
-  font-weight: 550;
-  margin: 24px 0 12px 0;
+  color: #d9d9d9;
+  font-size: 32px;
+  font-weight: 400;
   text-align: center;
+  letter-spacing: 0%;
+`
+const SecondTextContainer = styled.div`
+  width: 956px;
+  height: 244px;
 `
 
 const SubText = styled.p`
-  color: #fff;
-  font-size: 1.2rem;
-  margin: 0 0 24px 0;
+  color: #d9d9d9;
+  font-size: 24px;
   text-align: center;
-  max-width: 700px;
+  weight: 400px;
+  letter-spacing: 0%;
 `
 
 const DividerContainer = styled.div`
@@ -41,27 +80,26 @@ const DividerContainer = styled.div`
 `
 
 const Line = styled.hr`
-  width: 100%;
+  width: 100vw;
   border: none;
-  border-top: 2px solid #fff;
-  margin: 0;
+  border-top: 1px solid #ffffff;
+  margin-left: -25vw;
+  margin-right: -25vw;
 `
 
 const LogoWrapper = styled.div`
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 80px;
-  height: 80px;
+  width: 105px;
+  height: 103px;
+  border: 1px solid #fff;
   border-radius: 50%;
-  border: 4px solid #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #082d50;
-  z-index: 1;
-  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 `
 
 const ActionButton = styled.button`
@@ -105,33 +143,44 @@ const IconBox = styled.span`
   border-bottom-right-radius: 10px;
   border-left: 2px solid #fff;
 `
+const LogoIcon = styled.img`
+  scale: fill;
+  transform: translate(-2px, -8px);
+`
 
 export default function HomePage() {
   return (
-    <Wrapper>
-      <SubText>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua...
-      </SubText>
+    <MayIPrayForYouContainer>
+      <FirstTextContainer>
+        <SubText>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua...
+        </SubText>
+      </FirstTextContainer>
       <DividerContainer>
         <Line />
         <LogoWrapper>
-          <Image src={Logo} alt="Logo" width={60} height={60} />
+          <LogoIcon
+            src={typeof CrownLogo === "string" ? CrownLogo : (CrownLogo as StaticImageData).src}
+            alt="Logo Coroa Instituto Vida para Todos"
+          />
         </LogoWrapper>
       </DividerContainer>
-      <MainText>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua.
-      </MainText>
-      <SubText>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
-      </SubText>
+      <SecondTextContainer>
+        <MainText>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+        </MainText>
+        <SubText>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
+        </SubText>
+      </SecondTextContainer>
       <ActionButton>
         <ButtonText>Posso orar por você?</ButtonText>
         <IconBox>
           <FaPaperPlane size={20} color="#fff" />
         </IconBox>
       </ActionButton>
-    </Wrapper>
+    </MayIPrayForYouContainer>
   )
 }
