@@ -2,14 +2,14 @@ import styled from "styled-components"
 import CrownLogo from "./assets/crown-logo.svg"
 import BackgroundImage from "./assets/background.svg"
 import GradientImage from "./assets/background-gradient.svg"
-import { FaPaperPlane } from "react-icons/fa"
+import MayIPrayForYouButton from "@/components/may-i-pray-for-you-button/MayIPrayForYouButton.tsx"
+import { Colors } from "@/styles/types"
 
 const MayIPrayForYouContainer = styled.div`
   position: relative;
   min-height: 100vh;
-  background:
   width: 100vw;
-  background: #082D50;
+  background: var(${Colors.primaryColor});
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,7 +50,7 @@ const FirstTextContainer = styled.div`
 `
 
 const MainText = styled.h2`
-  color: #d9d9d9;
+  color: var(${Colors.textColor});
   font-size: 32px;
   font-weight: 400;
   text-align: center;
@@ -62,7 +62,7 @@ const SecondTextContainer = styled.div`
 `
 
 const SubText = styled.p`
-  color: #d9d9d9;
+  color: var(${Colors.textColor});
   font-size: 24px;
   text-align: center;
   weight: 400px;
@@ -82,7 +82,7 @@ const DividerContainer = styled.div`
 const Line = styled.hr`
   width: 100vw;
   border: none;
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid var(${Colors.textColor});
   margin-left: -25vw;
   margin-right: -25vw;
 `
@@ -90,59 +90,18 @@ const Line = styled.hr`
 const LogoWrapper = styled.div`
   width: 105px;
   height: 103px;
-  border: 1px solid #fff;
+  border: 1px solid var(${Colors.textColor});
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #082d50;
+  background: var(${Colors.primaryColor});
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 `
 
-const ActionButton = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  background: transparent;
-  border: 2px solid #fff;
-  border-radius: 12px;
-  padding: 0;
-  height: 48px;
-  width: 320px;
-  max-width: 90vw;
-  cursor: pointer;
-  font-family: inherit;
-  overflow: hidden;
-  transition: border 0.2s;
-
-  &:hover {
-    border-color: #7ecbff;
-  }
-`
-
-const ButtonText = styled.span`
-  flex: 1;
-  color: #fff;
-  font-size: 1.1rem;
-  font-weight: 700;
-  text-align: center;
-  letter-spacing: 0.5px;
-`
-
-const IconBox = styled.span`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #235b8c;
-  height: 100%;
-  width: 48px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-left: 2px solid #fff;
-`
 const LogoIcon = styled.img`
   scale: fill;
   transform: translate(-2px, -8px);
@@ -161,7 +120,7 @@ export default function HomePage() {
         <Line />
         <LogoWrapper>
           <LogoIcon
-            src={typeof CrownLogo === "string" ? CrownLogo : (CrownLogo as StaticImageData).src}
+            src={typeof CrownLogo === "string" ? CrownLogo : CrownLogo.src}
             alt="Logo Coroa Instituto Vida para Todos"
           />
         </LogoWrapper>
@@ -175,12 +134,7 @@ export default function HomePage() {
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
         </SubText>
       </SecondTextContainer>
-      <ActionButton>
-        <ButtonText>Posso orar por você?</ButtonText>
-        <IconBox>
-          <FaPaperPlane size={20} color="#fff" />
-        </IconBox>
-      </ActionButton>
+      <MayIPrayForYouButton />
     </MayIPrayForYouContainer>
   )
 }
