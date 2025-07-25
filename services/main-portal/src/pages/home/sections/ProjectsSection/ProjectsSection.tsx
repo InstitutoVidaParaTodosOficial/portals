@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import styled from "styled-components"
+import ReactMarkdown from "react-markdown"
 
 import FancyTitle from "@/components/fancy-title/FancyTitle"
 import Carousel from "@/components/carousel/Carousel"
@@ -34,7 +35,7 @@ export default function ProjectsSection() {
         <div key={index}>
           <FancyTitle title={project.title} />
           {project.paragraphs.map((content: string, idx: number) => (
-            <p key={idx}>{content}</p>
+            <ReactMarkdown key={idx}>{content}</ReactMarkdown>
           ))}
           {project.subProjects && project.subProjects.length > 0 && (
             <div>
@@ -42,7 +43,9 @@ export default function ProjectsSection() {
                 <div key={subIdx}>
                   <h3>{sub.title}</h3>
                   {sub.paragraphs &&
-                    sub.paragraphs.map((subPara: string, paraIdx: number) => <p key={paraIdx}>{subPara}</p>)}
+                    sub.paragraphs.map((subPara: string, paraIdx: number) => (
+                      <ReactMarkdown key={paraIdx}>{subPara}</ReactMarkdown>
+                    ))}
                 </div>
               ))}
             </div>
