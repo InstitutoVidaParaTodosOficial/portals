@@ -15,7 +15,7 @@ export type ProjectState = {
 }
 
 export type ProjectActions = {
-  getProjects: () => void
+  getProjects: (lang?: string) => void
 }
 
 export type ProjectsStore = ProjectState & ProjectActions
@@ -24,9 +24,15 @@ export const defaultInitState: ProjectState = {
   projects: []
 }
 
+type ProjectsI18nData = Record<string, Project[]>
+const projectsData = MOCK_DATA as ProjectsI18nData
+
 export const createProjectStore = (initState: ProjectState = defaultInitState) => {
   return createStore<ProjectsStore>()(set => ({
     ...initState,
-    getProjects: () => set(() => ({ projects: MOCK_DATA }))
+    getProjects: (lang = "pt-BR") => {
+      const projects = projectsData[lang] || []
+      set(() => ({ projects }))
+    }
   }))
 }

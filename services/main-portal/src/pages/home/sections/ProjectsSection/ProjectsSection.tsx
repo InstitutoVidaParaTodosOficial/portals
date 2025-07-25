@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import styled from "styled-components"
 import ReactMarkdown from "react-markdown"
+import { useRouter } from "next/router"
 
 import FancyTitle from "@/components/fancy-title/FancyTitle"
 import Carousel from "@/components/carousel/Carousel"
@@ -24,10 +25,11 @@ const ImageWrapper = styled.div<{ url: string }>`
 export default function ProjectsSection() {
   const projects = useProjectsStore(state => state.projects)
   const getProjects = useProjectsStore(state => state.getProjects)
+  const { locale } = useRouter()
 
   useEffect(() => {
-    getProjects()
-  }, [getProjects])
+    getProjects(locale)
+  }, [getProjects, locale])
 
   return (
     <ProjectsWrapper>
