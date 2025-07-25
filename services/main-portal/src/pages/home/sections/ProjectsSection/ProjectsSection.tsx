@@ -1,159 +1,10 @@
+import { useEffect } from "react"
 import styled from "styled-components"
 
-import ProjecttDetail from "@/pages/home/sections/ProjectsSection/ProjectDetail"
-
-type Project = {
-  title: string
-  titleIcon?: string
-  paragraphs: string[]
-  imagesUrls?: string[]
-  subProjects?: Project[]
-}
-
-const DATA: Project[] = [
-  {
-    title: "Colportagem",
-    paragraphs: [
-      'A palavra colportor tem origem no francês colporteur, que significa "carregar no pescoço", remetendo ao método utilizado por Pedro Valdo (1140–1205), comerciante de Lyon e líder dos valdenses. Ele promovia a distribuição das Escrituras ao perceber a necessidade espiritual das pessoas. Para isso, confeccionou bolsas tiracolo, usadas sob a roupa, por vendedores que levavam porções manuscritas da Bíblia, pois ainda não existia a imprensa. Valdo entendia que a Palavra precisava ser acessível, disponível a todos, e não apenas a uma minoria privilegiada, pois, quanto mais a lia e desfrutava dela, mais crescia em seu interior o desejo e o encargo de divulgá-la.',
-      "Assim, em 1990, a colportagem, a pregação do Evangelho do Reino através dos livros,  teve início no Brasil. Em 2018, surgiu a colportagem dinâmica, por meio de uma reação de jovens que, movidos pelo poder do Espírito, tornaram essa ferramente muito mais efetiva, agregando a dependência completa ao Senhor e a oração pelas pessoas . Hoje, os colportores, como os valdenses do passado, distribuem livros com a revelação de Deus, produzidos pela Editora Árvore da Vida, abordando pessoas com a pergunta: “Posso orar por você?” e compartilhando o evangelho do reino."
-    ],
-    imagesUrls: [
-      "https://picsum.photos/200/300?random=1",
-      "https://picsum.photos/200/300?random=1",
-      "https://picsum.photos/200/300?random=1",
-      "https://picsum.photos/200/300?random=1",
-      "https://picsum.photos/200/300?random=1",
-      "https://picsum.photos/200/300?random=1",
-      "https://picsum.photos/200/300?random=1",
-      "https://picsum.photos/200/300?random=1",
-      "https://picsum.photos/200/300?random=1",
-      "https://picsum.photos/200/300?random=1",
-      "https://picsum.photos/200/300?random=1",
-      "https://picsum.photos/200/300?random=1"
-    ]
-  },
-  {
-    title: "PAC - Posto Avançado de Colportagem",
-    paragraphs: [
-      "O PAC é um centro de aperfeiçoamento para colportores que já atuam como missionários em tempo integral, com o objetivo de melhorar sua prática diária para que alcancem mais pessoas a cada dia. É uma das ferramentas da obra do Senhor!",
-      "O PAC surgiu em 2017 quando um pequeno grupo de missionários que cuidavam do irmão Dong Yu Lan receberam uma palavra profética dizendo que eles eram colportores. Eles creram nesta palavra e o Senhor confirmou através de sinais, prodígios e milagres! Eles foram para as ruas e em 3 dias alcançaram mais de 500 pessoas com orações e com a palavra escrita.",
-      "Hoje o PAC tem sua sede em São Paulo, e outras duas unidades: Foz do Iguaçu e Bogotá Desde o ano de 2017 estima-se que mais de 6000 pessoas já foram aperfeiçoadas por meio desta ferramenta."
-    ],
-    imagesUrls: [
-      "https://picsum.photos/200/300?random=1",
-      "https://picsum.photos/200/300?random=1",
-      "https://picsum.photos/200/300?random=1",
-      "https://picsum.photos/200/300?random=1",
-      "https://picsum.photos/200/300?random=1"
-    ]
-  },
-  {
-    title: "CEAPE – Centro de Aperfeiçoamento para a Propagação do Evangelho",
-    paragraphs: [
-      "O CEAPE (Centro de Aperfeiçoamento para a Propagação do Evangelho) foi estabelecido em 1998, a partir do encargo do irmão Dong Yu Lan, com o propósito de formar e aperfeiçoar trabalhadores para a obra do Senhor. Ele surgiu como resposta à urgente necessidade expressa por Jesus em Mateus 9:37-38: “A seara é grande, mas os trabalhadores são poucos”.",
-      "A missão do CEAPE está alinhada à visão bíblica de Mateus 24:14: “E este evangelho do reino será pregado em todo o mundo como testemunho a todas as nações. Então virá o fim”. Assim, o centro existe para produzir discípulos comprometidos com a propagação do evangelho do reino, preparando-os espiritualmente para cumprir o IDE de Jesus (Mateus 28:19-20).",
-      'No CEAPE, os participantes são aperfeiçoados diariamente por meio do estudo da palavra profética, que funciona como luz e direção para o viver cristão, resultando em em uma profunda transformação de vida, capacitando missionários a servirem com excelência, fidelidade e compromisso com a missão de Deus. O centro valoriza o desenvolvimento de um coração simples, humilde e reverente à Palavra de Deus, como está escrito em Isaías 66:2: “Todavia, para este homem eu olharei, para aquele que é pobre e de um espírito humilde, e treme diante da minha palavra." (BKJ).'
-    ],
-    imagesUrls: [
-      "https://picsum.photos/200/300?random=1",
-      "https://picsum.photos/200/300?random=1",
-      "https://picsum.photos/200/300?random=1",
-      "https://picsum.photos/200/300?random=1",
-      "https://picsum.photos/200/300?random=1"
-    ]
-  },
-  {
-    title: "Missões no Exterior",
-    paragraphs: [
-      "O Projeto  Missões no Exterior volta dos anos 2000, quando o servo de Deus Dong Yu Lan, ao receber a revelação sobre o Filho Varão de Apocalipse 12, sentiu claramente do evangelho do reino precisava alcançar o continente africano e sucessivamente na Europa e na América do Norte. Nesses 25 anos de projeto, temos mais de 100 missionários espalhados por todos os continentes da terra para pregar o Evangelho do Reino por toda a Terra habitada  trazer nosso Senhor de volta  um dia mais cedo. ( Mt 24.14)",
-      "Nossos missionários são jovens formados no CEAPE e, aqueles que recebem esse chamamento de Deus, para servirem em outros países, são  enviados para nossas bases consolidadas, com toda estrutura para recebe-los em mais de 30 países. Ali eles trabalham de cidade em cidade, de pais em pais levando a semente da vida no coração da pessoas através de uma literatura espiritual saudável."
-    ]
-  },
-  {
-    title: "EXPOLIVRO: Levando Cultura, Educação e Leitura para Todo o Brasil",
-    paragraphs: [
-      "O EXPOLIVRO é um projeto cultural, social e educacional que tem como missão incentivar o hábito da leitura de forma acessível e envolvente. Sua principal ferramenta é uma carreta itinerante, equipada com livraria e biblioteca, que percorre cidades brasileiras promovendo cultura, livros e atividades que despertam o interesse pela leitura.",
-      "Criado em 1991, inicialmente com ônibus adaptados, o projeto evoluiu para carretas modernas. Atualmente, três unidades circulam pelas regiões Sul, Nordeste e Sudeste. Em cada cidade, a carreta oferece biblioteca, livraria, contação de histórias, apresentações teatrais, palestras, ações comunitárias e visitas escolares, proporcionando acesso diário a todas essas atividades.",
-      "Idealizado pelo Instituto Vida para Todos, com apoio da Editora Árvore da Vida e do CEAPE (Centro de Aperfeiçoamento para a Propagação do Evangelho), o EXPOLIVRO é um projeto cristão que acredita no poder transformador da leitura da Bíblia e de livros espirituais, atuando como agente de mudança por meio do conhecimento, da fé e da inspiração, alcançando todos os cantos do Brasil."
-    ],
-    imagesUrls: ["https://picsum.photos/200/300?random=1"]
-  },
-  {
-    title: "TCI - Tropas, Capitães e Adolescentes",
-    paragraphs: [
-      "A sigla TCI significa Tropas, Capitães e Intendentes, representando a união de forças de todas as faixas etárias no viver da igreja. Adolescentes, jovens e adultos — até mesmo os da melhor idade — estão unânimes e focados em um único propósito: servir ao Senhor de modo que todos sejam ativos e desfrutem plenamente do viver da igreja em ressurreição. Ninguém fica de fora; por isso, a inclusão é a primeira marca dessa ferramenta. Todos, direcionados pela Palavra do Senhor, vivem e servem com entusiasmo e excelência, dando o seu melhor para a edificação do Corpo de Cristo."
-    ],
-    imagesUrls: [
-      "https://picsum.photos/200/300?random=1",
-      "https://picsum.photos/200/300?random=1",
-      "https://picsum.photos/200/300?random=1",
-      "https://picsum.photos/200/300?random=1",
-      "https://picsum.photos/200/300?random=1"
-    ],
-    subProjects: [
-      {
-        title: "Tropas",
-        paragraphs: [
-          "As tropas são formadas nas Casas de Adolescentes: um projeto cristão de natureza voluntária que proporciona aos adolescentes, de acordo com sua faixa etária, a oportunidade de cooperar com a obra de Deus e, por meio do Evangelho, influenciar positivamente a sociedade. Eles são inseridos em um ambiente saudável de cuidado, santidade e crescimento, sendo aperfeiçoados nos âmbitos humano, social e espiritual.",
-          "Por meio da imersão na palavra profética e da prática do “Posso Orar por Você?”, os jovens dessa faixa etária têm manifestado, a cada dia, mais amor a Deus e à Sua Palavra, crescendo visivelmente na vida espiritual. A expectativa é que, ao chegarem à juventude, após participarem do Centro de Aperfeiçoamento para a Propagação do Evangelho (CEAPE), possam cooperar expressivamente com a obra de Deus, inclusive em trabalhos missionários. Enquanto crescem no caminho de Cristo, também distribuem os livros da Editora Árvore da Vida gratuitamente, pelo projeto Pães e Peixes. Esse projeto consiste na distribuição gratuita de livros doados para as pessoas que são alcançadas pela pregação do evangelho destes adolescentes.",
-          "A simplicidade, a ausência de conceitos e, principalmente, o amor integral e reverente à Palavra fizeram brotar na igreja uma força motriz que impacta a todos. Os adolescentes inflamam as reuniões da igreja, contagiando os irmãos com uma alegria singela. Por isso, Deus continua enviando-os a nós como gotas de orvalho; seus corações puros têm renovado o viver da igreja em ressurreição."
-        ]
-      },
-      {
-        title: "Capitães",
-        paragraphs: [
-          "Para canalizar a energia da vida dos adolescentes (tropas), os jovens também foram convocados a fazer parte desse exército como capitães. Eles se unem às tropas, direcionando-as, orientando-as e aprendendo com elas. Esses jovens estão em uma faixa etária bastante abrangente, sujeita às pressões do mundo moderno quanto ao sustento, aos relacionamentos e ao entretenimento. Ainda assim, dedicam seu amor reverente à Palavra de Deus, servindo-O em todas as frentes de atuação da igreja: missões de expansão, cuidado com a própria cidade, grupos familiares, reuniões e eventos maiores.",
-          "A Casa de Capitães surgiu a partir de uma palavra do irmão Pedro Dong sobre jovens que acompanham de perto a Palavra, assim como Timóteo, que, ainda muito jovem, começou a servir com sensibilidade ao falar de Paulo, sendo-lhe muito útil e colocando prontamente em prática a Palavra. Os capitães estão na fase de transição entre a adolescência e a idade adulta, ingressando na faculdade ou no mercado de trabalho. Por meio dessa ferramenta, têm a oportunidade de aprender a administrar melhor o tempo, com foco principal na vida espiritual, sem, contudo, deixar de atender às suas obrigações sociais. A Casa de Capitães é um espaço de convivência para esses jovens, onde possam dedicar mais tempo à imersão na palavra profética, realizar colportagem com o objetivo de produzir ofertas para a obra do Senhor e também ser aperfeiçoados na multiplicação, por meio do “Vem e Vê”."
-        ]
-      },
-      {
-        title: "Intendência",
-        paragraphs: [
-          "A Intendência é a parte do exército de Deus formada pelos irmãos da maturidade. Esse serviço surgiu a partir do sentimento e da preocupação do irmão Pedro Dong de envolver todos os irmãos da igreja nos serviços. Com o avanço da Casa de Adolescentes e, posteriormente, da Casa de Capitães, foi lançado um desafio aos irmãos da maturidade — principalmente os acima de 55 anos — para que se envolvessem no mover atual, acompanhando mais de perto a palavra profética e servindo com sensibilidade às necessidades, aptidões e características dessa faixa etária.",
-          "Como em um exército, tropas e capitães não podem avançar sem um apoio logístico adequado, almentação, ordem e carinho, necessidades essenciais para o funcionamento das Casas de Adolescentes e de Capitães. As atividades permitem que os irmãos e as irmãs dessa faixa etária sirvam com tranquilidade, sem perder o sentimento de pertencimento a algo muito maior e mais importante: a Obra do Senhor."
-        ]
-      }
-    ]
-  },
-  {
-    title: "Fábrica de Vencedores Kids",
-    paragraphs: [
-      "A Fábrica de Vencedores Kids é um projeto que tem como objetivo fortalecer o ministério infantil das igrejas, fornecendo ferramentas para que as crianças gravem a Palavra de Deus em seu coração, vivam essa Palavra na prática e preguem o evangelho. O projeto fortalece a identidade da criança como filho de Deus e soldado mirim do Rei, proporcionando um ambiente no qual, com a ajuda de diferentes recursos, elas possam internalizar a Palavra diariamente e desenvolver um coração missionário, que anseie pela volta do Senhor. Assim, tornam-se exemplo e luz em casa, na escola e em qualquer lugar onde estiverem. Para fortalecer ainda mais o cuidado semanal às crianças foi criada, também a Casa Kids.",
-      "A Casa Kids, semelhantemente à Casa de Adolescentes e a Casa de Capitães,  busca formar crianças para cooperarem com a obra de Deus e se tornarem adolescentes que influenciem positivamente a sociedade. Com a prática da Fábrica de Vencedores Kids, o número de crianças engajadas com a Palavra de Deus cresceu significativamente. O projeto também colabora com a formação do caráter e do aspecto social, visto que, após a preparação necessária para essa finalidade, poderá acolher crianças que se encontrarem em situação de vulnerabilidade e, além disso, auxiliar na formação escolar dos seus participantes."
-    ],
-    imagesUrls: ["https://picsum.photos/200/300?random=1", "https://picsum.photos/200/300?random=1"]
-  },
-  {
-    title: "Rede de Cuidado e Central de acolhimento",
-    paragraphs: [
-      "A intensa atuação do Espírito, por meio dos missionários que estão nas ruas pregando o evangelho, alcançou muitas pessoas que manifestaram interesse em conhecer mais a Deus e Sua obra. Com isso, fez-se necessário estruturar um serviço nas igrejas que ofereça apoio e suprimento de amor às pessoas alcançadas. O cuidado consiste em apascentar e pastorear essas almas com orações, conversas e ministração da palavra, para que elas encontrem o caminho espiritual rumo a uma viver pleno no Corpo de Cristo.",
-      "Com o objetivo de servir ao Senhor com excelência e agilizar o cuidado, integrando os novos irmãos ao viver da igreja foi criado o Sistema de Gerenciamento da Central de Acolhimento e Rede de Cuidado, já presente e atuante em quase todos os estados do Brasil, além de países da América Latina, Europa e Estados Unidos."
-    ]
-  },
-  {
-    title: "Editora Árvore da Vida",
-    paragraphs: [
-      "A Editora Árvore da Vida iniciou suas atividades em 1975, inicialmente sob o nome de Editora Gospel. Posteriormente, passou a se chamar Editora Restauração e, mais tarde, Editora Fonte da Vida, até adotar definitivamente o nome atual em 1978, juntamente com o slogan “A preciosidade colocada em livros”. No início, a editora focava-se principalmente na publicação de livros do irmão Dong Yu Lan, missão que continuou até seu falecimento, em setembro de 2017. Desde então, passou a publicar os escritos do irmão Pedro Dong.",
-      "O objetivo da editora é registrar, em livros, a palavra profética ministrada pelo Espírito Santo através de Seus servos, com o propósito de gerar e edificar igrejas. Suas obras têm como foco, além da revelação e da direção espiritual, a prática da palavra na vida normal da igreja. Os livros ajudam o leitor a extrair o Espírito e a vida da palavra por meio da ruminação.",
-      "As publicações, originalmente escritas em português, são traduzidas para vários idiomas, incluindo espanhol, inglês, francês, italiano, coreano, alemão, romeno e húngaro. A Editora Árvore da Vida já lançou cerca de mil títulos e alcançou a marca de aproximadamente 25 milhões de livros vendidos."
-    ],
-    imagesUrls: ["https://picsum.photos/200/300?random=1", "https://picsum.photos/200/300?random=1"]
-  },
-  {
-    title: "Estância Árvore da Vida",
-    paragraphs: [
-      "A serviço do Instituto Vida Para Todos, a Estância Árvore da Vida (EAV) é um espaço dedicado à realização de eventos cristãos e empresariais. Com uma área de 35 alqueires, a EAV conta com mais de quatro décadas de experiência no acolhimento de grandes encontros e conferências.",
-      "Desde sua inauguração, em setembro de 1980, idealizada pelo irmão Dong Yu Lan, a Estância tem sido um lugar estratégico para a união e a edificação do Corpo de Cristo. Seu surgimento atendeu à necessidade de um local próprio para as conferências espirituais, sem depender de aluguéis externos. Após muita oração e busca, a Estância foi encontrada e, desde então, tornou-se um marco para a obra do Senhor.",
-      "Com capacidade para receber de 100 a 10 mil pessoas, a estrutura da EAV é completa e funcional: são 11 salas, salões e auditórios climatizados; mais de 5.500 leitos disponíveis; restaurantes com cozinha industrial capazes de servir até 10 mil refeições por turno; além de áreas de lazer, centro de convivência, serviços informatizados e um dos maiores auditórios da América Latina.",
-      "Ao longo dos anos, a Estância tem recebido cerca de 200 mil pessoas por ano, realizando, em média, de 15 a 20 eventos anuais, o que totaliza mais de 475 eventos desde 1998. Hoje, é o principal local de realização das conferências do Ministério da Palavra, reunindo anualmente cerca de 20 mil pessoas. Mais do que um centro de eventos, a Estância Árvore da Vida é um lugar onde vidas são transformadas."
-    ],
-    imagesUrls: [
-      "https://picsum.photos/200/300?random=1",
-      "https://picsum.photos/200/300?random=1",
-      "https://picsum.photos/200/300?random=1"
-    ]
-  }
-]
+import FancyTitle from "@/components/fancy-title/FancyTitle"
+import Carousel from "@/components/carousel/Carousel"
+import { useProjectsStore } from "@/stores/ProjectsStoreContext"
+import { Project } from "@/stores/projects-store"
 
 const ProjectsWrapper = styled.div`
   background-color: var(--primary-color);
@@ -161,17 +12,49 @@ const ProjectsWrapper = styled.div`
   padding: 100px 32px;
 `
 
+const ImageWrapper = styled.div<{ url: string }>`
+  width: 300px;
+  height: 250px;
+  background-image: url(${props => props.url});
+  background-size: cover;
+  background-position: center;
+`
+
 export default function ProjectsSection() {
+  const projects = useProjectsStore(state => state.projects)
+  const getProjects = useProjectsStore(state => state.getProjects)
+
+  useEffect(() => {
+    getProjects()
+  }, [getProjects])
+
   return (
     <ProjectsWrapper>
-      {DATA.map((project, index) => (
-        <ProjecttDetail
-          key={index}
-          title={project.title}
-          // titleIcon={project.titleIcon}
-          paragraphs={project.paragraphs}
-          imagesUrls={project.imagesUrls}
-        />
+      {projects.map((project, index) => (
+        <div key={index}>
+          <FancyTitle title={project.title} />
+          {project.paragraphs.map((content: string, idx: number) => (
+            <p key={idx}>{content}</p>
+          ))}
+          {project.subProjects && project.subProjects.length > 0 && (
+            <div>
+              {project.subProjects.map((sub: Project, subIdx: number) => (
+                <div key={subIdx}>
+                  <h3>{sub.title}</h3>
+                  {sub.paragraphs &&
+                    sub.paragraphs.map((subPara: string, paraIdx: number) => <p key={paraIdx}>{subPara}</p>)}
+                </div>
+              ))}
+            </div>
+          )}
+          {project.imagesUrls && project.imagesUrls.length > 0 && (
+            <Carousel>
+              {project.imagesUrls.map((url: string, idx: number) => (
+                <ImageWrapper url={url} key={idx} />
+              ))}
+            </Carousel>
+          )}
+        </div>
       ))}
     </ProjectsWrapper>
   )

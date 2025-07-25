@@ -6,16 +6,19 @@ import "../styles/colors.css"
 import "../styles/configuration.css"
 import TopBar from "@/layout/TopBar"
 import Footer from "@/layout/Footer"
+import { ProjectsStoreProvider } from "@/stores/ProjectsStoreContext"
 
 function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
 
   return (
-    <NextIntlClientProvider locale={router.locale} messages={pageProps.messages}>
-      <TopBar />
-      <Component {...pageProps} />
-      <Footer />
-    </NextIntlClientProvider>
+    <ProjectsStoreProvider>
+      <NextIntlClientProvider locale={router.locale} messages={pageProps.messages}>
+        <TopBar />
+        <Component {...pageProps} />
+        <Footer />
+      </NextIntlClientProvider>
+    </ProjectsStoreProvider>
   )
 }
 
