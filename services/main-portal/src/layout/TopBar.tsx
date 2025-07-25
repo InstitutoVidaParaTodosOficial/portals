@@ -6,7 +6,7 @@ import { useRouter } from "next/router"
 import Logo from "./assets/logo.png"
 import NavMenu from "./NavMenu"
 
-const TopBarWrapper = styled.div<{ scrolled: boolean }>`
+const TopBarWrapper = styled.div<{ $scrolled: boolean }>`
   display: flex;
   position: fixed;
   box-sizing: border-box;
@@ -19,11 +19,11 @@ const TopBarWrapper = styled.div<{ scrolled: boolean }>`
   justify-content: space-between;
   align-items: center;
   padding: 16px 24px;
-  background-color: ${({ scrolled }) => (scrolled ? "var(--primary-color)" : "transparent")};
+  background-color: ${({ $scrolled }) => ($scrolled ? "var(--primary-color)" : "transparent")};
   transition:
     background-color 0.2s,
     box-shadow 0.2s;
-  box-shadow: ${({ scrolled }) => (scrolled ? "0 2px 12px 0 rgba(0,0,0,0.18)" : "none")};
+  box-shadow: ${({ $scrolled }) => ($scrolled ? "0 2px 12px 0 rgba(0,0,0,0.18)" : "none")};
 `
 
 const LogoWrapper = styled.div`
@@ -47,7 +47,7 @@ export default function TopBar() {
   }, [])
 
   return (
-    <TopBarWrapper scrolled={scrolled}>
+    <TopBarWrapper $scrolled={scrolled}>
       <LogoWrapper onClick={() => router.push("/")}>
         <Image src={Logo} alt="Website Logo" width={200} />
       </LogoWrapper>
