@@ -1,7 +1,7 @@
 import React from "react"
 import { useTranslations } from "next-intl"
 import styled from "styled-components"
-import logoCrown from "./assets/logoCrown.svg"
+import logoCrown from "@/pages/assets/logoCrown.svg"
 import { Blinker } from "next/font/google"
 
 const DEFAULT_SIDE_PADDING = "10%"
