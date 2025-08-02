@@ -1,10 +1,9 @@
 import styled from "styled-components"
-import logoCrown from "@/pages/assets/logoCrown.svg"
-import BackgroundImage from "./assets/background.svg"
-import GradientImage from "./assets/background-gradient.svg"
+import BackgroundImage from "./assets/background.jpg"
 import MayIPrayForYouButton from "@/components/may-i-pray-for-you-button/MayIPrayForYouDarkButton.tsx"
 import { Colors } from "@/styles/types"
 import { Blinker } from "next/font/google"
+import HorizontalLine from "@/components/HorizontalLine/HorizontalLine"
 
 const blinker = Blinker({
   subsets: ["latin"],
@@ -14,10 +13,8 @@ const blinker = Blinker({
 
 const MayIPrayForYouContainer = styled.div`
   font-family: ${blinker.style.fontFamily};
-  position: relative;
-  min-height: 100vh;
-  width: 100vw;
-  background: var(${Colors.primaryColor});
+  color: var(${Colors.lightGray});
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,115 +22,34 @@ const MayIPrayForYouContainer = styled.div`
   padding: 32px 16px;
   overflow: hidden;
 
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: url(${BackgroundImage.src});
-    background-size: cover;
-    background-position: center;
-    z-index: 0;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: url(${GradientImage.src});
-    background-size: cover;
-    background-position: center;
-    z-index: 1;
-    pointer-events: none;
-  }
-
-  > * {
-    position: relative;
-    z-index: 2;
-  }
-`
-
-const FirstTextContainer = styled.div`
-  width: 838px;
-  height: 170px;
-`
-
-const MainText = styled.h2`
-  color: var(${Colors.lightGray});
-  font-size: 32px;
-  font-weight: 400;
-  text-align: center;
-  letter-spacing: 0%;
-`
-const SecondTextContainer = styled.div`
-  width: 956px;
-  height: 244px;
-`
-
-const SubText = styled.p`
-  color: var(${Colors.lightGray});
-  font-size: 24px;
-  text-align: center;
-  weight: 400px;
-  letter-spacing: 0%;
-`
-
-const DividerContainer = styled.div`
-  width: 100%;
-  max-width: 500px;
-  position: relative;
-  margin: 32px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`
-
-const Line = styled.hr`
-  width: 100vw;
-  border: none;
-  border-top: 1px solid var(${Colors.lightGray});
-  margin-left: -25vw;
-  margin-right: -25vw;
-`
-
-const LogoWrapper = styled.div`
-  width: 105px;
-  height: 103px;
-  border: 1px solid var(${Colors.lightGray});
-  border-radius: 50%;
-  display: center;
-  background: var(${Colors.primaryColor});
-  background-image: url(${logoCrown.src});
-  background-size: 70%;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  background-color: var(${Colors.primaryColor});
+  background: url(${BackgroundImage.src});
+  background-size: cover;
+  background-position: bottom;
 `
 
 export default function HomePage() {
   return (
     <MayIPrayForYouContainer>
-      <FirstTextContainer>
-        <SubText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua...
-        </SubText>
-      </FirstTextContainer>
-      <DividerContainer>
-        <Line />
-        <LogoWrapper></LogoWrapper>
-      </DividerContainer>
-      <SecondTextContainer>
-        <MainText>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+      </p>
+
+      <HorizontalLine />
+
+      <div>
+        <h2>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua.
-        </MainText>
-        <SubText>
+        </h2>
+        <p>
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
-        </SubText>
-      </SecondTextContainer>
+        </p>
+      </div>
       <MayIPrayForYouButton />
     </MayIPrayForYouContainer>
   )
