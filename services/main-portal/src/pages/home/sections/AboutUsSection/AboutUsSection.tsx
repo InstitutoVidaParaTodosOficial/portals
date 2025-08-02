@@ -1,8 +1,8 @@
 import React from "react"
 import { useTranslations } from "next-intl"
 import styled from "styled-components"
-import logoCrown from "@/pages/assets/logoCrown.svg"
 import { Blinker } from "next/font/google"
+import CircleLogo from "@/components/circle-logo/CircleLogo"
 
 const DEFAULT_SIDE_PADDING = "10%"
 
@@ -13,19 +13,12 @@ const blinker = Blinker({
 })
 
 const LogoWrapper = styled.div`
-  position: absolute;
+  //position: absolute;
   left: 50%;
-  width: 120px;
-  height: 120px;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  transform: translate(0, -50%);
   z-index: 2;
-  background-color: var(--primary-color);
-  background-image: url(${logoCrown.src});
-  background-size: 75%;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
-  border: 10px solid var(--background-color);
+  //border: 10px solid var(--background-color);
 `
 
 const AboutUsContainer = styled.section`
@@ -69,7 +62,9 @@ export default function AboutUsSection() {
         <p>{t("summary")}</p>
       </TopSection>
 
-      <LogoWrapper />
+      <LogoWrapper>
+        <CircleLogo size={120} borderSize={10} />
+      </LogoWrapper>
 
       <BottomSection>
         <TitleWrapper>
