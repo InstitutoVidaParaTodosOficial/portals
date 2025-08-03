@@ -29,5 +29,19 @@
     "title": "Nuestra Misión",
     "subtitle": "Además de su función evangelística, el IVPT cumple un papel jurídico y administrativo dentro de la obra, o en los diversos frentes de trabajo que conocerás a continuación.",
     "descripttion": "Para cumplir plenamente su misión, el IVPT coopera con todas las herramientas disponibles: Colportaje, PAC, CEAPE, Misiones Extranjeras, Expolibro, TCI, Fábrica de Ganadores Kids, Red de Cuidado y Centro de Recepción, Editorial Árbol de la Vida, Inversionistas del Reino y Granja Árbol de la Vida, trabajando en unidad para que el evangelio del reino sea predicado en toda la tierra, para traer a nuestro Señor de regreso un día antes."
+  },
+  "kingdom-investors": {
+    "title": "Inversionistas del Reino",
+    "subtitle": "¡Conviértete también en un Inversionista del Reino!",
+    "description": "Así como Dios ha bendecido grandemente la expansión de la obra en todas las regiones del mundo, especialmente en África y Asia, la necesidad de enviar misioneros ha aumentado significativamente.\n\nAunque IVPT tiene cobertura digital en todos los territorios del planeta, para que el árbol de la iglesia sea plantado y crezca, llevando el beneficio de la vida de Dios a todos y cumpliendo el deseo del corazón de Dios, nuestro equipo de avanzada necesita estar en las calles, llevando la palabra profética, estableciendo centros de trabajo, promoviendo el colportaje y levantando misioneros locales para consolidar estas regiones.",
+    "details": "Enviar misioneros implica la compra de pasajes, alojamiento, alimentación, logística, transporte, así como el alquiler de casas para colportores, la compra y construcción de centros de trabajo (en Europa, Norteamérica, África y Asia) y la impresión de libros.\n\nPara apoyar este maravilloso frente de trabajo, se creó el proyecto **INVERSIONISTAS DEL REINO**, que consiste en ofrendas mensuales determinadas por cuotas de R$ 500,00. Muchas personas han sido conquistadas por este proyecto y se han convertido en Inversionistas del Reino.\n\n**Así, el enfoque principal es tener una base financiera que pueda sostener la predicación del evangelio del reino en toda la tierra.**",
+    "videos": {
+      "introduction": "Ie834rxik4w",
+      "show_case": "Ie834rxik4w"
+    },
+    "call_to_action": {
+      "title": "¿Y tú? ¿Qué esperas para ser parte de esta maravillosa causa? ¡Conviértete también en un Inversionista del Reino!",
+      "button": "Toma tus cuotas y visita **www.investidoresdoreino.com.br**"
+    }
   }
 }
