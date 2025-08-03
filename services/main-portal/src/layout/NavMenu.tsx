@@ -23,16 +23,16 @@ type MenuItem = {
 
 const MENU_ITEMS: MenuItem[] = [
   {
-    name: "about-us",
-    path: "/about-us"
+    name: "home",
+    path: "/"
   },
   {
-    name: "news-feed",
-    path: "/news-feed"
+    name: "kingdom-investors",
+    path: "/kingdom-investors"
   },
   {
-    name: "donations",
-    path: "/donations"
+    name: "missionary",
+    path: "/become-a-missionary"
   }
 ]
 

@@ -1,14 +1,8 @@
 {
   "welcome": "Welcome to the main portal!",
   "nav-menu": {
-    "about-us": "About Us",
-    "agenda": "Agenda",
-    "donations": "Donations",
-    "find-us": "Find Us",
-    "ministry": "Ministry",
-    "news-feed": "News Feed",
-    "projects": "Projects",
-    "search": "Search",
+    "home": "Home",
+    "missionary": "Become a Ministry",
     "kingdom-investors": "Kingdom Investors"
   },
   "sections": {
