@@ -1,14 +1,8 @@
 {
   "welcome": "Bem-vindo ao portal principal",
   "nav-menu": {
-    "about-us": "Sobre nós",
-    "agenda": "Agenda",
-    "donations": "Central de Ofertas",
-    "find-us": "Encontre-nos",
-    "ministry": "Ministérios",
-    "news-feed": "Notícias",
-    "projects": "Projetos",
-    "search": "Pesquisa",
+    "home": "Home",
+    "missionary": "Sejá um Missionário",
     "kingdom-investors": "Investidores do Reino"
   },
   "sections": {
