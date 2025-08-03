@@ -1,3 +1,9 @@
+import HeroSection from "@/pages/kingdom-investors/sections/HeroSection/HeroSection"
+
 export default function IndexPage() {
-  return <h1>Donations</h1>
+  return (
+    <>
+      <HeroSection />
+    </>
+  )
 }
