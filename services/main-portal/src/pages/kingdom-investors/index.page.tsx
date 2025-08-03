@@ -16,7 +16,6 @@ const PageWrapper = styled.div`
 const VideoPlayerWrapper = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: -64px;
 `
 
 const CallToActionSection = styled.section`
@@ -25,6 +24,7 @@ const CallToActionSection = styled.section`
   align-items: center;
   text-align: center;
   padding: 0 72px;
+  margin-bottom: 32px;
 `
 
 const CallToActionButton = styled.button`
@@ -43,14 +43,12 @@ const CallToActionButton = styled.button`
 export default function IndexPage() {
   const t = useTranslations("kingdom-investors")
 
-  const videoId = t("videos.introduction")
-
   return (
     <PageWrapper>
       <HeroSection />
 
-      <VideoPlayerWrapper>
-        <YouTubeVideoPlayer videoId={videoId} />
+      <VideoPlayerWrapper style={{ marginTop: "-64px" }}>
+        <YouTubeVideoPlayer videoId={t("videos.introduction")} />
       </VideoPlayerWrapper>
 
       <section>
@@ -67,6 +65,10 @@ export default function IndexPage() {
           <ReactMarkdown>{t("call_to_action.button")}</ReactMarkdown>
         </CallToActionButton>
       </CallToActionSection>
+
+      <VideoPlayerWrapper>
+        <YouTubeVideoPlayer videoId={t("videos.show_case")} />
+      </VideoPlayerWrapper>
     </PageWrapper>
   )
 }
