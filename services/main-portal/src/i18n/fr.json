@@ -6,6 +6,7 @@
     "kingdom-investors": "Investisseurs du Royaume"
   },
   "sections": {
+    "may_i_pray_for_you": "Puis-je prier pour vous?",
     "contact": {
       "headline": "Contactez-nous",
       "subtitle": "Contact",
@@ -17,10 +18,6 @@
         "city": "Ville",
         "state": "État",
         "country": "États-Unis"
-      },
-      "pray": {
-        "call_to_action": "Puis-je prier pour vous ?",
-        "action_button": "Cliquez ici"
       }
     }
   },
