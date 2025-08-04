@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown"
 
 import HeroSection from "@/pages/kingdom-investors/sections/HeroSection/HeroSection"
 import YouTubeVideoPlayer from "@/components/youtube-video-player/YouTubeVideoPlayer"
+import MayIPrayForYouButton from "@/components/may-i-pray-for-you-button/MayIPrayForYouButton"
 
 const PageWrapper = styled.div`
   color: var(--primary-color);
@@ -40,6 +41,12 @@ const CallToActionButton = styled.button`
   }
 `
 
+const MayIPrayForYouWrapper = styled.section`
+  display: flex;
+  justify-content: center;
+  margin: 32px 0;
+`
+
 export default function IndexPage() {
   const t = useTranslations("kingdom-investors")
 
@@ -69,6 +76,10 @@ export default function IndexPage() {
       <VideoPlayerWrapper>
         <YouTubeVideoPlayer videoId={t("videos.show_case")} />
       </VideoPlayerWrapper>
+
+      <MayIPrayForYouWrapper>
+        <MayIPrayForYouButton textColor="var(--primary-color)" />
+      </MayIPrayForYouWrapper>
     </PageWrapper>
   )
 }
