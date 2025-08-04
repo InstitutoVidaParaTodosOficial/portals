@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import BackgroundImage from "./assets/background.jpg"
-import MayIPrayForYouButton from "@/components/may-i-pray-for-you-button/MayIPrayForYouDarkButton.tsx"
+import MayIPrayForYouButton from "@/components/may-i-pray-for-you-button/MayIPrayForYouButton.tsx"
 import { Colors } from "@/styles/types"
 import { Blinker } from "next/font/google"
 import HorizontalLine from "@/components/HorizontalLine/HorizontalLine"
