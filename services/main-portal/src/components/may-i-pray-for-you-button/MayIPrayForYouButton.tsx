@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import ArrowIcon from "./assets/Icon.svg"
 import { Colors } from "@/styles/types"
+import { useTranslations } from "next-intl"
 
 interface MayIPrayForYouButtonProps {
   textColor?: string
@@ -49,9 +50,10 @@ const Icon = styled.img`
 `
 
 export default function MayIPrayForYouButton({ textColor }: MayIPrayForYouButtonProps) {
+  const t = useTranslations("sections")
   return (
     <Button type="button" $color={textColor}>
-      <Text $color={textColor}>Posso orar por você?</Text>
+      <Text $color={textColor}>{t("may_i_pray_for_you")}</Text>
       <IconBox $color={textColor}>
         <Icon src={ArrowIcon.src} alt="Icon" />
       </IconBox>
