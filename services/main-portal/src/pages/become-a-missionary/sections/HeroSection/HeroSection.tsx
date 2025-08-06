@@ -19,6 +19,7 @@ const HeroSectionContainer = styled.section`
   left: 9rem;
   right: 6rem;
   font-family: ${blinker.style.fontFamily};
+  color: var(--white);
 
   h1 {
     font-size: 2rem;
@@ -47,8 +48,6 @@ const HeroBackgroundWrapper = styled.section`
   background-image: url(${BackgroundImageFile.src});
   background-size: cover;
   background-position: center;
-  color: var(--white);
-  opacity: 1.5;
 `
 
 const HeroComasWrapper = styled.section`
@@ -59,7 +58,7 @@ const HeroComasWrapper = styled.section`
 `
 
 export default function HeroSection() {
-  const t = useTranslations("missionary")
+  const t = useTranslations("become-a-missionary")
 
   const renderWithLineBreaks = (text: string) => {
     return text.split("\n").map((line, index) => (
