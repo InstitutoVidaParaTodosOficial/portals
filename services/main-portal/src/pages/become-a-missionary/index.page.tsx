@@ -1,3 +1,3 @@
 export default function IndexPage() {
-  return <h1>Donations</h1>
+  return <h1>Become a missionary</h1>
 }
