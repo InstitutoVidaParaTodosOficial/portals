@@ -32,7 +32,7 @@ const MENU_ITEMS: MenuItem[] = [
   },
   {
     name: "missionary",
-    path: "/missionary"
+    path: "/become-a-missionary"
   }
 ]
 

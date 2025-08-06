@@ -1,3 +1,9 @@
-export default function IndexPage() {
-  return <h1>Become a missionary</h1>
+import HeroSection from "@/pages/become-a-missionary/sections/HeroSection/HeroSection"
+
+export default function HomePage() {
+  return (
+    <>
+      <HeroSection />
+    </>
+  )
 }
