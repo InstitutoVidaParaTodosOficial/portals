@@ -48,7 +48,7 @@ const HeroBackgroundWrapper = styled.section`
   background-size: cover;
   background-position: center;
   color: var(--white);
-  opacity: 1.5;         
+  opacity: 1.5;
 `
 
 const HeroComasWrapper = styled.section`
