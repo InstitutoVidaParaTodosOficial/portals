@@ -33,6 +33,10 @@ const MENU_ITEMS: MenuItem[] = [
     path: "/"
   },
   {
+    name: "pedro-dong",
+    path: "/pedro-dong"
+  },
+  {
     name: "kingdom-investors",
     path: "/kingdom-investors"
   },
