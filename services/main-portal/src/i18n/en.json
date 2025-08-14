@@ -52,7 +52,10 @@
     },
     "call_to_action": {
       "title": "And you? What are you waiting for to be part of this wonderful cause? Become a Kingdom Investor too!",
-      "button": "Take your quotas and visit **www.investidoresdoreino.com.br**"
+      "button": {
+        "text": "Take your quotas and visit **www.investidoresdoreino.com.br**",
+        "link": "https://forms.gle/mN9DYi1qghNT2ocF6"
+      }
     }
   },
   "become-a-missionary": {
