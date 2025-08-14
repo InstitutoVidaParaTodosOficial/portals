@@ -13,7 +13,10 @@
     "youtube": "https://www.youtube.com/@InstitutoVidaParaTodos"
   },
   "sections": {
-    "may_i_pray_for_you": "제가 당신을 위해 기도해도 될까요?",
+    "may_i_pray_for_you": {
+      "title": "제가 당신을 위해 기도해도 될까요?",
+      "link": "https://qrfacil.me/QqNKW4z5"
+    },
     "contact": {
       "headline": "문의하기",
       "subtitle": "연락처",
