@@ -20,11 +20,15 @@ const Line = styled.hr`
   margin-right: -25vw;
 `
 
-export default function HorizontalLine() {
+type HorizontalLineProps = {
+  logoSize: number
+}
+
+export default function HorizontalLine({ logoSize = 90 }: HorizontalLineProps) {
   return (
     <Container>
       <Line />
-      <CircleLogo />
+      <CircleLogo size={logoSize} />
     </Container>
   )
 }
