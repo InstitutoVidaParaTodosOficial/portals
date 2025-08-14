@@ -19,6 +19,12 @@ const NavMenuItemsList = styled.ul`
 type MenuItem = {
   name: string
   path: string
+  target?: HrefTarget
+}
+
+enum HrefTarget {
+  BLANK = "_blank",
+  SELF = "_self"
 }
 
 const MENU_ITEMS: MenuItem[] = [
@@ -33,6 +39,11 @@ const MENU_ITEMS: MenuItem[] = [
   {
     name: "missionary",
     path: "/become-a-missionary"
+  },
+  {
+    name: "immersion",
+    path: "https://oquetemosvistoeouvido.com.br/",
+    target: HrefTarget.BLANK
   }
 ]
 
@@ -55,13 +66,21 @@ export default function NavMenu() {
     router.push(router.asPath, router.asPath, { locale: newLocale })
   }
 
+  const handleNavItemClick = (item: MenuItem) => {
+    if (item.target === HrefTarget.BLANK) {
+      window.open(item.path, item.target)
+    } else {
+      router.push(item.path)
+    }
+  }
+
   return (
     <NavMenuWrapper>
       <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
         <NavMenuItemsList>
           {MENU_ITEMS.map((item, index) => (
             <li key={index}>
-              <a onClick={() => router.push(item.path)}>{t(item.name)}</a>
+              <a onClick={() => handleNavItemClick(item)}>{t(item.name)}</a>
             </li>
           ))}
         </NavMenuItemsList>
