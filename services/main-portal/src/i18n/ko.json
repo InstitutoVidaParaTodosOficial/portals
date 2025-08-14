@@ -52,7 +52,10 @@
     },
     "call_to_action": {
       "title": "그리고 당신은요? 이 놀라운 사역의 일부가 되기 위해 무엇을 기다리고 계신가요? 여러분도 킹덤 투자자가 되세요!",
-      "button": "할당금을 신청하고 **www.investidoresdoreino.com.br**를 방문하세요"
+      "button": {
+        "text": "할당금을 신청하고 **www.investidoresdoreino.com.br**를 방문하세요",
+        "link": "https://forms.gle/mN9DYi1qghNT2ocF6"
+      }
     }
   },
   "become-a-missionary": {

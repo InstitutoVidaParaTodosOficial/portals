@@ -52,7 +52,10 @@
     },
     "call_to_action": {
       "title": "Et vous ? Qu'attendez-vous pour faire partie de cette merveilleuse cause ? Devenez aussi un Investisseur du Royaume !",
-      "button": "Prenez vos quotas et visitez **www.investidoresdoreino.com.br**"
+      "button": {
+        "text": "Prenez vos quotas et visitez **www.investidoresdoreino.com.br**",
+        "link": "https://forms.gle/mN9DYi1qghNT2ocF6"
+      }
     }
   },
   "become-a-missionary": {

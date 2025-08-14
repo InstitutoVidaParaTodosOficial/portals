@@ -50,6 +50,11 @@ const MayIPrayForYouWrapper = styled.section`
 export default function IndexPage() {
   const t = useTranslations("kingdom-investors")
 
+  const onKingdomInvestorsButtonClick = () => {
+    const link = t("call_to_action.button.link")
+    window.open(link, "_blank")
+  }
+
   return (
     <PageWrapper>
       <HeroSection />
@@ -68,8 +73,8 @@ export default function IndexPage() {
 
       <CallToActionSection>
         <h2 style={{ textAlign: "center" }}>{t("call_to_action.title")}</h2>
-        <CallToActionButton type="button">
-          <ReactMarkdown>{t("call_to_action.button")}</ReactMarkdown>
+        <CallToActionButton type="button" onClick={onKingdomInvestorsButtonClick}>
+          <ReactMarkdown>{t("call_to_action.button.text")}</ReactMarkdown>
         </CallToActionButton>
       </CallToActionSection>
 
