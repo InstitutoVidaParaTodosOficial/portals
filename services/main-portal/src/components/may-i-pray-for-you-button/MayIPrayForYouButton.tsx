@@ -50,10 +50,16 @@ const Icon = styled.img`
 `
 
 export default function MayIPrayForYouButton({ textColor }: MayIPrayForYouButtonProps) {
-  const t = useTranslations("sections")
+  const t = useTranslations("sections.may_i_pray_for_you")
+
+  const onClickHandler = () => {
+    const link = t("link")
+    window.open(link, "_blank", "noopener,noreferrer")
+  }
+
   return (
-    <Button type="button" $color={textColor}>
-      <Text $color={textColor}>{t("may_i_pray_for_you")}</Text>
+    <Button type="button" $color={textColor} onClick={onClickHandler}>
+      <Text $color={textColor}>{t("title")}</Text>
       <IconBox $color={textColor}>
         <Icon src={ArrowIcon.src} alt="Icon" />
       </IconBox>

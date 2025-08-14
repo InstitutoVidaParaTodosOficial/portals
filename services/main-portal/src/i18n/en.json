@@ -13,7 +13,10 @@
     "youtube": "https://www.youtube.com/@InstitutoVidaParaTodos"
   },
   "sections": {
-    "may_i_pray_for_you": "May I pray for you?",
+    "may_i_pray_for_you": {
+      "title": "May I pray for you?",
+      "link": "https://qrfacil.me/QqNKW4z5"
+    },
     "contact": {
       "headline": "Contact us",
       "subtitle": "Contact",
