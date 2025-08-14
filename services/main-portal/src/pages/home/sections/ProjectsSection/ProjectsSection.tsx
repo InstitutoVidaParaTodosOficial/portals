@@ -11,7 +11,7 @@ import { Project } from "@/stores/projects-store"
 const ProjectsWrapper = styled.div`
   background-color: var(--primary-color);
   color: var(--white);
-  padding: 100px 32px;
+  padding: 100px 32px 0px 32px;
 `
 
 const ImageWrapper = styled.div<{ url: string }>`
