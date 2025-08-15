@@ -4,6 +4,14 @@ const nextConfig = {
     locales: ["en", "es", "fr", "ko", "pt"],
     defaultLocale: "en"
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.institutovidaparatodos.org.br"
+      }
+    ]
+  },
   compiler: {
     styledComponents: true
   },
