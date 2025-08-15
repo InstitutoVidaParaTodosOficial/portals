@@ -60,7 +60,7 @@ export default function IndexPage() {
       <HeroSection />
 
       <VideoPlayerWrapper style={{ marginTop: "-64px" }}>
-        <YouTubeVideoPlayer videoId={t("videos.introduction")} />
+        <YouTubeVideoPlayer maxWidth="560px" videoId={t("videos.introduction")} />
       </VideoPlayerWrapper>
 
       <section>
@@ -79,7 +79,7 @@ export default function IndexPage() {
       </CallToActionSection>
 
       <VideoPlayerWrapper>
-        <YouTubeVideoPlayer videoId={t("videos.show_case")} />
+        <YouTubeVideoPlayer maxWidth="560px" videoId={t("videos.show_case")} />
       </VideoPlayerWrapper>
 
       <MayIPrayForYouWrapper>

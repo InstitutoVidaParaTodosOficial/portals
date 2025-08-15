@@ -19,7 +19,7 @@ export default function WorldMap({
   }
 
   return (
-    <ComposableMap style={{ backgroundColor: "#24314E" }}>
+    <ComposableMap style={{ backgroundColor: "var(--primary-color)" }}>
       <ZoomableGroup filterZoomEvent={handleZoomEvent}>
         {/* World countries */}
         <Geographies geography={geoUrl}>
