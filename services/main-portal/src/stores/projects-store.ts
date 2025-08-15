@@ -10,6 +10,10 @@ export type Project = {
   featuredImageUrl?: string
   imagesUrls?: string[]
   subProjects?: Project[]
+  worldMap?: {
+    countryColorsConfig: Record<string, string>
+    markers: { name: string; coordinates: [number, number] }[]
+  }
 }
 
 export type ProjectState = {

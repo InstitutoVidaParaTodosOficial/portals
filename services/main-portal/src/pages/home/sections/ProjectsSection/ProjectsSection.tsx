@@ -7,6 +7,7 @@ import FancyTitle from "@/components/fancy-title/FancyTitle"
 import Carousel from "@/components/carousel/Carousel"
 import { useProjectsStore } from "@/stores/ProjectsStoreContext"
 import { Project } from "@/stores/projects-store"
+import WorldMap from "@/components/world-map/WorldMap"
 
 const ProjectsWrapper = styled.div`
   background-color: var(--primary-color);
@@ -58,6 +59,13 @@ export default function ProjectsSection() {
                 <ImageWrapper url={url} key={idx} />
               ))}
             </Carousel>
+          )}
+          {project.worldMap && (
+            <WorldMap
+              markers={project.worldMap.markers}
+              countryColors={project.worldMap.countryColorsConfig}
+              loadBrazilianStatesBorders={true}
+            />
           )}
         </div>
       ))}
