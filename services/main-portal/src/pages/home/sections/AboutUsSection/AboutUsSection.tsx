@@ -1,18 +1,11 @@
 import React from "react"
 import { useTranslations } from "next-intl"
 import styled from "styled-components"
-import { Blinker } from "next/font/google"
 import CircleLogo from "@/components/circle-logo/CircleLogo"
 import ReactMarkdown from "react-markdown"
 import WatchPropheticWordYouTube from "@/components/sections/watch-prophetic-word-youtube/WatchPropheticWordYouTube"
 
 const DEFAULT_SIDE_PADDING = "10%"
-
-const blinker = Blinker({
-  subsets: ["latin"],
-  weight: "400",
-  style: "normal"
-})
 
 const LogoWrapper = styled.div`
   left: 50%;
@@ -24,7 +17,6 @@ const LogoWrapper = styled.div`
 const AboutUsContainer = styled.section`
   position: relative;
   text-align: center;
-  font-family: ${blinker.style.fontFamily};
   line-height: 1.7;
   font-size: 1.2rem;
 
