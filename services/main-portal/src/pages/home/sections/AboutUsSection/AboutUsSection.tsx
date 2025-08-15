@@ -3,6 +3,8 @@ import { useTranslations } from "next-intl"
 import styled from "styled-components"
 import { Blinker } from "next/font/google"
 import CircleLogo from "@/components/circle-logo/CircleLogo"
+import ReactMarkdown from "react-markdown"
+import WatchPropheticWordYouTube from "@/components/sections/watch-prophetic-word-youtube/WatchPropheticWordYouTube"
 
 const DEFAULT_SIDE_PADDING = "10%"
 
@@ -13,12 +15,10 @@ const blinker = Blinker({
 })
 
 const LogoWrapper = styled.div`
-  //position: absolute;
   left: 50%;
   width: 100%;
   transform: translate(0, -50%);
   z-index: 2;
-  //border: 10px solid var(--background-color);
 `
 
 const AboutUsContainer = styled.section`
@@ -59,7 +59,7 @@ export default function AboutUsSection() {
   return (
     <AboutUsContainer>
       <TopSection>
-        <p>{t("summary")}</p>
+        <ReactMarkdown>{t("summary")}</ReactMarkdown>
       </TopSection>
 
       <LogoWrapper>
