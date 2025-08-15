@@ -52,11 +52,11 @@ const MENU_ITEMS: MenuItem[] = [
 ]
 
 const LANGUAGES = [
-  { code: "pt", label: "Portuguese", flag: "🇧🇷" },
-  { code: "es", label: "Spanish", flag: "🇪🇸" },
-  { code: "en", label: "English", flag: "🇺🇸" },
-  { code: "fr", label: "French", flag: "🇫🇷" },
-  { code: "ko", label: "Korean", flag: "🇰🇷" }
+  { code: "pt", label: "Portuguese" },
+  { code: "es", label: "Spanish" },
+  { code: "en", label: "English" },
+  { code: "fr", label: "French" },
+  { code: "ko", label: "Korean" }
 ]
 
 export default function NavMenu() {
@@ -95,7 +95,7 @@ export default function NavMenu() {
         >
           {LANGUAGES.map(lang => (
             <option key={lang.code} value={lang.code}>
-              {lang.flag} {lang.label}
+              {lang.label}
             </option>
           ))}
         </select>
