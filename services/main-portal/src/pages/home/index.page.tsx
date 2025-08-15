@@ -6,7 +6,7 @@ import MayIPrayForYouSection from "@/pages/home/sections/MayIPrayForYouSection/M
 export default function HomePage() {
   return (
     <>
-      <HeroSection title="Hello World" />
+      <HeroSection />
       <AboutUsSection />
       <ProjectsSection />
       <MayIPrayForYouSection />
