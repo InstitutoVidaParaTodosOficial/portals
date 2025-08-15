@@ -11,6 +11,7 @@
     "@testing-library/user-event": "13.5.0",
     "@types/jest": "27.5.2",
     "@types/lodash": "4.17.16",
+    "@types/react-simple-maps": "3.0.6",
     "@typescript-eslint/eslint-plugin": "7.13.0",
     "@typescript-eslint/parser": "7.13.0",
     "create-next-app": "14.2.3",
@@ -51,6 +52,7 @@
     "react-markdown": "10.1.0",
     "react-router-dom": "6.30.0",
     "react-scripts": "5.0.1",
+    "react-simple-maps": "3.0.0",
     "styled-components": "6.1.12",
     "typescript": "4.9.5",
     "zustand": "5.0.6"
