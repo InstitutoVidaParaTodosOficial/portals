@@ -52,27 +52,9 @@
       "paragraphs": [
         "O CEAPE (Centro de Aperfeiçoamento para a Propagação do Evangelho) foi estabelecido em 1998, a partir do encargo do irmão Dong Yu Lan, com o propósito de formar e aperfeiçoar trabalhadores para a obra do Senhor. Ele surgiu como resposta à urgente necessidade expressa por Jesus em Mateus 9:37-38: “A seara é grande, mas os trabalhadores são poucos”.",
         "A missão do CEAPE está alinhada à visão bíblica de Mateus 24:14: “E este evangelho do reino será pregado em todo o mundo como testemunho a todas as nações. Então virá o fim”. Assim, o centro existe para produzir discípulos comprometidos com a propagação do evangelho do reino, preparando-os espiritualmente para cumprir o IDE de Jesus (Mateus 28:19-20).",
-        "No CEAPE, os participantes são aperfeiçoados diariamente por meio do estudo da palavra profética, que funciona como luz e direção para o viver cristão, resultando em em uma profunda transformação de vida, capacitando missionários a servirem com excelência, fidelidade e compromisso com a missão de Deus. O centro valoriza o desenvolvimento de um coração simples, humilde e reverente à Palavra de Deus, como está escrito em Isaías 66:2: “Todavia, para este homem eu olharei, para aquele que é pobre e de um espírito humilde, e treme diante da minha palavra.\" (BKJ)."
+        "No CEAPE, os participantes são aperfeiçoados diariamente por meio do estudo da palavra profética, que funciona como luz e direção para o viver cristão, resultando em em uma profunda transformação de vida, capacitando missionários a servirem com excelência, fidelidade e compromisso com a missão de Deus. O centro valoriza o desenvolvimento de um coração simples, humilde e reverente à Palavra de Deus, como está escrito em Isaías 66:2: “Todavia, para este homem eu olharei, para aquele que é pobre e de um espírito humilde, e treme diante da minha palavra.\" (BKJ).",
+        "**Onde o CEAPE esta presente?**"
       ],
-      "imagesUrls": [
-        "https://picsum.photos/200/300?random=1",
-        "https://picsum.photos/200/300?random=1",
-        "https://picsum.photos/200/300?random=1",
-        "https://picsum.photos/200/300?random=1",
-        "https://picsum.photos/200/300?random=1"
-      ]
-    },
-    {
-      "title": "Missões no Exterior",
-      "logo": {
-        "url": "https://cdn.institutovidaparatodos.org.br/projects/logos/missoes-exterior.png"
-      },
-      "order": 1,
-      "paragraphs": [
-        "O Projeto  Missões no Exterior volta dos anos 2000, quando o servo de Deus Dong Yu Lan, ao receber a revelação sobre o Filho Varão de Apocalipse 12, sentiu claramente do evangelho do reino precisava alcançar o continente africano e sucessivamente na Europa e na América do Norte. Nesses 25 anos de projeto, temos mais de 100 missionários espalhados por todos os continentes da terra para pregar o Evangelho do Reino por toda a Terra habitada  trazer nosso Senhor de volta  um dia mais cedo. ( Mt 24.14)",
-        "Nossos missionários são jovens formados no CEAPE e, aqueles que recebem esse chamamento de Deus, para servirem em outros países, são  enviados para nossas bases consolidadas, com toda estrutura para recebe-los em mais de 30 países. Ali eles trabalham de cidade em cidade, de pais em pais levando a semente da vida no coração da pessoas através de uma literatura espiritual saudável."
-      ],
-      "imagesUrls": ["https://picsum.photos/200/300?random=1", "https://picsum.photos/200/300?random=1"],
       "worldMap": {
         "countryColorsConfig": {
           "Brazil": "var(--primary-color)",
@@ -120,6 +102,18 @@
           { "name": "Paraiba", "coordinates": [-34.8631, -7.1153] }
         ]
       }
+    },
+    {
+      "title": "Missões no Exterior",
+      "logo": {
+        "url": "https://cdn.institutovidaparatodos.org.br/projects/logos/missoes-exterior.png"
+      },
+      "order": 1,
+      "paragraphs": [
+        "O Projeto  Missões no Exterior volta dos anos 2000, quando o servo de Deus Dong Yu Lan, ao receber a revelação sobre o Filho Varão de Apocalipse 12, sentiu claramente do evangelho do reino precisava alcançar o continente africano e sucessivamente na Europa e na América do Norte. Nesses 25 anos de projeto, temos mais de 100 missionários espalhados por todos os continentes da terra para pregar o Evangelho do Reino por toda a Terra habitada  trazer nosso Senhor de volta  um dia mais cedo. ( Mt 24.14)",
+        "Nossos missionários são jovens formados no CEAPE e, aqueles que recebem esse chamamento de Deus, para servirem em outros países, são  enviados para nossas bases consolidadas, com toda estrutura para recebe-los em mais de 30 países. Ali eles trabalham de cidade em cidade, de pais em pais levando a semente da vida no coração da pessoas através de uma literatura espiritual saudável."
+      ],
+      "imagesUrls": ["https://picsum.photos/200/300?random=1", "https://picsum.photos/200/300?random=1"]
     },
     {
       "title": "EXPOLIVRO: Levando Cultura, Educação e Leitura para Todo o Brasil",
