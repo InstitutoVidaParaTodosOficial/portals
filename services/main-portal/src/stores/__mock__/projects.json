@@ -2,6 +2,7 @@
   "pt": [
     {
       "title": "Colportagem",
+      "order": 3,
       "titleIcon": "https://picsum.photos/200/300?random=1",
       "paragraphs": [
         "A palavra colportor tem origem no francês colporteur, que significa \"carregar no pescoço\", remetendo ao método utilizado por Pedro Valdo (1140–1205), comerciante de Lyon e líder dos valdenses. Ele promovia a distribuição das Escrituras ao perceber a necessidade espiritual das pessoas. Para isso, confeccionou bolsas tiracolo, usadas sob a roupa, por vendedores que levavam porções manuscritas da Bíblia, pois ainda não existia a imprensa. Valdo entendia que a Palavra precisava ser acessível, disponível a todos, e não apenas a uma minoria privilegiada, pois, quanto mais a lia e desfrutava dela, mais crescia em seu interior o desejo e o encargo de divulgá-la.",
@@ -24,6 +25,7 @@
     },
     {
       "title": "PAC - Posto Avançado de Colportagem",
+      "order": 4,
       "paragraphs": [
         "O PAC é um centro de aperfeiçoamento para colportores que já atuam como missionários em tempo integral, com o objetivo de melhorar sua prática diária para que alcancem mais pessoas a cada dia. É uma das ferramentas da obra do Senhor!",
         "O PAC surgiu em 2017 quando um pequeno grupo de missionários que cuidavam do irmão Dong Yu Lan receberam uma palavra profética dizendo que eles eram colportores. Eles creram nesta palavra e o Senhor confirmou através de sinais, prodígios e milagres! Eles foram para as ruas e em 3 dias alcançaram mais de 500 pessoas com orações e com a palavra escrita.",
@@ -39,6 +41,7 @@
     },
     {
       "title": "CEAPE – Centro de Aperfeiçoamento para a Propagação do Evangelho",
+      "order": 2,
       "paragraphs": [
         "O CEAPE (Centro de Aperfeiçoamento para a Propagação do Evangelho) foi estabelecido em 1998, a partir do encargo do irmão Dong Yu Lan, com o propósito de formar e aperfeiçoar trabalhadores para a obra do Senhor. Ele surgiu como resposta à urgente necessidade expressa por Jesus em Mateus 9:37-38: “A seara é grande, mas os trabalhadores são poucos”.",
         "A missão do CEAPE está alinhada à visão bíblica de Mateus 24:14: “E este evangelho do reino será pregado em todo o mundo como testemunho a todas as nações. Então virá o fim”. Assim, o centro existe para produzir discípulos comprometidos com a propagação do evangelho do reino, preparando-os espiritualmente para cumprir o IDE de Jesus (Mateus 28:19-20).",
@@ -54,13 +57,16 @@
     },
     {
       "title": "Missões no Exterior",
+      "order": 1,
       "paragraphs": [
         "O Projeto  Missões no Exterior volta dos anos 2000, quando o servo de Deus Dong Yu Lan, ao receber a revelação sobre o Filho Varão de Apocalipse 12, sentiu claramente do evangelho do reino precisava alcançar o continente africano e sucessivamente na Europa e na América do Norte. Nesses 25 anos de projeto, temos mais de 100 missionários espalhados por todos os continentes da terra para pregar o Evangelho do Reino por toda a Terra habitada  trazer nosso Senhor de volta  um dia mais cedo. ( Mt 24.14)",
         "Nossos missionários são jovens formados no CEAPE e, aqueles que recebem esse chamamento de Deus, para servirem em outros países, são  enviados para nossas bases consolidadas, com toda estrutura para recebe-los em mais de 30 países. Ali eles trabalham de cidade em cidade, de pais em pais levando a semente da vida no coração da pessoas através de uma literatura espiritual saudável."
-      ]
+      ],
+      "imagesUrls": ["https://picsum.photos/200/300?random=1", "https://picsum.photos/200/300?random=1"]
     },
     {
       "title": "EXPOLIVRO: Levando Cultura, Educação e Leitura para Todo o Brasil",
+      "order": 5,
       "paragraphs": [
         "O EXPOLIVRO é um projeto cultural, social e educacional que tem como missão incentivar o hábito da leitura de forma acessível e envolvente. Sua principal ferramenta é uma carreta itinerante, equipada com livraria e biblioteca, que percorre cidades brasileiras promovendo cultura, livros e atividades que despertam o interesse pela leitura.",
         "Criado em 1991, inicialmente com ônibus adaptados, o projeto evoluiu para carretas modernas. Atualmente, três unidades circulam pelas regiões Sul, Nordeste e Sudeste. Em cada cidade, a carreta oferece biblioteca, livraria, contação de histórias, apresentações teatrais, palestras, ações comunitárias e visitas escolares, proporcionando acesso diário a todas essas atividades.",
@@ -70,6 +76,7 @@
     },
     {
       "title": "TCI - Tropas, Capitães e Adolescentes",
+      "order": 6,
       "paragraphs": [
         "A sigla TCI significa Tropas, Capitães e Intendentes, representando a união de forças de todas as faixas etárias no viver da igreja. Adolescentes, jovens e adultos — até mesmo os da melhor idade — estão unânimes e focados em um único propósito: servir ao Senhor de modo que todos sejam ativos e desfrutem plenamente do viver da igreja em ressurreição. Ninguém fica de fora; por isso, a inclusão é a primeira marca dessa ferramenta. Todos, direcionados pela Palavra do Senhor, vivem e servem com entusiasmo e excelência, dando o seu melhor para a edificação do Corpo de Cristo."
       ],
@@ -107,6 +114,7 @@
     },
     {
       "title": "Fábrica de Vencedores Kids",
+      "order": 7,
       "paragraphs": [
         "A Fábrica de Vencedores Kids é um projeto que tem como objetivo fortalecer o ministério infantil das igrejas, fornecendo ferramentas para que as crianças gravem a Palavra de Deus em seu coração, vivam essa Palavra na prática e preguem o evangelho. O projeto fortalece a identidade da criança como filho de Deus e soldado mirim do Rei, proporcionando um ambiente no qual, com a ajuda de diferentes recursos, elas possam internalizar a Palavra diariamente e desenvolver um coração missionário, que anseie pela volta do Senhor. Assim, tornam-se exemplo e luz em casa, na escola e em qualquer lugar onde estiverem. Para fortalecer ainda mais o cuidado semanal às crianças foi criada, também a Casa Kids.",
         "A Casa Kids, semelhantemente à Casa de Adolescentes e a Casa de Capitães,  busca formar crianças para cooperarem com a obra de Deus e se tornarem adolescentes que influenciem positivamente a sociedade. Com a prática da Fábrica de Vencedores Kids, o número de crianças engajadas com a Palavra de Deus cresceu significativamente. O projeto também colabora com a formação do caráter e do aspecto social, visto que, após a preparação necessária para essa finalidade, poderá acolher crianças que se encontrarem em situação de vulnerabilidade e, além disso, auxiliar na formação escolar dos seus participantes."
@@ -115,6 +123,7 @@
     },
     {
       "title": "Rede de Cuidado e Central de acolhimento",
+      "order": 8,
       "paragraphs": [
         "A intensa atuação do Espírito, por meio dos missionários que estão nas ruas pregando o evangelho, alcançou muitas pessoas que manifestaram interesse em conhecer mais a Deus e Sua obra. Com isso, fez-se necessário estruturar um serviço nas igrejas que ofereça apoio e suprimento de amor às pessoas alcançadas. O cuidado consiste em apascentar e pastorear essas almas com orações, conversas e ministração da palavra, para que elas encontrem o caminho espiritual rumo a uma viver pleno no Corpo de Cristo.",
         "Com o objetivo de servir ao Senhor com excelência e agilizar o cuidado, integrando os novos irmãos ao viver da igreja foi criado o Sistema de Gerenciamento da Central de Acolhimento e Rede de Cuidado, já presente e atuante em quase todos os estados do Brasil, além de países da América Latina, Europa e Estados Unidos."
@@ -122,6 +131,7 @@
     },
     {
       "title": "Editora Árvore da Vida",
+      "order": 9,
       "paragraphs": [
         "A Editora Árvore da Vida iniciou suas atividades em 1975, inicialmente sob o nome de Editora Gospel. Posteriormente, passou a se chamar Editora Restauração e, mais tarde, Editora Fonte da Vida, até adotar definitivamente o nome atual em 1978, juntamente com o slogan “A preciosidade colocada em livros”. No início, a editora focava-se principalmente na publicação de livros do irmão Dong Yu Lan, missão que continuou até seu falecimento, em setembro de 2017. Desde então, passou a publicar os escritos do irmão Pedro Dong.",
         "O objetivo da editora é registrar, em livros, a palavra profética ministrada pelo Espírito Santo através de Seus servos, com o propósito de gerar e edificar igrejas. Suas obras têm como foco, além da revelação e da direção espiritual, a prática da palavra na vida normal da igreja. Os livros ajudam o leitor a extrair o Espírito e a vida da palavra por meio da ruminação.",
@@ -131,6 +141,7 @@
     },
     {
       "title": "Estância Árvore da Vida",
+      "order": 10,
       "paragraphs": [
         "A serviço do Instituto Vida Para Todos, a Estância Árvore da Vida (EAV) é um espaço dedicado à realização de eventos cristãos e empresariais. Com uma área de 35 alqueires, a EAV conta com mais de quatro décadas de experiência no acolhimento de grandes encontros e conferências.",
         "Desde sua inauguração, em setembro de 1980, idealizada pelo irmão Dong Yu Lan, a Estância tem sido um lugar estratégico para a união e a edificação do Corpo de Cristo. Seu surgimento atendeu à necessidade de um local próprio para as conferências espirituais, sem depender de aluguéis externos. Após muita oração e busca, a Estância foi encontrada e, desde então, tornou-se um marco para a obra do Senhor.",
@@ -147,6 +158,7 @@
   "en": [
     {
       "title": "Colportage",
+      "order": 3,
       "titleIcon": "https://picsum.photos/200/300?random=1",
       "paragraphs": [
         "The word colporteur comes from the French colporteur, meaning 'to carry on the neck', referring to the method used by Peter Waldo (1140–1205), a merchant from Lyon and leader of the Waldensians. He promoted the distribution of the Scriptures after perceiving people's spiritual needs. To do this, he made shoulder bags, worn under clothing, for vendors who carried handwritten portions of the Bible, as the printing press did not yet exist. Waldo believed the Word needed to be accessible to all, not just a privileged minority. The more he read and enjoyed it, the more he felt the desire and burden to spread it.",
@@ -156,6 +168,7 @@
     },
     {
       "title": "PAC - Advanced Colportage Post",
+      "order": 4,
       "paragraphs": [
         "PAC is a training center for colporteurs who are already working as full-time missionaries, aiming to improve their daily practice so they can reach more people each day. It is one of the tools for the Lord's work!",
         "PAC started in 2017 when a small group of missionaries caring for brother Dong Yu Lan received a prophetic word saying they were colporteurs. They believed this word, and the Lord confirmed it through signs, wonders, and miracles! They went out to the streets and in 3 days reached over 500 people with prayers and the written word.",
@@ -165,6 +178,7 @@
     },
     {
       "title": "CEAPE - Center for the Advancement of the Gospel",
+      "order": 2,
       "paragraphs": [
         "CEAPE (Center for the Advancement of the Gospel) was established in 1998, following the burden of brother Dong Yu Lan, with the purpose of training and perfecting workers for the Lord's harvest. It arose in response to the urgent need expressed by Jesus in Matthew 9:37-38: 'The harvest is plentiful, but the workers are few.'",
         "The mission of CEAPE aligns with the biblical vision of Matthew 24:14: 'And this gospel of the kingdom will be preached in the whole world as a testimony to all nations. And then the end will come.' Thus, the center exists to produce disciples committed to spreading the gospel of the kingdom, spiritually preparing them to fulfill Jesus' command (Matthew 28:19-20).",
@@ -174,6 +188,7 @@
     },
     {
       "title": "Missions Abroad",
+      "order": 1,
       "paragraphs": [
         "The Missions Abroad Project dates back to the 2000s when God's servant Dong Yu Lan, upon receiving the revelation about the Man Child in Revelation 12, clearly felt that the gospel of the kingdom needed to reach the African continent and subsequently Europe and North America. In these 25 years of project, we have over 100 missionaries spread across all continents to preach the Gospel of the Kingdom throughout the inhabited Earth, bringing our Lord back one day earlier. (Mt 24.14)",
         "Our missionaries are young people trained at CEAPE, and those who receive this calling from God to serve in other countries are sent to our consolidated bases, with all the structure to welcome them in over 30 countries. There they work from city to city, from country to country, sowing the seed of life in the hearts of people through healthy spiritual literature."
@@ -181,6 +196,7 @@
     },
     {
       "title": "EXPOLIVRO: Bringing Culture, Education, and Reading to All of Brazil",
+      "order": 5,
       "paragraphs": [
         "EXPOLIVRO is a cultural, social, and educational project that aims to encourage the habit of reading in an accessible and engaging way. Its main tool is an itinerant trailer, equipped with a bookstore and library, which travels through Brazilian cities promoting culture, books, and activities that awaken interest in reading.",
         "Created in 1991, initially with adapted buses, the project evolved into modern trailers. Currently, three units circulate through the South, Northeast, and Southeast regions. In each city, the trailer offers a library, bookstore, storytelling, theatrical performances, lectures, community actions, and school visits, providing daily access to all these activities.",
@@ -190,6 +206,7 @@
     },
     {
       "title": "TCI - Troops, Captains, and Adolescents",
+      "order": 6,
       "paragraphs": [
         "The acronym TCI stands for Troops, Captains, and Stewards, representing the union of forces of all ages in the church's life. Adolescents, young people, and adults—even the elderly—are unanimous and focused on a single purpose: to serve the Lord so that everyone is active and fully enjoys the church life in resurrection. No one is left out; therefore, inclusion is the first mark of this tool. All, guided by the Lord's Word, live and serve with enthusiasm and excellence, giving their best for the edification of the Body of Christ."
       ],
@@ -227,6 +244,7 @@
     },
     {
       "title": "Factory of Winners Kids",
+      "order": 7,
       "paragraphs": [
         "The Factory of Winners Kids is a project that aims to strengthen the children's ministry of churches, providing tools for children to engrave God's Word in their hearts, live this Word in practice, and preach the gospel. The project strengthens the child's identity as a child of God and a junior soldier of the King, providing an environment where, with the help of different resources, they can internalize the Word daily and develop a missionary heart that longs for the Lord's return. Thus, they become examples and lights at home, at school, and wherever they are. To further strengthen the weekly care for children, the Casa Kids was also created.",
         "Casa Kids, similar to the Adolescent House and the House of Captains, seeks to train children to cooperate with God's work and become adolescents who positively influence society. With the practice of the Factory of Winners Kids, the number of children engaged with God's Word has grown significantly. The project also contributes to the formation of character and social aspect, since, after the necessary preparation for this purpose, it can welcome children who are in vulnerable situations and, moreover, assist in the educational formation of its participants."
@@ -235,6 +253,7 @@
     },
     {
       "title": "Care Network and Reception Center",
+      "order": 8,
       "paragraphs": [
         "The intense work of the Spirit, through the missionaries who are in the streets preaching the gospel, has reached many people who have shown interest in knowing more about God and His work. Consequently, it became necessary to structure a service in the churches that offers support and supply of love to the reached people. The care consists of shepherding these souls with prayers, conversations, and ministering the word, so that they find the spiritual path towards a full life in the Body of Christ.",
         "Aiming to serve the Lord with excellence and expedite care, integrating the new brothers into the life of the church, the Management System of the Reception Center and Care Network was created, already present and active in almost all states of Brazil, in addition to countries in Latin America, Europe, and the United States."
@@ -242,6 +261,7 @@
     },
     {
       "title": "Editora Árvore da Vida",
+      "order": 9,
       "paragraphs": [
         "Editora Árvore da Vida started its activities in 1975, initially under the name Editora Gospel. Later, it was renamed Editora Restauração, and then Editora Fonte da Vida, until it definitively adopted its current name in 1978, along with the slogan 'The preciousness placed in books'. In the beginning, the publisher focused mainly on publishing books by brother Dong Yu Lan, a mission that continued until his death in September 2017. Since then, it has published the writings of brother Pedro Dong.",
         "The publisher's goal is to record, in books, the prophetic word ministered by the Holy Spirit through His servants, with the purpose of generating and edifying churches. Its works focus not only on revelation and spiritual direction but also on the practice of the word in the normal life of the church. The books help the reader extract the Spirit and life from the word through rumination.",
@@ -251,6 +271,7 @@
     },
     {
       "title": "Árvore da Vida Retreat Center",
+      "order": 10,
       "paragraphs": [
         "In the service of the Instituto Vida Para Todos, the Árvore da Vida Retreat Center (EAV) is a space dedicated to holding Christian and business events. With an area of 35 acres, the EAV has more than four decades of experience in hosting large meetings and conferences.",
         "Since its inauguration in September 1980, envisioned by brother Dong Yu Lan, the Retreat Center has been a strategic place for the union and edification of the Body of Christ. Its emergence met the need for a proper place for spiritual conferences, without depending on external rentals. After much prayer and seeking, the Retreat Center was found and has since become a landmark for the Lord's work.",

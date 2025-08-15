@@ -4,8 +4,10 @@ import MOCK_DATA from "./__mock__/projects.json"
 
 export type Project = {
   title: string
+  order?: number
   titleIcon?: string
   paragraphs: string[]
+  featuredImageUrl?: string
   imagesUrls?: string[]
   subProjects?: Project[]
 }
@@ -31,7 +33,10 @@ export const createProjectStore = (initState: ProjectState = defaultInitState) =
   return createStore<ProjectsStore>()(set => ({
     ...initState,
     getProjects: (lang = "pt-BR") => {
-      const projects = projectsData[lang] || []
+      const projects = (projectsData[lang] || []).slice().sort((a, b) => {
+        if (a.order === undefined || b.order === undefined) return 0
+        return a.order - b.order
+      })
       set(() => ({ projects }))
     }
   }))
