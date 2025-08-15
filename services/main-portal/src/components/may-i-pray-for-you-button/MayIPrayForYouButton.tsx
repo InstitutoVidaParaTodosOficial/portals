@@ -10,6 +10,8 @@ interface MayIPrayForYouButtonProps {
 
 const Button = styled.button<{ $color?: string }>`
   display: flex;
+  width: 100%;
+  max-width: 300px;
   gap: 16px;
   align-items: center;
   background: transparent;
