@@ -62,7 +62,54 @@
         "O Projeto  Missões no Exterior volta dos anos 2000, quando o servo de Deus Dong Yu Lan, ao receber a revelação sobre o Filho Varão de Apocalipse 12, sentiu claramente do evangelho do reino precisava alcançar o continente africano e sucessivamente na Europa e na América do Norte. Nesses 25 anos de projeto, temos mais de 100 missionários espalhados por todos os continentes da terra para pregar o Evangelho do Reino por toda a Terra habitada  trazer nosso Senhor de volta  um dia mais cedo. ( Mt 24.14)",
         "Nossos missionários são jovens formados no CEAPE e, aqueles que recebem esse chamamento de Deus, para servirem em outros países, são  enviados para nossas bases consolidadas, com toda estrutura para recebe-los em mais de 30 países. Ali eles trabalham de cidade em cidade, de pais em pais levando a semente da vida no coração da pessoas através de uma literatura espiritual saudável."
       ],
-      "imagesUrls": ["https://picsum.photos/200/300?random=1", "https://picsum.photos/200/300?random=1"]
+      "imagesUrls": ["https://picsum.photos/200/300?random=1", "https://picsum.photos/200/300?random=1"],
+      "worldMap": {
+        "countryColorsConfig": {
+          "Brazil": "var(--primary-color)",
+          "United States of America": "var(--secondary-color)",
+          "Chile": "var(--secondary-color)",
+          "Bolivia": "var(--secondary-color)",
+          "Peru": "var(--secondary-color)",
+          "Ecuador": "var(--secondary-color)",
+          "Colombia": "var(--secondary-color)",
+          "Portugal": "var(--secondary-color)",
+          "Cameroon": "var(--secondary-color)",
+          "Congo": "var(--secondary-color)",
+          "Dem. Rep. Congo": "var(--secondary-color)",
+          "Kenya": "var(--secondary-color)",
+          "Tanzania": "var(--secondary-color)",
+          "Angola": "var(--secondary-color)",
+          "Mozambique": "var(--secondary-color)",
+          "Madagascar": "var(--secondary-color)",
+          "South Africa": "var(--secondary-color)"
+        },
+        "markers": [
+          { "name": "United States - Florida", "coordinates": [-81.5158, 27.6648] },
+          { "name": "Chile", "coordinates": [-71.542969, -35.675147] },
+          { "name": "Bolivia", "coordinates": [-63.5887, -16.2902] },
+          { "name": "Peru", "coordinates": [-75.0152, -9.189967] },
+          { "name": "Ecuador", "coordinates": [-78.1834, -1.8312] },
+          { "name": "Colombia", "coordinates": [-74.2973, 4.5709] },
+          { "name": "Portugal", "coordinates": [-8.2245, 39.3999] },
+          { "name": "Cameroon", "coordinates": [12.3547, 7.3697] },
+          { "name": "Dem. Rep. Congo (Kinshasa, DRC)", "coordinates": [21.7587, -4.0383] },
+          { "name": "Uganda", "coordinates": [32.2903, 1.3733] },
+          { "name": "Kenya", "coordinates": [37.9062, -0.0236] },
+          { "name": "Tanzania", "coordinates": [34.8888, -6.369] },
+          { "name": "Angola", "coordinates": [17.8739, -11.2027] },
+          { "name": "Mozambique", "coordinates": [35.5296, -18.6657] },
+          { "name": "Madagascar", "coordinates": [46.8691, -18.7669] },
+          { "name": "South Africa", "coordinates": [22.9375, -30.5595] },
+          { "name": "Parana", "coordinates": [-51.9253, -25.2521] },
+          { "name": "Sao Paulo", "coordinates": [-46.6333, -23.5505] },
+          { "name": "Brasilia", "coordinates": [-47.9292, -15.7801] },
+          { "name": "Bahia", "coordinates": [-38.5014, -12.9704] },
+          { "name": "Mato Grosso", "coordinates": [-56.0969, -12.6819] },
+          { "name": "Amazonas", "coordinates": [-60.0258, -3.4168] },
+          { "name": "Pará", "coordinates": [-52.2971, -5.5321] },
+          { "name": "Paraiba", "coordinates": [-34.8631, -7.1153] }
+        ]
+      }
     },
     {
       "title": "EXPOLIVRO: Levando Cultura, Educação e Leitura para Todo o Brasil",
