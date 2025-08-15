@@ -1,30 +1,21 @@
 import styled from "styled-components"
+import Image from "next/image"
 
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
 `
 
-interface CircleDivProps {
-  $backgroundImage?: string
-}
-
-const CircleDiv = styled.div<CircleDivProps>`
-  width: 40px;
-  height: 40px;
+const CircleDiv = styled.div`
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: var(--background-color);
-  margin-right: 16px;
+  margin-right: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  ${({ $backgroundImage }) =>
-    $backgroundImage &&
-    `
-      background-image: url(${$backgroundImage});
-      background-size: cover;
-      background-position: center;
-    `}
+  padding: 4px;
 `
 
 type FancyTitleProps = {
@@ -36,7 +27,19 @@ type FancyTitleProps = {
 export default function FancyTitle({ title, imageSrc, imageAlt }: FancyTitleProps) {
   return (
     <Wrapper>
-      <CircleDiv $backgroundImage={imageSrc} aria-label={imageAlt} role={imageSrc ? "img" : undefined} />
+      {imageSrc && (
+        <CircleDiv>
+          <Image
+            src={imageSrc}
+            alt={imageAlt || ""}
+            width={50}
+            height={50}
+            style={{ objectFit: "cover", borderRadius: "50%" }}
+            sizes="50px"
+            priority
+          />
+        </CircleDiv>
+      )}
       <h2>{title}</h2>
     </Wrapper>
   )
