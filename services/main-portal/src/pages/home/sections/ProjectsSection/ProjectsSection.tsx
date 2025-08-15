@@ -36,7 +36,11 @@ export default function ProjectsSection() {
     <ProjectsWrapper>
       {projects.map((project, index) => (
         <div key={index}>
-          <FancyTitle imageSrc={project.titleIcon} title={project.title} />
+          <FancyTitle
+            logoBackgroundColor={project.logo?.backgroundColor}
+            imageSrc={project.logo?.url}
+            title={project.title}
+          />
           {project.paragraphs.map((content: string, idx: number) => (
             <ReactMarkdown key={idx}>{content}</ReactMarkdown>
           ))}

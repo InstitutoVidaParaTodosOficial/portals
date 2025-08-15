@@ -25,6 +25,9 @@
     },
     {
       "title": "PAC - Posto Avançado de Colportagem",
+      "logo": {
+        "url": "https://cdn.institutovidaparatodos.org.br/projects/logos/pac.png"
+      },
       "order": 4,
       "paragraphs": [
         "O PAC é um centro de aperfeiçoamento para colportores que já atuam como missionários em tempo integral, com o objetivo de melhorar sua prática diária para que alcancem mais pessoas a cada dia. É uma das ferramentas da obra do Senhor!",
@@ -41,6 +44,10 @@
     },
     {
       "title": "CEAPE – Centro de Aperfeiçoamento para a Propagação do Evangelho",
+      "logo": {
+        "url": "https://cdn.institutovidaparatodos.org.br/projects/logos/ceape.png",
+        "backgroundColor": "var(--primary-color)"
+      },
       "order": 2,
       "paragraphs": [
         "O CEAPE (Centro de Aperfeiçoamento para a Propagação do Evangelho) foi estabelecido em 1998, a partir do encargo do irmão Dong Yu Lan, com o propósito de formar e aperfeiçoar trabalhadores para a obra do Senhor. Ele surgiu como resposta à urgente necessidade expressa por Jesus em Mateus 9:37-38: “A seara é grande, mas os trabalhadores são poucos”.",
@@ -57,6 +64,9 @@
     },
     {
       "title": "Missões no Exterior",
+      "logo": {
+        "url": "https://cdn.institutovidaparatodos.org.br/projects/logos/missoes-exterior.png"
+      },
       "order": 1,
       "paragraphs": [
         "O Projeto  Missões no Exterior volta dos anos 2000, quando o servo de Deus Dong Yu Lan, ao receber a revelação sobre o Filho Varão de Apocalipse 12, sentiu claramente do evangelho do reino precisava alcançar o continente africano e sucessivamente na Europa e na América do Norte. Nesses 25 anos de projeto, temos mais de 100 missionários espalhados por todos os continentes da terra para pregar o Evangelho do Reino por toda a Terra habitada  trazer nosso Senhor de volta  um dia mais cedo. ( Mt 24.14)",
@@ -113,6 +123,10 @@
     },
     {
       "title": "EXPOLIVRO: Levando Cultura, Educação e Leitura para Todo o Brasil",
+      "logo": {
+        "url": "https://cdn.institutovidaparatodos.org.br/projects/logos/expolivro.png",
+        "backgroundColor": "var(--primary-color)"
+      },
       "order": 5,
       "paragraphs": [
         "O EXPOLIVRO é um projeto cultural, social e educacional que tem como missão incentivar o hábito da leitura de forma acessível e envolvente. Sua principal ferramenta é uma carreta itinerante, equipada com livraria e biblioteca, que percorre cidades brasileiras promovendo cultura, livros e atividades que despertam o interesse pela leitura.",
@@ -161,6 +175,9 @@
     },
     {
       "title": "Fábrica de Vencedores Kids",
+      "logo": {
+        "url": "https://cdn.institutovidaparatodos.org.br/projects/logos/fvkids.png"
+      },
       "order": 7,
       "paragraphs": [
         "A Fábrica de Vencedores Kids é um projeto que tem como objetivo fortalecer o ministério infantil das igrejas, fornecendo ferramentas para que as crianças gravem a Palavra de Deus em seu coração, vivam essa Palavra na prática e preguem o evangelho. O projeto fortalece a identidade da criança como filho de Deus e soldado mirim do Rei, proporcionando um ambiente no qual, com a ajuda de diferentes recursos, elas possam internalizar a Palavra diariamente e desenvolver um coração missionário, que anseie pela volta do Senhor. Assim, tornam-se exemplo e luz em casa, na escola e em qualquer lugar onde estiverem. Para fortalecer ainda mais o cuidado semanal às crianças foi criada, também a Casa Kids.",
@@ -170,6 +187,9 @@
     },
     {
       "title": "Rede de Cuidado e Central de acolhimento",
+      "logo": {
+        "url": "https://cdn.institutovidaparatodos.org.br/projects/logos/central-acolhimento.png"
+      },
       "order": 8,
       "paragraphs": [
         "A intensa atuação do Espírito, por meio dos missionários que estão nas ruas pregando o evangelho, alcançou muitas pessoas que manifestaram interesse em conhecer mais a Deus e Sua obra. Com isso, fez-se necessário estruturar um serviço nas igrejas que ofereça apoio e suprimento de amor às pessoas alcançadas. O cuidado consiste em apascentar e pastorear essas almas com orações, conversas e ministração da palavra, para que elas encontrem o caminho espiritual rumo a uma viver pleno no Corpo de Cristo.",
@@ -178,6 +198,10 @@
     },
     {
       "title": "Editora Árvore da Vida",
+      "logo": {
+        "url": "https://cdn.institutovidaparatodos.org.br/projects/logos/editora.png",
+        "backgroundColor": "#004D21"
+      },
       "order": 9,
       "paragraphs": [
         "A Editora Árvore da Vida iniciou suas atividades em 1975, inicialmente sob o nome de Editora Gospel. Posteriormente, passou a se chamar Editora Restauração e, mais tarde, Editora Fonte da Vida, até adotar definitivamente o nome atual em 1978, juntamente com o slogan “A preciosidade colocada em livros”. No início, a editora focava-se principalmente na publicação de livros do irmão Dong Yu Lan, missão que continuou até seu falecimento, em setembro de 2017. Desde então, passou a publicar os escritos do irmão Pedro Dong.",
@@ -188,6 +212,9 @@
     },
     {
       "title": "Estância Árvore da Vida",
+      "logo": {
+        "url": "https://cdn.institutovidaparatodos.org.br/projects/logos/eav.png"
+      },
       "order": 10,
       "paragraphs": [
         "A serviço do Instituto Vida Para Todos, a Estância Árvore da Vida (EAV) é um espaço dedicado à realização de eventos cristãos e empresariais. Com uma área de 35 alqueires, a EAV conta com mais de quatro décadas de experiência no acolhimento de grandes encontros e conferências.",
