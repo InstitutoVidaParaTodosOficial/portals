@@ -1,20 +1,43 @@
 import styled from "styled-components"
-import Image from "next/image"
+import { Blinker } from "next/font/google"
+import { Colors } from "@/styles/types"
 
-import Logo from "./assets/logo.png"
+const blinker = Blinker({
+  subsets: ["latin"],
+  weight: "400",
+  style: "normal"
+})
 
 const FooterContainer = styled.footer`
-  background-color: var(--background-color);
+  font-family: ${blinker.style.fontFamily};
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px;
+
+  gap: 8px;
+  padding: 8px 16px;
+
+  border-radius: 32px 32px 0 0;
+  background-color: var(${Colors.secondaryColor});
+  color: var(${Colors.backgroundColor});
+`
+
+const Link = styled.a`
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
 `
 
 export default function Footer() {
   return (
     <FooterContainer>
-      <Image src={Logo} alt="IVPT Logo" width={200} />
+      <Link href="google.com">Politicas de Privacidade</Link>
+      <p>|</p>
+      <Link>Termos de Uso</Link>
+      <p>|</p>
+      <p>CNPJ 00.623.904/0001-73</p>
+      <p>|</p>
+      <p style={{ fontWeight: "bold" }}>IVPT</p>
     </FooterContainer>
   )
 }
