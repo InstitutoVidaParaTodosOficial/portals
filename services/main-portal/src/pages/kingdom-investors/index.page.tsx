@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown"
 
 import HeroSection from "@/pages/kingdom-investors/sections/HeroSection/HeroSection"
 import YouTubeVideoPlayer from "@/components/youtube-video-player/YouTubeVideoPlayer"
-import MayIPrayForYouButton from "@/components/may-i-pray-for-you-button/MayIPrayForYouButton"
+import MayIPrayForYouButton from "@/components/sections/MayIPrayForYouSection/MayIPrayForYouButton"
 
 const PageWrapper = styled.div`
   color: var(--primary-color);

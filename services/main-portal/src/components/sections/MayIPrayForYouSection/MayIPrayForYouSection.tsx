@@ -1,6 +1,7 @@
 import styled from "styled-components"
-import MayIPrayForYouButton from "@/components/may-i-pray-for-you-button/MayIPrayForYouButton.tsx"
 import { Colors } from "@/styles/types"
+
+import MayIPrayForYouButton from "@/components/sections/MayIPrayForYouSection/MayIPrayForYouButton"
 import HorizontalLine from "@/components/HorizontalLine/HorizontalLine"
 
 const MayIPrayForYouContainer = styled.div`
