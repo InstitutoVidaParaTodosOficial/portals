@@ -1,4 +1,6 @@
+import { useRouter } from "next/router"
 import styled from "styled-components"
+import { useTranslations } from "next-intl"
 import { Blinker } from "next/font/google"
 import { Colors } from "@/styles/types"
 
@@ -17,7 +19,8 @@ const FooterContainer = styled.footer`
   gap: 8px;
   padding: 8px 16px;
 
-  border-radius: 32px 32px 0 0;
+  margin-top: -20px;
+  border-radius: 24px 24px 0 0;
   background-color: var(${Colors.secondaryColor});
   color: var(${Colors.backgroundColor});
 `
@@ -29,11 +32,14 @@ const Link = styled.a`
 `
 
 export default function Footer() {
+  const router = useRouter()
+  const t = useTranslations("footer")
+
   return (
     <FooterContainer>
-      <Link href="google.com">Politicas de Privacidade</Link>
+      <Link onClick={() => router.push("/")}>{t("privacy")}</Link>
       <p>|</p>
-      <Link>Termos de Uso</Link>
+      <Link onClick={() => router.push("/")}>{t("terms")}</Link>
       <p>|</p>
       <p>CNPJ 00.623.904/0001-73</p>
       <p>|</p>
