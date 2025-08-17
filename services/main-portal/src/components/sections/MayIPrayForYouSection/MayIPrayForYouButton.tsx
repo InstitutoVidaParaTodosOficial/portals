@@ -9,12 +9,12 @@ interface MayIPrayForYouButtonProps {
   textColor?: string
 }
 
-const Button = styled.div<{ $color?: string }>`
+const Button = styled.div<{ $color: string }>`
   display: flex;
   font-size: 22px;
   border-radius: ${BORDER_RADIUS};
   align-items: center;
-  border: 1px solid white;
+  border: 1px solid ${({ $color }) => $color};
   padding-left: 16px;
 
   :hover {
@@ -26,8 +26,8 @@ const Text = styled.span<{ $color?: string }>`
   margin-right: 16px;
 `
 
-const IconBox = styled.div`
-  background-color: var(--secondary-color);
+const IconBox = styled.div<{ $color: string }>`
+  background-color: ${({ $color }) => $color};
   border-bottom-right-radius: ${BORDER_RADIUS};
   border-top-right-radius: ${BORDER_RADIUS};
 `
@@ -36,7 +36,7 @@ const Icon = styled.img`
   padding: 8px 16px;
 `
 
-export default function MayIPrayForYouButton({ textColor }: MayIPrayForYouButtonProps) {
+export default function MayIPrayForYouButton({ textColor = "white" }: MayIPrayForYouButtonProps) {
   const t = useTranslations("sections.may_i_pray_for_you")
 
   const onClickHandler = () => {
@@ -47,7 +47,7 @@ export default function MayIPrayForYouButton({ textColor }: MayIPrayForYouButton
   return (
     <Button $color={textColor} onClick={onClickHandler}>
       <Text $color={textColor}>{t("title")}</Text>
-      <IconBox>
+      <IconBox $color={textColor == "white" ? "var(--secondary-color)" : textColor}>
         <Icon src={ArrowIcon.src} alt="Icon" />
       </IconBox>
     </Button>
