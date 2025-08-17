@@ -21,6 +21,10 @@
       }
     }
   },
+  "footer": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
   "about_us": {
     "summary": "The Instituto Vida Para Todos (IVPT) is an essential channel for spreading the Lord's work, but it is not limited to a simple platform for videos and publications. Its role is that of a preacher of the gospel of the kingdom, faithfully proclaiming the only gospel: the gospel of Christ (Gal 1:4). IVPT's mission is to give global reach to the preaching of the gospel of the kingdom with just one click. As it is written in Psalm 19:4: 'Yet their voice goes out into all the earth, their words to the ends of the world,' the prophetic Word transmitted by IVPT reaches distant places and, with this breadth, touches hearts, generating the hearing of faith in people.",
     "title": "Our Mission",

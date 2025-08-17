@@ -21,6 +21,10 @@
       }
     }
   },
+  "footer": {
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation"
+  },
   "about_us": {
     "summary": "L'Institut Vie Pour Tous (IVPT) est un canal essentiel pour diffuser l'œuvre du Seigneur, mais il ne se limite pas à une simple plateforme de vidéos et de publications. Son rôle est celui de prédicateur de l'évangile du royaume, proclamant fidèlement le seul évangile : l'évangile du Christ (Gal 1:4). La mission de l'IVPT est de donner une portée mondiale à la prédication de l'évangile du royaume en un seul clic. Comme il est écrit dans le Psaume 19:4 : 'Cependant leur voix parcourt toute la terre, leurs paroles jusqu'aux extrémités du monde', la Parole prophétique transmise par l'IVPT atteint des lieux lointains et, par cette ampleur, touche les cœurs, générant l'écoute de la foi chez les personnes.",
     "title": "Notre Mission",
