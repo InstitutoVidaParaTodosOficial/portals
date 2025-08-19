@@ -3,15 +3,14 @@ import { useTranslations } from "next-intl"
 import styled from "styled-components"
 import CircleLogo from "@/components/circle-logo/CircleLogo"
 import ReactMarkdown from "react-markdown"
-import WatchPropheticWordYouTube from "@/components/sections/watch-prophetic-word-youtube/WatchPropheticWordYouTube"
 
 const DEFAULT_SIDE_PADDING = "10%"
 
 const LogoWrapper = styled.div`
   left: 50%;
-  width: 100%;
-  transform: translate(0, -50%);
   z-index: 2;
+  position: absolute;
+  transform: translate(-50%, -50%);
 `
 
 const AboutUsContainer = styled.section`
