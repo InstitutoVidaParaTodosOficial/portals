@@ -1,17 +1,9 @@
 import { useRouter } from "next/router"
 import styled from "styled-components"
 import { useTranslations } from "next-intl"
-import { Blinker } from "next/font/google"
 import { Colors } from "@/styles/types"
 
-const blinker = Blinker({
-  subsets: ["latin"],
-  weight: "400",
-  style: "normal"
-})
-
 const FooterContainer = styled.footer`
-  font-family: ${blinker.style.fontFamily};
   display: flex;
   align-items: center;
   justify-content: center;
