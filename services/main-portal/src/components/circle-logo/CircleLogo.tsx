@@ -20,10 +20,6 @@ const LogoWrapper = styled.div<{ $size: number; $borderSize: number }>`
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 `
 
 export default function CircleLogo({ size = 90, borderSize = 1 }: CircleLogoProps) {
