@@ -78,10 +78,6 @@ export default function IndexPage() {
         </CallToActionButton>
       </CallToActionSection>
 
-      <VideoPlayerWrapper>
-        <YouTubeVideoPlayer maxWidth="560px" videoId={t("videos.show_case")} />
-      </VideoPlayerWrapper>
-
       <MayIPrayForYouWrapper>
         <MayIPrayForYouButton textColor="var(--primary-color)" />
       </MayIPrayForYouWrapper>
