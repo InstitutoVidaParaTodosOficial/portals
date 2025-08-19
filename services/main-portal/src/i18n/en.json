@@ -5,6 +5,11 @@
     "missionary": "Become a Ministry",
     "kingdom-investors": "Kingdom Investors"
   },
+  "socialLinks": {
+    "spotify": "https://open.spotify.com/show/7omrpEfEN794JONo8jfQpV",
+    "instagram": "https://www.instagram.com/institutovidaparatodos/",
+    "youtube": "https://www.youtube.com/@InstitutoVidaParaTodos"
+  },
   "sections": {
     "may_i_pray_for_you": "May I pray for you?",
     "contact": {

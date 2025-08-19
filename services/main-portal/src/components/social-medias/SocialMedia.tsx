@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { useTranslations } from "next-intl"
 import { FaInstagram, FaSpotify, FaYoutube } from "react-icons/fa"
 
 type BorderRadiusPosition = "none" | "left" | "right" | "all"
@@ -90,23 +91,24 @@ export default function SocialMedia({
   radius = "25px",
   backColor = "#082D50"
 }: SocialMediasListProps) {
+  const t = useTranslations('socialLinks');
   return (
     <SocialMediaList $borderRadiusPosition={borderRadiusPosition} radius={radius} $backgroundColor={backColor}>
       <SocialIcon>
-        <IconLink href="https://open.spotify.com/show/7omrpEfEN794JONo8jfQpV" target="_blank" rel="noopener noreferrer">
+        <IconLink href={t('spotify')} target="_blank" rel="noopener noreferrer">
           <FaSpotify />
         </IconLink>
       </SocialIcon>
 
       <SocialIcon>
-        <IconLink href="https://www.instagram.com/institutovidaparatodos/" target="_blank" rel="noopener noreferrer">
+        <IconLink href={t('instagram')} target="_blank" rel="noopener noreferrer">
           <FaInstagram />
         </IconLink>
       </SocialIcon>
 
       <SocialIcon>
         <IconLinkYoutube
-          href="https://www.youtube.com/@InstitutoVidaParaTodos"
+          href={t('youtube')}
           target="_blank"
           rel="noopener noreferrer"
         >
