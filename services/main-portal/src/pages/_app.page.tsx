@@ -8,6 +8,7 @@ import "../styles/configuration.css"
 import TopBar from "@/layout/TopBar"
 import Footer from "@/layout/Footer"
 import { ProjectsStoreProvider } from "@/stores/ProjectsStoreContext"
+import SocialMedia from "@/components/social-medias/SocialMedia"
 
 function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
@@ -28,6 +29,7 @@ function App({ Component, pageProps }: AppProps) {
         <TopBar />
         <Component {...pageProps} />
         <Footer />
+        <SocialMedia borderRadiusPosition="left" />
       </NextIntlClientProvider>
     </ProjectsStoreProvider>
   )

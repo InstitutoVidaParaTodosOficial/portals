@@ -9,9 +9,11 @@ const SocialMediaList = styled.div<{
   radius: string
   $backgroundColor: `#${string}`
 }>`
-  padding: 16px;
+  padding: 19px 15px 19px 15px;
   background-color: ${props => props.$backgroundColor};
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: ${props => {
     switch (props.$borderRadiusPosition) {
       case "all":
@@ -24,11 +26,17 @@ const SocialMediaList = styled.div<{
         return null
     }
   }};
+
+  position: fixed;
+  top: 30%;
+  right: 0;
+  transform: translateY(-75%);
+  z-index: 1000;
 `
 
 const SocialIcon = styled.div`
   width: 35px;
-  height: 120px;
+  height: 35px;
 
   &:hover {
     cursor: pointer;
@@ -40,13 +48,35 @@ const SocialIcon = styled.div`
 `
 
 const IconLink = styled.a`
-  color: var(--background-color);
+  color: #ffffff;
   font-size: 35px;
   text-decoration: none;
+`
 
-  &:hover {
-    color: var(--accent-color);
-  }
+const WhiteBorder = styled.div`
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+`
+
+const StyledYoutubeIcon = styled(FaYoutube)`
+  font-size: 25px;
+  color: #082d50;
+  position: relative;
+  z-index: 2;
+`
+
+const IconLinkYoutube = styled.a`
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 40px;
+  height: 40px;
 `
 
 type SocialMediasListProps = {
@@ -57,7 +87,7 @@ type SocialMediasListProps = {
 
 export default function SocialMedia({
   borderRadiusPosition,
-  radius = "15px",
+  radius = "25px",
   backColor = "#082D50"
 }: SocialMediasListProps) {
   return (
@@ -66,12 +96,23 @@ export default function SocialMedia({
         <IconLink href="https://open.spotify.com/show/7omrpEfEN794JONo8jfQpV" target="_blank" rel="noopener noreferrer">
           <FaSpotify />
         </IconLink>
+      </SocialIcon>
+
+      <SocialIcon>
         <IconLink href="https://www.instagram.com/institutovidaparatodos/" target="_blank" rel="noopener noreferrer">
           <FaInstagram />
         </IconLink>
-        <IconLink href="https://www.youtube.com/@InstitutoVidaParaTodos" target="_blank" rel="noopener noreferrer">
-          <FaYoutube />
-        </IconLink>
+      </SocialIcon>
+
+      <SocialIcon>
+        <IconLinkYoutube
+          href="https://www.youtube.com/@InstitutoVidaParaTodos"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <WhiteBorder />
+          <StyledYoutubeIcon />
+        </IconLinkYoutube>
       </SocialIcon>
     </SocialMediaList>
   )
