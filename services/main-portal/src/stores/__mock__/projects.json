@@ -61,27 +61,143 @@
           "Kenya": "var(--secondary-color)",
           "Tanzania": "var(--secondary-color)",
           "Angola": "var(--secondary-color)",
+          "Uganda": "var(--secondary-color)",
           "Mozambique": "var(--secondary-color)",
           "Madagascar": "var(--secondary-color)",
           "South Africa": "var(--secondary-color)"
         },
+        "additionalTexts": [
+          {
+            "text": "BRASIL",
+            "coordinates": [-48, -10]
+          },
+          {
+            "text": "ESTADOS UNIDOS",
+            "fontSize": 8,
+            "coordinates": [-100, 37]
+          }
+        ],
         "markers": [
           { "name": "United States - Florida", "coordinates": [-81.5158, 27.6648] },
-          { "name": "Chile", "coordinates": [-71.542969, -35.675147] },
-          { "name": "Bolivia", "coordinates": [-63.5887, -16.2902] },
-          { "name": "Peru", "coordinates": [-75.0152, -9.189967] },
-          { "name": "Ecuador", "coordinates": [-78.1834, -1.8312] },
-          { "name": "Colombia", "coordinates": [-74.2973, 4.5709] },
-          { "name": "Portugal", "coordinates": [-8.2245, 39.3999] },
-          { "name": "Cameroon", "coordinates": [12.3547, 7.3697] },
-          { "name": "Dem. Rep. Congo (Kinshasa, DRC)", "coordinates": [21.7587, -4.0383] },
-          { "name": "Uganda", "coordinates": [32.2903, 1.3733] },
-          { "name": "Kenya", "coordinates": [37.9062, -0.0236] },
-          { "name": "Tanzania", "coordinates": [34.8888, -6.369] },
-          { "name": "Angola", "coordinates": [17.8739, -11.2027] },
-          { "name": "Mozambique", "coordinates": [35.5296, -18.6657] },
-          { "name": "Madagascar", "coordinates": [46.8691, -18.7669] },
-          { "name": "South Africa", "coordinates": [22.9375, -30.5595] },
+          {
+            "name": "Chile",
+            "markerText": {
+              "text": "Chile"
+            },
+            "coordinates": [-71.542969, -35.675147]
+          },
+          {
+            "name": "Bolivia",
+            "markerText": {
+              "text": "Bolívia"
+            },
+            "coordinates": [-63.5887, -16.2902]
+          },
+          {
+            "name": "Peru",
+            "markerText": {
+              "text": "Peru"
+            },
+            "coordinates": [-75.0152, -9.189967]
+          },
+          {
+            "name": "Ecuador",
+            "markerText": {
+              "text": "Equador",
+              "fontSize": 3
+            },
+            "coordinates": [-78.1834, -1.8312]
+          },
+          {
+            "name": "Colombia",
+            "markerText": {
+              "text": "Colômbia",
+              "fontSize": 3
+            },
+            "coordinates": [-73.2973, 4.5709]
+          },
+          {
+            "name": "Portugal",
+            "markerText": {
+              "text": "Portugal",
+              "textAnchor": "end"
+            },
+            "coordinates": [-8.2245, 39.3999]
+          },
+          {
+            "name": "Cameroon",
+            "markerText": {
+              "text": "Camarões",
+              "fontSize": 2
+            },
+            "coordinates": [11.7, 6.3697]
+          },
+          {
+            "name": "Dem. Rep. Congo (Kinshasa, DRC)",
+            "markerText": {
+              "text": "República\ndo Congo"
+            },
+            "coordinates": [22, -2.7]
+          },
+          {
+            "name": "Uganda",
+            "markerText": {
+              "text": "Uganda",
+              "fontSize": 2,
+              "y": 2
+            },
+            "coordinates": [32.2903, 1.3733]
+          },
+          {
+            "name": "Kenya",
+            "markerText": {
+              "text": "Quênia",
+              "fontSize": 3
+            },
+            "coordinates": [37.9062, 1.5]
+          },
+          {
+            "name": "Tanzania",
+            "markerText": {
+              "text": "Tanzânia",
+              "fontSize": 3
+            },
+            "coordinates": [34.8888, -6.369]
+          },
+          {
+            "name": "Angola",
+            "markerText": { "text": "Angola" },
+            "coordinates": [17.8739, -11.2027]
+          },
+          {
+            "name": "Mozambique",
+            "markerText": {
+              "text": "Moçambique",
+              "rotate": "-45deg",
+              "fontSize": 3,
+              "textAnchor": "end",
+              "y": "3"
+            },
+            "coordinates": [38, -15]
+          },
+          {
+            "name": "Madagascar",
+            "markerText": {
+              "text": "Madagascar",
+              "textAnchor": "end",
+              "fontSize": 3,
+              "rotate": "-72deg"
+            },
+            "coordinates": [46.8691, -17]
+          },
+          {
+            "name": "South Africa",
+            "markerText": {
+              "text": "África do Sul",
+              "fontSize": 3
+            },
+            "coordinates": [24, -30.5595]
+          },
           { "name": "Parana", "coordinates": [-51.9253, -25.2521] },
           { "name": "Sao Paulo", "coordinates": [-46.6333, -23.5505] },
           { "name": "Brasilia", "coordinates": [-47.9292, -15.7801] },
