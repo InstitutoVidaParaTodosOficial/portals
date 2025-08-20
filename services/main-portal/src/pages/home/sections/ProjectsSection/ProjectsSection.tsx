@@ -67,6 +67,7 @@ export default function ProjectsSection() {
           {project.worldMap && (
             <WorldMap
               markers={project.worldMap.markers}
+              additionalTexts={project.worldMap.additionalTexts}
               countryColors={project.worldMap.countryColorsConfig}
               loadBrazilianStatesBorders={true}
             />
