@@ -89,5 +89,20 @@
       "action": "Entre em contato",
       "whatsapp": "5511990058006"
     }
+  },
+  "world_map": {
+    "controls": {
+      "enabled": "Habilitado",
+      "disabled": "Desabilitado",
+      "reset_zoom": "Resetar",
+      "zoom_label": "Zoom:"
+    },
+    "oceans": {
+      "atlantic": "Oceano\nAtlântico",
+      "pacific": "Oceano\nPacífico",
+      "indian": "Oceano\nÍndico",
+      "arctic": "Oceano\nÁrtico",
+      "antarctic": "Oceano\nAntártico"
+    }
   }
 }

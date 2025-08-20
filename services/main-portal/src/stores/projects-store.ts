@@ -15,7 +15,23 @@ export type Project = {
   subProjects?: Project[]
   worldMap?: {
     countryColorsConfig: Record<string, string>
-    markers: { name: string; coordinates: [number, number] }[]
+    additionalTexts?: {
+      text: string
+      coordinates: [number, number]
+      fontSize?: number
+    }[]
+    markers: {
+      name: string
+      markerText?: {
+        text: string
+        fontSize?: number
+        x?: number
+        y?: number
+        textAnchor?: "start" | "middle" | "end"
+        rotate?: `${string}deg`
+      }
+      coordinates: [number, number]
+    }[]
   }
 }
 
