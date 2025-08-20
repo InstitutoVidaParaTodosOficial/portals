@@ -14,6 +14,11 @@ type Oceans = {
   coordinates: [number, number]
 }
 
+const DEFAULTS: { zoom: number; center: [number, number] } = {
+  zoom: 1.05,
+  center: [15, -10]
+}
+
 const OCEANS: Oceans[] = [
   { name: "pacific", coordinates: [-120, 0] },
   { name: "pacific", coordinates: [140, 20] },
@@ -84,9 +89,8 @@ export default function WorldMap({
   additionalTexts = [],
   loadBrazilianStatesBorders = false
 }: WorldMapProps) {
-  console.log(additionalTexts)
-  const [zoom, setZoom] = useState(1)
-  const [center, setCenter] = useState<[number, number]>([0, 0])
+  const [zoom, setZoom] = useState(DEFAULTS.zoom)
+  const [center, setCenter] = useState<[number, number]>(DEFAULTS.center)
   const [zoomEnabled, setZoomEnabled] = useState<boolean>(false)
 
   const t = useTranslations("world_map")
@@ -110,8 +114,8 @@ export default function WorldMap({
   }
 
   const handleResetZoom = () => {
-    setZoom(1)
-    setCenter([0, 0])
+    setZoom(DEFAULTS.zoom)
+    setCenter(DEFAULTS.center)
   }
 
   return (
@@ -130,7 +134,7 @@ export default function WorldMap({
         </MapControllersWrapper>
       </MapControllersBox>
 
-      <ComposableMap style={{ backgroundColor: "var(--primary-color)" }}>
+      <ComposableMap viewBox="0 0 800 450" style={{ backgroundColor: "var(--primary-color)" }}>
         <ZoomableGroup zoom={zoom} center={center} filterZoomEvent={handleZoomEvent} onMoveEnd={onMoveEndHandler}>
           {/* Oceans labels */}
           {OCEANS.map(({ name, fontSize, coordinates }) => (
