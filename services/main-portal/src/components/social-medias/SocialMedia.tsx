@@ -3,6 +3,10 @@ import styled from "styled-components"
 import { useTranslations } from "next-intl"
 import { FaInstagram, FaSpotify, FaYoutube } from "react-icons/fa"
 
+const SpotifyIcon = FaSpotify as React.FC
+const InstagramIcon = FaInstagram as React.FC
+const YoutubeIcon = FaYoutube as React.FC
+
 type BorderRadiusPosition = "none" | "left" | "right" | "all"
 
 const SocialMediaList = styled.div<{
@@ -63,7 +67,7 @@ const WhiteBorder = styled.div`
   z-index: 1;
 `
 
-const StyledYoutubeIcon = styled(FaYoutube)`
+const StyledYoutubeIcon = styled(YoutubeIcon)`
   font-size: 25px;
   color: #082d50;
   position: relative;
@@ -91,27 +95,23 @@ export default function SocialMedia({
   radius = "25px",
   backColor = "#082D50"
 }: SocialMediasListProps) {
-  const t = useTranslations('socialLinks');
+  const t = useTranslations("socialLinks")
   return (
     <SocialMediaList $borderRadiusPosition={borderRadiusPosition} radius={radius} $backgroundColor={backColor}>
       <SocialIcon>
-        <IconLink href={t('spotify')} target="_blank" rel="noopener noreferrer">
-          <FaSpotify />
+        <IconLink href={t("spotify")} target="_blank" rel="noopener noreferrer">
+          <SpotifyIcon />
         </IconLink>
       </SocialIcon>
 
       <SocialIcon>
-        <IconLink href={t('instagram')} target="_blank" rel="noopener noreferrer">
-          <FaInstagram />
+        <IconLink href={t("instagram")} target="_blank" rel="noopener noreferrer">
+          <InstagramIcon />
         </IconLink>
       </SocialIcon>
 
       <SocialIcon>
-        <IconLinkYoutube
-          href={t('youtube')}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <IconLinkYoutube href={t("youtube")} target="_blank" rel="noopener noreferrer">
           <WhiteBorder />
           <StyledYoutubeIcon />
         </IconLinkYoutube>
