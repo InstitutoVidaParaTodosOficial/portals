@@ -5,6 +5,7 @@ import HeroSection from "@/pages/become-a-missionary/sections/HeroSection/HeroSe
 import CircleLogo from "@/components/circle-logo/CircleLogo"
 
 import WhatsAppImage from "@/pages/become-a-missionary/assets/whatsapp.png"
+import Image from "next/image"
 
 const CircleLogoWrapper = styled.div`
   border: 16px solid var(--primary-color);
@@ -80,7 +81,7 @@ export default function HomePage() {
           {t("call_to_action.action")}
 
           <div>
-            <img src={WhatsAppImage.src} alt="WhatsApp icon" />
+            <Image src={WhatsAppImage} style={{ width: 60, height: 50 }} alt="WhatsApp icon" />
           </div>
         </WhatsAppButton>
       </Section>
