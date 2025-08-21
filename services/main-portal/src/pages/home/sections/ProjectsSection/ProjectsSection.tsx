@@ -8,6 +8,7 @@ import Carousel from "@/components/carousel/Carousel"
 import { useProjectsStore } from "@/stores/ProjectsStoreContext"
 import { Project } from "@/stores/projects-store"
 import WorldMap from "@/components/world-map/WorldMap"
+import YouTubeVideoPlayer from "@/components/youtube-video-player/YouTubeVideoPlayer"
 
 const ProjectsWrapper = styled.div`
   background-color: var(--primary-color);
@@ -57,11 +58,13 @@ export default function ProjectsSection() {
               ))}
             </div>
           )}
-          {project.imagesUrls && project.imagesUrls.length > 0 && (
+          {(project.imagesUrls || project.YouTubeVideoIds) && (
             <Carousel>
-              {project.imagesUrls.map((url: string, idx: number) => (
-                <ImageWrapper url={url} key={idx} />
-              ))}
+              {project.YouTubeVideoIds &&
+                project.YouTubeVideoIds.map((videoId: string) => (
+                  <YouTubeVideoPlayer videoId={videoId} key={videoId} maxWidth="500px" />
+                ))}
+              {project.imagesUrls && project.imagesUrls.map((url: string) => <ImageWrapper url={url} key={url} />)}
             </Carousel>
           )}
           {project.worldMap && (

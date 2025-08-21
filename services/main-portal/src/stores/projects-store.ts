@@ -12,6 +12,7 @@ export type Project = {
   paragraphs: string[]
   featuredImageUrl?: string
   imagesUrls?: string[]
+  YouTubeVideoIds?: string[]
   subProjects?: Project[]
   worldMap?: {
     countryColorsConfig: Record<string, string>
