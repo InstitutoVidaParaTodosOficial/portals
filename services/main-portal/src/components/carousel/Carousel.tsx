@@ -42,9 +42,9 @@ const ArrowButton = styled.button`
   }
 `
 
-const CarouselContainer = styled.div<{ $zeroPadding: boolean }>`
+const CarouselContainer = styled.div<{ $zeroPadding: boolean; $canScroll: boolean }>`
   position: relative;
-  padding: ${props => (props.$zeroPadding ? "0" : "0 54px")};
+  padding: ${props => (props.$zeroPadding || !props.$canScroll ? "0" : "0 54px")};
 `
 
 type CarouselProps = {
@@ -105,7 +105,7 @@ export default function Carousel({ overlapArrows = true, children }: CarouselPro
   }
 
   return (
-    <CarouselContainer $zeroPadding={overlapArrows}>
+    <CarouselContainer $zeroPadding={overlapArrows} $canScroll={canScroll}>
       {canScroll && (
         <ArrowButton style={{ left: 8 }} aria-label="Scroll left" onClick={() => scrollBy(-200)}>
           <FaChevronLeftIcon />
