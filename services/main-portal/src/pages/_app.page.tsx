@@ -2,16 +2,17 @@ import type { AppProps, AppContext } from "next/app"
 import { NextIntlClientProvider } from "next-intl"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
-import { createGlobalStyle } from "styled-components"
+import styled, { createGlobalStyle } from "styled-components"
 import { Blinker } from "next/font/google"
 
 import "../global.css"
 import "../styles/colors.css"
 import "../styles/configuration.css"
-import TopBar from "@/layout/TopBar"
+import DesktopTopBar from "@/layout/menu/DesktopTopBar"
 import Footer from "@/layout/Footer"
 import { ProjectsStoreProvider } from "@/stores/ProjectsStoreContext"
 import SocialMedia from "@/components/social-medias/SocialMedia"
+import MobileTopBar from "@/layout/menu/MobileTopBar"
 
 const blinker = Blinker({
   subsets: ["latin"],
@@ -22,6 +23,24 @@ const blinker = Blinker({
 const GlobalStyle = createGlobalStyle`
   body {
     font-family: ${blinker.style.fontFamily}, sans-serif;
+  }
+`
+
+const SocialMediaWrapper = styled.div`
+  @media (max-width: 1048px) {
+    display: none;
+  }
+`
+
+const DesktopTopBarWrapper = styled.div`
+  @media (max-width: 1048px) {
+    display: none;
+  }
+`
+
+const MobileTopBarWrapper = styled.div`
+  @media (min-width: 1048px) {
+    display: none;
   }
 `
 
@@ -42,10 +61,22 @@ function App({ Component, pageProps }: AppProps) {
     <ProjectsStoreProvider>
       <NextIntlClientProvider locale={router.locale} messages={pageProps.messages} timeZone={timeZone}>
         <GlobalStyle />
-        <TopBar />
+
+        {/*top bars*/}
+        <DesktopTopBarWrapper>
+          <DesktopTopBar />
+        </DesktopTopBarWrapper>
+        <MobileTopBarWrapper>
+          <MobileTopBar />
+        </MobileTopBarWrapper>
+
         <Component {...pageProps} />
+
         <Footer />
-        <SocialMedia borderRadiusPosition="left" />
+
+        <SocialMediaWrapper>
+          <SocialMedia borderRadiusPosition="left" />
+        </SocialMediaWrapper>
       </NextIntlClientProvider>
     </ProjectsStoreProvider>
   )

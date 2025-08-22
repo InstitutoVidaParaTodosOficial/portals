@@ -3,8 +3,9 @@ import Image from "next/image"
 import styled from "styled-components"
 import { useRouter } from "next/router"
 
-import Logo from "./assets/logo.png"
+import Logo from "../assets/logo.png"
 import NavMenu from "./NavMenu"
+import LanguageSelector from "@/layout/menu/LanguageSelector"
 
 const TopBarWrapper = styled.div<{ $scrolled: boolean }>`
   display: flex;
@@ -26,15 +27,20 @@ const TopBarWrapper = styled.div<{ $scrolled: boolean }>`
   box-shadow: ${({ $scrolled }) => ($scrolled ? "0 2px 12px 0 rgba(0,0,0,0.18)" : "none")};
 `
 
-const LogoWrapper = styled.div`
+const LeftSide = styled.div`
   justify-content: center;
+  position: relative;
+  width: 200px; // set your desired width
+  height: 48px; // set your desired height
 
   :hover {
     cursor: pointer;
   }
 `
 
-export default function TopBar() {
+const RightSide = styled.div``
+
+export default function DesktopTopBar() {
   const router = useRouter()
   const [scrolled, setScrolled] = useState(false)
 
@@ -48,11 +54,15 @@ export default function TopBar() {
 
   return (
     <TopBarWrapper $scrolled={scrolled}>
-      <LogoWrapper onClick={() => router.push("/")}>
-        <Image src={Logo} alt="Website Logo" width={200} />
-      </LogoWrapper>
+      <LeftSide onClick={() => router.push("/")}>
+        <Image src={Logo} alt="Website Logo" fill style={{ objectFit: "contain" }} />
+      </LeftSide>
 
       <NavMenu />
+
+      <RightSide>
+        <LanguageSelector />
+      </RightSide>
     </TopBarWrapper>
   )
 }

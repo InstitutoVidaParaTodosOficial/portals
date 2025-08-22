@@ -1,7 +1,8 @@
 body {
   margin: 0;
   background-color: var(--background-color);
-  overflow-x: hidden;
+
+  min-width: 320px;
 }
 
 section {
