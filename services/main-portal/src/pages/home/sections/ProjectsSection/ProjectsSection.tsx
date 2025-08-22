@@ -10,10 +10,9 @@ import { Project } from "@/stores/projects-store"
 import WorldMap from "@/components/world-map/WorldMap"
 import YouTubeVideoPlayer from "@/components/youtube-video-player/YouTubeVideoPlayer"
 
-const ProjectsWrapper = styled.div`
+const ProjectsWrapper = styled.section`
   background-color: var(--primary-color);
   color: var(--white);
-  padding: 100px 32px 0px 32px;
 `
 
 const ImageWrapper = styled.div<{ url: string }>`
@@ -22,6 +21,13 @@ const ImageWrapper = styled.div<{ url: string }>`
   background-image: url(${props => props.url});
   background-size: cover;
   background-position: center;
+`
+
+const ProjectItem = styled.div`
+  margin-bottom: 32px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 `
 
 export default function ProjectsSection() {
@@ -36,7 +42,7 @@ export default function ProjectsSection() {
   return (
     <ProjectsWrapper>
       {projects.map((project, index) => (
-        <div key={index}>
+        <ProjectItem key={index}>
           <FancyTitle
             logoBackgroundColor={project.logo?.backgroundColor}
             imageSrc={project.logo?.url}
@@ -75,7 +81,7 @@ export default function ProjectsSection() {
               loadBrazilianStatesBorders={true}
             />
           )}
-        </div>
+        </ProjectItem>
       ))}
     </ProjectsWrapper>
   )

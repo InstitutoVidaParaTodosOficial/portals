@@ -4,15 +4,13 @@ import { Colors } from "@/styles/types"
 import MayIPrayForYouButton from "@/components/sections/MayIPrayForYouSection/MayIPrayForYouButton"
 import HorizontalLine from "@/components/HorizontalLine/HorizontalLine"
 
-const MayIPrayForYouContainer = styled.div`
+const MayIPrayForYouContainer = styled.section`
   color: var(${Colors.lightGray});
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 32px;
   justify-content: space-between;
-  padding: 32px 16px;
   overflow: hidden;
 
   background-color: var(${Colors.primaryColor});
@@ -22,8 +20,8 @@ const MayIPrayForYouContainer = styled.div`
 
 export default function HomePage() {
   return (
-    <MayIPrayForYouContainer>
-      <HorizontalLine logoSize={60} />
+    <MayIPrayForYouContainer style={{ paddingTop: "0" }}>
+      <HorizontalLine logoSize={74} />
 
       <MayIPrayForYouButton />
     </MayIPrayForYouContainer>

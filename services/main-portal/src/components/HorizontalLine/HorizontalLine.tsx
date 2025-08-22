@@ -1,30 +1,19 @@
 import styled from "styled-components"
-import { Colors } from "@/styles/types"
 import CircleLogo from "@/components/circle-logo/CircleLogo"
 
 const Container = styled.div`
-  width: 100%;
-  max-width: 500px;
-  position: relative;
-  margin: 32px 0;
   display: flex;
   align-items: center;
-  justify-content: center;
-`
+  margin: 32px 0;
+  width: 100%;
 
-const Line = styled.hr`
-  width: 100vw;
-  border: none;
-  border-top: 1px solid var(${Colors.lightGray});
-  margin-left: -25vw;
-  margin-right: -25vw;
-`
-
-const LogoWrapper = styled.div`
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--light-gray);
+  }
 `
 
 type HorizontalLineProps = {
@@ -34,10 +23,7 @@ type HorizontalLineProps = {
 export default function HorizontalLine({ logoSize = 90 }: HorizontalLineProps) {
   return (
     <Container>
-      <Line />
-      <LogoWrapper>
-        <CircleLogo size={logoSize} />
-      </LogoWrapper>
+      <CircleLogo size={logoSize} />
     </Container>
   )
 }

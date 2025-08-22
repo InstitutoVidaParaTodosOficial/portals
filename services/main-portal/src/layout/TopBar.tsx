@@ -18,7 +18,7 @@ const TopBarWrapper = styled.div<{ $scrolled: boolean }>`
   color: white;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 24px;
+  padding: 16px 32px;
   background-color: ${({ $scrolled }) => ($scrolled ? "var(--primary-color)" : "transparent")};
   transition:
     background-color 0.2s,

@@ -4,8 +4,6 @@ import styled from "styled-components"
 import CircleLogo from "@/components/circle-logo/CircleLogo"
 import ReactMarkdown from "react-markdown"
 
-const DEFAULT_SIDE_PADDING = "10%"
-
 const LogoWrapper = styled.div`
   left: 50%;
   z-index: 2;
@@ -13,31 +11,18 @@ const LogoWrapper = styled.div`
   transform: translate(-50%, -50%);
 `
 
-const AboutUsContainer = styled.section`
-  position: relative;
+const AboutUsContainer = styled.div`
   text-align: center;
-  line-height: 1.7;
-  font-size: 1.2rem;
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-weight: normal;
-  }
 `
 
-const TopSection = styled.div`
+const TopSection = styled.section`
   background-color: var(--primary-color);
   color: var(--white);
-  padding: 100px ${DEFAULT_SIDE_PADDING};
   background: linear-gradient(#000000, #082d50 28%);
 `
 
-const BottomSection = styled.div`
+const BottomSection = styled.section`
   background-color: var(--background-color);
-  padding: 100px ${DEFAULT_SIDE_PADDING};
 `
 
 const TitleWrapper = styled.div`

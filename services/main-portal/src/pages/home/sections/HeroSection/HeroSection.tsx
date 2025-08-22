@@ -10,7 +10,6 @@ const HeroSectionWrapper = styled.section`
   background-position: center;
   height: 100vh;
   color: var(--white);
-  padding: 32px;
 `
 
 type HeroSectionProps = {
