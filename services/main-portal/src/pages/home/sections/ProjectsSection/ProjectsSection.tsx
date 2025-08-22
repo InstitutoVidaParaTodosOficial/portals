@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import styled from "styled-components"
 import ReactMarkdown from "react-markdown"
 import { useRouter } from "next/router"
+import Image from "next/image"
 
 import FancyTitle from "@/components/fancy-title/FancyTitle"
 import Carousel from "@/components/carousel/Carousel"
@@ -15,12 +16,10 @@ const ProjectsWrapper = styled.section`
   color: var(--white);
 `
 
-const ImageWrapper = styled.div<{ url: string }>`
-  width: 300px;
-  height: 250px;
-  background-image: url(${props => props.url});
-  background-size: cover;
-  background-position: center;
+const Book = styled.div`
+  &:hover {
+    cursor: pointer;
+  }
 `
 
 const ProjectItem = styled.div`
@@ -43,6 +42,7 @@ export default function ProjectsSection() {
     <ProjectsWrapper>
       {projects.map((project, index) => (
         <ProjectItem key={index}>
+          {/* Fancy Title */}
           <FancyTitle
             logoBackgroundColor={project.logo?.backgroundColor}
             imageSrc={project.logo?.url}
@@ -51,6 +51,7 @@ export default function ProjectsSection() {
           {project.paragraphs.map((content: string, idx: number) => (
             <ReactMarkdown key={idx}>{content}</ReactMarkdown>
           ))}
+          {/* Sub Projects */}
           {project.subProjects && project.subProjects.length > 0 && (
             <div>
               {project.subProjects.map((sub: Project, subIdx: number) => (
@@ -64,15 +65,31 @@ export default function ProjectsSection() {
               ))}
             </div>
           )}
+          {/* Images URLs */}
           {(project.imagesUrls || project.YouTubeVideoIds) && (
             <Carousel>
               {project.YouTubeVideoIds &&
                 project.YouTubeVideoIds.map((videoId: string) => (
                   <YouTubeVideoPlayer videoId={videoId} key={videoId} maxWidth="500px" />
                 ))}
-              {project.imagesUrls && project.imagesUrls.map((url: string) => <ImageWrapper url={url} key={url} />)}
+              {project.imagesUrls &&
+                project.imagesUrls.map((url: string, idx: number) => {
+                  return (
+                    <Image width="300" height="250" alt={`${project.title} image ${idx + 1}`} src={url} key={url} />
+                  )
+                })}
             </Carousel>
           )}
+          {project.books && (
+            <Carousel overlapArrows={false}>
+              {project.books.map(book => (
+                <Book key={book.coverUrl} onClick={() => window.open(book.link, "_blank")}>
+                  <Image width="120" height="180" src={book.coverUrl} alt={book.title} />
+                </Book>
+              ))}
+            </Carousel>
+          )}
+          {/* World Map */}
           {project.worldMap && (
             <WorldMap
               markers={project.worldMap.markers}

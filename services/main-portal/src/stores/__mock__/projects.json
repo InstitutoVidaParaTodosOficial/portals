@@ -311,7 +311,43 @@
         "O objetivo da editora é registrar, em livros, a palavra profética ministrada pelo Espírito Santo por meio de Seus servos, com o propósito de gerar e edificar igrejas. Suas obras têm como foco, além da revelação e da direção espiritual, a prática da palavra na vida normal da igreja. Os livros ajudam o leitor a extrair o Espírito e a vida da palavra por meio da ruminação.",
         "As publicações, originalmente escritas em português, são traduzidas para vários idiomas, incluindo espanhol, inglês, francês, italiano, coreano, alemão, romeno e húngaro. A Editora Árvore da Vida já lançou cerca de mil títulos e alcançou a marca de aproximadamente 25 milhões de livros vendidos."
       ],
-      "imagesUrls": ["https://picsum.photos/200/300?random=1", "https://picsum.photos/200/300?random=1"]
+      "books": [
+        {
+          "title": "Deus Quer Falar com Você!",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/deus-quer-falar-com-você.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        },
+        {
+          "title": "Dias mais sábios",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/dias-mais-sabios.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        },
+        {
+          "title": "Investidores do Reino: Testemunhos de Fé e Milagres",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/investidosres-do-reino-testemunhos-de-fe-e-milagres.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        },
+        {
+          "title": "Os Perigos do Lado Bom da Alma",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/os-perigos-do-lado-bom-da-alma.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        },
+        {
+          "title": "Palavra Profetica: Direção e Poder de Deus",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/palavra-profetica-direcao-e-poder-de-deus.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        },
+        {
+          "title": "Reconhecer o Enviado de Deus",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/reconhecer-o-enviado-de-deus.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        },
+        {
+          "title": "Você Quer Ser um Missionário?: Testemunhos de Fé e Milagres",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/voce-quer-ser-um-missionario.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        }
+      ]
     },
     {
       "title": "Estância Árvore da Vida",
@@ -646,7 +682,43 @@
         "The publishing house’s goal is to record, in books, the prophetic word ministered by the Holy Spirit through His servants, with the purpose of generating and building up churches. In addition to revelation and spiritual direction, the works focus on the practical application of the Word in the normal church life. The books help readers receive the Spirit and life from the Word by prayerfully meditating on it.",
         "The publications, originally written in Portuguese, are translated into several languages, including Spanish, English, French, Italian, Korean, German, Romanian, and Hungarian. Arvore da Vida Publishing House has released around 1,000 titles and reached approximately 25 million books sold."
       ],
-      "imagesUrls": ["https://picsum.photos/200/300?random=1", "https://picsum.photos/200/300?random=1"]
+      "books": [
+        {
+          "title": "Deus Quer Falar com Você!",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/deus-quer-falar-com-você.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        },
+        {
+          "title": "Dias mais sábios",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/dias-mais-sabios.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        },
+        {
+          "title": "Investidores do Reino: Testemunhos de Fé e Milagres",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/investidosres-do-reino-testemunhos-de-fe-e-milagres.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        },
+        {
+          "title": "Os Perigos do Lado Bom da Alma",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/os-perigos-do-lado-bom-da-alma.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        },
+        {
+          "title": "Palavra Profetica: Direção e Poder de Deus",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/palavra-profetica-direcao-e-poder-de-deus.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        },
+        {
+          "title": "Reconhecer o Enviado de Deus",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/reconhecer-o-enviado-de-deus.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        },
+        {
+          "title": "Você Quer Ser um Missionário?: Testemunhos de Fé e Milagres",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/voce-quer-ser-um-missionario.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        }
+      ]
     },
     {
       "title": "Arvore da Vida Retreat Center (EAV)",
@@ -981,7 +1053,43 @@
         "El objetivo de la editorial es registrar, en libros, la palabra profética ministrada por el Espíritu Santo por medio de Sus siervos, con el propósito de generar y edificar iglesias. Sus obras tienen como enfoque, además de la revelación y la dirección espiritual, la práctica de la palabra en la vida normal de la iglesia. Los libros ayudan al lector a extraer el Espíritu y la vida de la palabra por medio de la meditación.",
         "Las publicaciones, originalmente escritas en portugués, son traducidas a varios idiomas, incluyendo español, inglés, francés, italiano, coreano, alemán, rumano y húngaro. La Editorial Árbol de la Vida ha lanzado cerca de mil títulos y alcanzó la marca de aproximadamente 25 millones de libros vendidos."
       ],
-      "imagesUrls": ["https://picsum.photos/200/300?random=1", "https://picsum.photos/200/300?random=1"]
+      "books": [
+        {
+          "title": "Deus Quer Falar com Você!",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/deus-quer-falar-com-você.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        },
+        {
+          "title": "Dias mais sábios",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/dias-mais-sabios.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        },
+        {
+          "title": "Investidores do Reino: Testemunhos de Fé e Milagres",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/investidosres-do-reino-testemunhos-de-fe-e-milagres.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        },
+        {
+          "title": "Os Perigos do Lado Bom da Alma",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/os-perigos-do-lado-bom-da-alma.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        },
+        {
+          "title": "Palavra Profetica: Direção e Poder de Deus",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/palavra-profetica-direcao-e-poder-de-deus.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        },
+        {
+          "title": "Reconhecer o Enviado de Deus",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/reconhecer-o-enviado-de-deus.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        },
+        {
+          "title": "Você Quer Ser um Missionário?: Testemunhos de Fé e Milagres",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/voce-quer-ser-um-missionario.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        }
+      ]
     },
     {
       "title": "Estancia Árbol de la Vida",
@@ -1313,7 +1421,43 @@
         "Les Éditions Arbre de Vie ont commencé leurs activités en 1975, initialement sous le nom d’Éditions Gospel. Par la suite, elles sont devenues les Éditions Arbre de Vie. Ce projet est né dans le but de diffuser la vérité de l’Évangile du royaume au moyen de la littérature chrétienne. L’objectif de la maison d’édition est d’enregistrer, dans des livres, la parole prophétique transmise par le Saint-Esprit à travers Ses serviteurs, en la mettant à disposition des frères et de tous ceux qui recherchent la réalité de l’Évangile du royaume et une vie victorieuse en Christ. Il s’agit d’un ministère de compilation et d’impression de publications, en collaboration avec le CEPPEV, afin que l’Évangile du royaume soit annoncé dans le monde entier. Avec plus de 3 200 titres imprimés et distribués au Brésil et à l’étranger, notre vision est de continuer à avancer en portant l’Évangile de Christ dans tout le Brésil et dans le monde entier.",
         "Les publications, à l’origine écrites en portugais, sont traduites en plusieurs langues, notamment en espagnol, anglais, français, italien, chinois, japonais et urdu. Les livres sont également imprimés et distribués en collaboration avec le CEPPEV. Les Éditions Arbre de Vie participent à des foires et expositions du livre, tant dans le contexte chrétien que dans le monde séculier, promouvant l’habitude de la lecture et aidant les gens à avoir une vie de foi et d’espérance. Par exemple, elles participent au Salon international du livre de São Paulo et de Rio de Janeiro, avec des stands, des auteurs, des livres numériques et la distribution de milliers de livres gratuits, atteignant des milliers de personnes."
       ],
-      "imagesUrls": ["https://picsum.photos/200/300?random=1", "https://picsum.photos/200/300?random=1"]
+      "books": [
+        {
+          "title": "Deus Quer Falar com Você!",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/deus-quer-falar-com-você.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        },
+        {
+          "title": "Dias mais sábios",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/dias-mais-sabios.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        },
+        {
+          "title": "Investidores do Reino: Testemunhos de Fé e Milagres",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/investidosres-do-reino-testemunhos-de-fe-e-milagres.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        },
+        {
+          "title": "Os Perigos do Lado Bom da Alma",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/os-perigos-do-lado-bom-da-alma.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        },
+        {
+          "title": "Palavra Profetica: Direção e Poder de Deus",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/palavra-profetica-direcao-e-poder-de-deus.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        },
+        {
+          "title": "Reconhecer o Enviado de Deus",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/reconhecer-o-enviado-de-deus.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        },
+        {
+          "title": "Você Quer Ser um Missionário?: Testemunhos de Fé e Milagres",
+          "coverUrl": "https://cdn.institutovidaparatodos.org.br/projects/editora/pt/voce-quer-ser-um-missionario.jpeg",
+          "link": "https://arvoredavida.org.br/"
+        }
+      ]
     },
     {
       "title": "Domaine Arbre de Vie",

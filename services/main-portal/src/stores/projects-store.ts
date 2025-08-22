@@ -12,6 +12,11 @@ export type Project = {
   paragraphs: string[]
   featuredImageUrl?: string
   imagesUrls?: string[]
+  books?: {
+    title: string
+    coverUrl: string
+    link: string
+  }[]
   YouTubeVideoIds?: string[]
   subProjects?: Project[]
   worldMap?: {
