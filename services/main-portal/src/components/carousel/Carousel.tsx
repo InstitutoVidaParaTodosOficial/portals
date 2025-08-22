@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React, { useRef, useState, useEffect } from "react"
 import styled from "styled-components"
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa"
 
@@ -52,9 +52,22 @@ type CarouselProps = {
 
 export default function Carousel({ children }: CarouselProps) {
   const carouselRef = useRef<HTMLDivElement>(null)
+  const [canScroll, setCanScroll] = useState(false)
   let isDown = false
   let startX = 0
   let scrollLeft = 0
+
+  useEffect(() => {
+    const checkScroll = () => {
+      const el = carouselRef.current
+      if (el) {
+        setCanScroll(el.scrollWidth > el.clientWidth)
+      }
+    }
+    checkScroll()
+    window.addEventListener("resize", checkScroll)
+    return () => window.removeEventListener("resize", checkScroll)
+  }, [])
 
   const scrollBy = (amount: number) => {
     if (carouselRef.current) {
@@ -91,12 +104,16 @@ export default function Carousel({ children }: CarouselProps) {
 
   return (
     <CarouselContainer>
-      <ArrowButton style={{ left: 8 }} aria-label="Scroll left" onClick={() => scrollBy(-200)}>
-        <FaChevronLeftIcon />
-      </ArrowButton>
-      <ArrowButton style={{ right: 8 }} aria-label="Scroll right" onClick={() => scrollBy(200)}>
-        <FaChevronRightIcon />
-      </ArrowButton>
+      {canScroll && (
+        <ArrowButton style={{ left: 8 }} aria-label="Scroll left" onClick={() => scrollBy(-200)}>
+          <FaChevronLeftIcon />
+        </ArrowButton>
+      )}
+      {canScroll && (
+        <ArrowButton style={{ right: 8 }} aria-label="Scroll right" onClick={() => scrollBy(200)}>
+          <FaChevronRightIcon />
+        </ArrowButton>
+      )}
       <CarouselWrapper
         ref={carouselRef}
         onMouseDown={onMouseDown}
