@@ -36,10 +36,10 @@
     "terms": "Terms of Use"
   },
   "about_us": {
-    "summary": "The Instituto Vida Para Todos (IVPT) is an essential channel for spreading the Lord's work, but it is not limited to a simple platform for videos and publications. Its role is that of a preacher of the gospel of the kingdom, faithfully proclaiming the only gospel: the gospel of Christ (Gal 1:4). IVPT's mission is to give global reach to the preaching of the gospel of the kingdom with just one click. As it is written in Psalm 19:4: 'Yet their voice goes out into all the earth, their words to the ends of the world,' the prophetic Word transmitted by IVPT reaches distant places and, with this breadth, touches hearts, generating the hearing of faith in people.",
+    "summary": "The Instituto Vida Para Todos (IVPT) is an essential channel for the propagation of the Lord’s work, yet it is not merely a platform for videos and publications. Its role is that of a preacher of the gospel of the kingdom, faithfully proclaiming the one and only gospel: the gospel of Christ (Gal. 1:4). The mission of IVPT is to give global reach to the spread of the gospel of the kingdom with just one click. As it is written in Psalm 19:4: “Their line has gone out through all the earth, And their words to the end of the world,” The prophetic word proclaimed through IVPT reaches distant places, and with this reach, it touches hearts and produces faith in people.",
     "title": "Our Mission",
-    "subtitle": "In addition to its evangelistic function, IVPT plays a legal and administrative role within the work, or in the various fronts of work that you will get to know below.",
-    "descripttion": "To fully accomplish its mission, IVPT cooperates with all available tools: Colportage, PAC, CEAPE, Foreign Missions, Expolivro, TCI, Kids' Winners Factory, Care Network and Reception Center, Tree of Life Publisher, Kingdom Investors, and Tree of Life Ranch, working in unity so that the gospel of the kingdom is preached throughout the earth, to bring our Lord back one day sooner."
+    "subtitle": "Beyond its evangelistic function, IVPT plays a legal and administrative role within the work, or the various fronts of work that you will learn about below.",
+    "description": "To fully accomplish its mission, IVPT cooperates with all available ministries: Colporting, ACO (Advanced Colporting Outpost), GPC (Gospel Perfecting Center), Missions Abroad, BookExpo, TCS (Troops, Captains, and Senior Stewards), PO Kids (Producing Overcomers Kids), Care Networks and Shepherding Team, Árvore da Vida Publishing House, Kingdom Investors, an Árvore da Vida Retreat Center (EAV), working in oneness to ensure that the gospel of the kingdom is spread throughout the earth, so that our Lord may return sooner."
   },
   "kingdom-investors": {
     "title": "Kingdom Investors",
@@ -60,5 +60,20 @@
   "become-a-missionary": {
     "title": "Do you want to be a missionary?",
     "text": "## See the testimony of a Christian missionary and make your decision today! Give your life to the Lord Jesus and be part of the group of overcomers who fight for the Kingdom of God.\n\n**Man was created to do the will of God. This fact is not just a generic ideal, but within man there is a spirit that can receive the power to carry out this will.**\n\nIn my experience of salvation, I realized that the blessing of being rescued and included in the body of Christ could not remain only with me, but from my life God wants to reach other people. This is the feeling of the Spirit of God who dwells in each of us. This feeling comes accompanied by consecration, that is, understanding that we have been set apart and must take action.\n\n**Practically, how does this happen?**\n\nThe first step is to be close to the word of God, because through it comes His command. Thus, we hear the voice of the Lord and His call to fulfill His will. At the same time, we recognize that we do not have the strength or ability to do God's work. At this moment, consecration becomes real in us and we see a way to fulfill the Lord's desire, laying aside our own desires to put God's desire into practice.\n\n**Christ has already commanded us all to go and preach the gospel when He said: 'Go!'**\n\nPreaching the gospel of the Kingdom to every creature is an act of obedience and gratitude to God! And there is no one who leaves everything for love of God's will who does not receive much more!\n\n**However, just like Christ, we all need to be perfected.**\n\nThat is why going to CEAPE is fundamental for the realization of this consecration, because, naturally, we all create our own nests, our safety nets, our comfort, and we remain in the comfort zone. And our own nature is not useful to the Lord. The Lord needs to work on our nature and, for this, He has set apart an environment that gives us this path, where spirit and soul are worked on, perfected, aligned with the will of God, and how to carry it out not by a set of rules, but as a life that governs us. It is an essential experience for all who wish to be missionaries.\n\n**The missionary life is a life of struggles, trials, dependence on the Lord, full of joy and enjoyment, like any servant of God.**\n\nThis life has its special characteristic, which is to be 100% focused on only taking care of God's interests, dedicating all your time to this, without worrying about secular things. There is no better life than having God as your boss!"
+  },
+  "world_map": {
+    "controls": {
+      "enabled": "Enabled",
+      "disabled": "Disabled",
+      "reset_zoom": "Reset",
+      "zoom_label": "Zoom:"
+    },
+    "oceans": {
+      "atlantic": "Atlantic\nOcean",
+      "pacific": "Pacific\nOcean",
+      "indian": "Indian\nOcean",
+      "arctic": "Arctic\nOcean",
+      "antarctic": "Southern\nOcean"
+    }
   }
 }

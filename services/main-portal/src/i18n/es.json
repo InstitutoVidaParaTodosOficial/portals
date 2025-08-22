@@ -36,10 +36,10 @@
     "terms": "Términos de Uso"
   },
   "about_us": {
-    "summary": "El Instituto Vida Para Todos (IVPT) es un canal esencial para difundir la obra del Señor, pero no se limita a una simple plataforma de videos y publicaciones. Su papel es el de predicador del evangelio del reino, proclamando fielmente el único evangelio: el evangelio de Cristo (Gál 1:4). La misión del IVPT es dar alcance global a la predicación del evangelio del reino con solo un clic. Como está escrito en el Salmo 19:4: 'Pero por toda la tierra salió su voz, y hasta el extremo del mundo sus palabras', la Palabra profética transmitida por el IVPT llega a lugares lejanos y, con este alcance, toca corazones, generando la audición de la fe en las personas.",
+    "summary": "El Instituto Vida Para Todos (IVPT) es un canal esencial para la propagación de la obra del Señor, pero no se limita a una simple plataforma de videos y publicaciones. Su papel es el de un predicador del evangelio del reino, anunciando fielmente el único evangelio: el evangelio de Cristo (Gál 1:4 Reina-Valera 1960). La misión del IVPT es dar alcance global a la predicación del evangelio del reino con un solo clic. Como está escrito en Salmos 19:4: “Por toda la tierra salió su voz, Y hasta el extremo del mundo sus palabras”, la Palabra profética transmitida por el IVPT llega a lugares remotos y, con esta amplitud, toca corazones y genera la fe que viene por el oír.",
     "title": "Nuestra Misión",
-    "subtitle": "Además de su función evangelística, el IVPT cumple un papel jurídico y administrativo dentro de la obra, o en los diversos frentes de trabajo que conocerás a continuación.",
-    "descripttion": "Para cumplir plenamente su misión, el IVPT coopera con todas las herramientas disponibles: Colportaje, PAC, CEAPE, Misiones Extranjeras, Expolibro, TCI, Fábrica de Ganadores Kids, Red de Cuidado y Centro de Recepción, Editorial Árbol de la Vida, Inversionistas del Reino y Granja Árbol de la Vida, trabajando en unidad para que el evangelio del reino sea predicado en toda la tierra, para traer a nuestro Señor de regreso un día antes."
+    "subtitle": "Además de su función evangelística, el IVPT desempeña un papel legal y administrativo dentro de la obra, o de las diversas áreas de trabajo que conocerás a continuación.",
+    "description": "Para cumplir plenamente su misión, el IVPT colabora con todas las herramientas disponibles: Colportaje, PAC, CEPEV, Misiones en el Extranjero, Expolibro, TCI, Fábrica de Vencedores Kids, Red de Cuidado y Central de Acogida, Editorial Árbol de la Vida, Inversionistas del Reino y Estancia Árbol de la Vida, trabajando en unidad para que el evangelio del reino sea predicado en toda la tierra y así apresurar el regreso de nuestro Señor."
   },
   "kingdom-investors": {
     "title": "Inversionistas del Reino",
@@ -60,5 +60,20 @@
   "become-a-missionary": {
     "title": "¿Quieres ser misionero?",
     "text": "## ¡Mira el testimonio de un misionero cristiano y toma tu decisión hoy! Entrega tu vida al Señor Jesús y sé parte del grupo de vencedores que luchan por el Reino de Dios.\n\n**El hombre fue creado para hacer la voluntad de Dios. Este hecho no es solo un ideal genérico, sino que dentro del hombre hay un espíritu que puede recibir el poder para cumplir esta voluntad.**\n\nEn mi experiencia de salvación, me di cuenta de que la bendición de ser rescatado e incluido en el cuerpo de Cristo no podía quedarse solo conmigo, sino que a través de mi vida Dios quiere alcanzar a otras personas. Este es el sentir del Espíritu de Dios que habita en cada uno de nosotros. Este sentir viene acompañado de consagración, es decir, entender que hemos sido apartados y debemos actuar.\n\n**¿Prácticamente, cómo sucede esto?**\n\nEl primer paso es estar cerca de la palabra de Dios, porque a través de ella viene Su mandato. Así, escuchamos la voz del Señor y Su llamado para cumplir Su voluntad. Al mismo tiempo, reconocemos que no tenemos la fuerza ni la capacidad para hacer la obra de Dios. En ese momento, la consagración se vuelve real en nosotros y vemos una manera de cumplir el deseo del Señor, dejando de lado nuestros propios deseos para poner en práctica el deseo de Dios.\n\n**Cristo ya nos ha mandado a todos a ir y predicar el evangelio cuando dijo: '¡Vayan!'**\n\n¡Predicar el evangelio del Reino a toda criatura es un acto de obediencia y gratitud a Dios! ¡Y no hay nadie que deje todo por amor a la voluntad de Dios que no reciba mucho más!\n\n**Sin embargo, así como Cristo, todos necesitamos ser perfeccionados.**\n\nPor eso, ir a CEAPE es fundamental para la realización de esta consagración, porque, naturalmente, todos creamos nuestros propios nidos, nuestras redes de seguridad, nuestra comodidad, y permanecemos en la zona de confort. Y nuestra propia naturaleza no es útil al Señor. El Señor necesita trabajar en nuestra naturaleza y, para esto, ha apartado un ambiente que nos da este camino, donde el espíritu y el alma son trabajados, perfeccionados, alineados con la voluntad de Dios, y cómo llevarla a cabo no por un conjunto de reglas, sino como una vida que nos gobierna. Es una experiencia esencial para todos los que desean ser misioneros.\n\n**La vida misionera es una vida de luchas, pruebas, dependencia del Señor, llena de gozo y disfrute, como cualquier siervo de Dios.**\n\nEsta vida tiene su característica especial, que es estar 100% enfocado solo en cuidar los intereses de Dios, dedicando todo tu tiempo a esto, sin preocuparte por las cosas seculares. ¡No hay mejor vida que tener a Dios como tu jefe!"
+  },
+  "world_map": {
+    "controls": {
+      "enabled": "Activado",
+      "disabled": "Desactivado",
+      "reset_zoom": "Reiniciar",
+      "zoom_label": "Zoom:"
+    },
+    "oceans": {
+      "atlantic": "Océano\nAtlántico",
+      "pacific": "Océano\nPacífico",
+      "indian": "Océano\nÍndico",
+      "arctic": "Océano\nÁrtico",
+      "antarctic": "Océano\nAustral"
+    }
   }
 }

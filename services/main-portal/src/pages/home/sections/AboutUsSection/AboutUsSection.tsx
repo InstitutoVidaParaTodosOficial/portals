@@ -48,7 +48,7 @@ export default function AboutUsSection() {
         </TitleWrapper>
 
         <h2>{t("subtitle")}</h2>
-        <p>{t("descripttion")}</p>
+        <p>{t("description")}</p>
       </BottomSection>
     </AboutUsContainer>
   )
