@@ -42,15 +42,17 @@ const ArrowButton = styled.button`
   }
 `
 
-const CarouselContainer = styled.div`
+const CarouselContainer = styled.div<{ $zeroPadding: boolean }>`
   position: relative;
+  padding: ${props => (props.$zeroPadding ? "0" : "0 54px")};
 `
 
 type CarouselProps = {
+  overlapArrows?: boolean
   children: React.ReactNode
 }
 
-export default function Carousel({ children }: CarouselProps) {
+export default function Carousel({ overlapArrows = true, children }: CarouselProps) {
   const carouselRef = useRef<HTMLDivElement>(null)
   const [canScroll, setCanScroll] = useState(false)
   let isDown = false
@@ -103,7 +105,7 @@ export default function Carousel({ children }: CarouselProps) {
   }
 
   return (
-    <CarouselContainer>
+    <CarouselContainer $zeroPadding={overlapArrows}>
       {canScroll && (
         <ArrowButton style={{ left: 8 }} aria-label="Scroll left" onClick={() => scrollBy(-200)}>
           <FaChevronLeftIcon />
